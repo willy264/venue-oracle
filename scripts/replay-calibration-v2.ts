@@ -15,6 +15,7 @@ const holdoutStart = Math.floor(observations.length * 0.8);
 const client = MemWal.create({ key: process.env.MEMWAL_KEY_CHECKER, accountId: process.env.MEMWAL_ACCOUNT_ID, serverUrl: process.env.MEMWAL_SERVER_URL, namespace: `vo-v2-replay-${runId}` });
 const priors = new Map<string, CalibrationPrior>();
 const previousSummary = new Map<string, string>();
+const recalledKeys = new Set<string>();
 const summaryCounts = new Map<string, number>();
 const rows: Array<Record<string, unknown>> = [];
 const pending: Array<{ key: string; kind: "summary" | "observation"; text: string; namespace: string }> = [];
@@ -53,7 +54,8 @@ for (let index = 0; index < observations.length; index++) {
 	const observation = observations[index];
 	const key = calibrationBucket(observation);
 	const namespace = `vo-v2-replay-${runId}-${observation.venue}-${observation.category}`;
-	const recalled = await recallSummary(namespace, `Calibration summary ${observation.venue} ${observation.category} ${observation.timeBucket}`);
+	let recalled: CalibrationPrior | undefined;
+	if (!recalledKeys.has(key)) { recalled = await recallSummary(namespace, `Calibration summary ${observation.venue} ${observation.category} ${observation.timeBucket}`); recalledKeys.add(key); }
 	const prior = priors.get(key) ?? recalled;
 	const prediction = calibrationPrediction(observation.price, prior, k, 5);
 	const isHoldout = index >= holdoutStart;
