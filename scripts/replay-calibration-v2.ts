@@ -25,7 +25,11 @@ let observationWrites = 0;
 
 function parseTail(text: string): Record<string, unknown> | null { const match = text.match(/(\{\"t\":\"(?:bucket-summary|observation)\".*\})\s*$/); if (!match) return null; try { return JSON.parse(match[1]); } catch { return null; } }
 async function recallSummary(namespace: string, query: string): Promise<CalibrationPrior | undefined> {
-	const response = await client.recall({ query, namespace, limit: 20, sort: "relevance" });
+	const response = await Promise.race([
+		client.recall({ query, namespace, limit: 20, sort: "relevance" }),
+		new Promise<undefined>((resolve) => setTimeout(() => resolve(undefined), 5000)),
+	]);
+	if (!response) return undefined;
 	const candidates = response.results.map((item) => parseTail(item.text ?? "")).filter((tag): tag is Record<string, unknown> => Boolean(tag && tag.t === "bucket-summary" && Number(tag.n) >= 0)).sort((a, b) => Number(b.n) - Number(a.n));
 	if (!candidates[0]) return undefined;
 	return { count: Number(candidates[0].n), meanPrice: Number(candidates[0].meanPrice), positive: Number(candidates[0].rate) * Number(candidates[0].n) };
