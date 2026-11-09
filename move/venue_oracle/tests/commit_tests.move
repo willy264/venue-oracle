@@ -9,7 +9,7 @@ module venue_oracle::commit_tests {
         let sender = @0xA;
         let mut scenario = test_scenario::begin(sender);
         {
-            let clock = clock::create_for_testing(&mut scenario);
+            let clock = clock::create_for_testing(test_scenario::ctx(&mut scenario));
             commit::commit(b"digest", b"pair-1", &clock, test_scenario::ctx(&mut scenario));
             clock::destroy_for_testing(clock);
         };

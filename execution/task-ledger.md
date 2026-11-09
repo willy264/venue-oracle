@@ -23,7 +23,7 @@
 | Run v2 held-out replay and summary memories | Done with mixed result | 550 observations, 440/110 time split, 9 summary writes, 20 individual writes; held-out raw Brier 0.1955 vs corrected 0.1984; calibration error improved |
 | Evaluate learning curve | Done | Raw Brier 0.0983; corrected Brier 0.2195; negative result disclosed |
 | Snapshot live markets and prepare calls | Done | 6 Tatum price calls, 6 `vo-live` MemWal writes; blob IDs and SHA-256 call digests in `results/live-calls.json` |
-| Sui testnet commitment layer | Blocked | `suiup` installed, but testnet v1.83.1 artifact returns repeated HTTP 504; Move source is present, no tx sent |
+| Sui testnet commitment layer | In progress | Direct GitHub release workaround succeeded; Move unit test passes; testnet publish pending |
 | Web app shell | Done | Live Board, Learning Curve, Memory Inspector, Track Record, and Method pages added |
 | Build web application | Done with local build gap | Five Next pages committed; local Next package is incomplete and production build remains unverified |
 | Mainnet memory writes | Done under standing approval | Replay observation and belief writes completed; no secrets tracked |
