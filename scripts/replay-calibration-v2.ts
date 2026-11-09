@@ -36,7 +36,7 @@ async function recallSummary(namespace: string, query: string): Promise<Calibrat
 }
 async function flush() {
 	while (pending.length) {
-		const batch = pending.splice(0, 20);
+		const batch = pending.splice(0, 5);
 		const idempotencyKey = `${runId}|${createHash("sha256").update(batch.map((item) => `${item.kind}|${item.key}`).join(",")).digest("hex")}`;
 		const result = await client.rememberBulkAndWait(batch.map((item) => ({ text: item.text, namespace: item.namespace })), { idempotencyKey, pollIntervalMs: 2500, timeoutMs: 180000 });
 		for (let i = 0; i < result.results.length; i++) { const blobId = result.results[i].blob_id; if (blobId) memoryBlobIds[batch[i].key] = blobId; }
@@ -45,7 +45,7 @@ async function flush() {
 }
 function summaryDue(count: number) { return [1, 2, 5, 10, 20, 50].includes(count) || (count > 50 && count % 50 === 0); }
 function addSummary(observation: Observation, prior: CalibrationPrior) {
-	if (summaryWrites >= 120) return;
+	if (summaryWrites >= 24) return;
 	const key = calibrationBucket(observation);
 	const count = summaryCounts.get(key) ?? 0;
 	if (!summaryDue(count)) return;
@@ -67,12 +67,20 @@ for (let index = 0; index < observations.length; index++) {
 	const updated = updateCalibrationPrior(prior, observation.price, observation.outcome);
 	priors.set(key, updated);
 	summaryCounts.set(key, updated.count);
-	addSummary(observation, updated);
-	if (index < Math.min(100, observations.length) && pending.filter((item) => item.kind === "observation").length < 100) {
+	if (index < Math.min(20, observations.length) && pending.filter((item) => item.kind === "observation").length < 20) {
 		pending.push({ kind: "observation", key: `observation|${index}|${observation.marketId}`, namespace: `vo-v2-observations-${runId}`, text: `V2 calibration observation: ${observation.venue} ${observation.category} priced YES at ${observation.price.toFixed(4)} ${observation.timeBucket} before close; resolved ${observation.outcome ? "YES" : "NO"}. {"t":"observation","venue":"${observation.venue}","category":"${observation.category}","ttc":"${observation.timeBucket}","price":${observation.price.toFixed(4)},"outcome":${observation.outcome},"snapshotAt":"${observation.snapshotAt}","marketId":"${observation.marketId}"}` });
 		observationWrites++;
 	}
 	if (pending.length >= 20) await flush();
+}
+for (const [key, prior] of priors) {
+	if (summaryWrites >= 24) break;
+	const observation = observations.find((item) => calibrationBucket(item) === key);
+	if (!observation) continue;
+	const namespace = `vo-v2-replay-${runId}-${observation.venue}-${observation.category}`;
+	const previous = previousSummary.get(key) ?? "";
+	pending.push({ kind: "summary", key: `summary|${key}|final`, namespace, text: `Calibration summary ${key}: observed rate ${(prior.positive / prior.count * 100).toFixed(1)}% from ${prior.count} prior observations; mean raw price ${(prior.meanPrice * 100).toFixed(1)}%. Previous summary ${previous || "none"}. {"t":"bucket-summary","bucket":"${key}","venue":"${observation.venue}","category":"${observation.category}","ttc":"${observation.timeBucket}","n":${prior.count},"rate":${(prior.positive / prior.count).toFixed(6)},"meanPrice":${prior.meanPrice.toFixed(6)},"previous":"${previous}"}` });
+	summaryWrites++;
 }
 await flush();
 const holdout = rows.filter((row) => row.split === "holdout");
