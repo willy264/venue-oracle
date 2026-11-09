@@ -1,0 +1,30 @@
+{
+  "fetchedAt": "2026-11-08T22:59:16.960Z",
+  "calls": 40,
+  "source": "Tatum Prediction API",
+  "endpoints": {
+    "markets": {
+      "creditsPerCall": 100,
+      "polymarketRows": 2000,
+      "kalshiRows": 1920,
+      "pagesPerPlatform": 20
+    },
+    "history": {
+      "creditsPerCall": 200,
+      "path": "/v4/data/prediction/markets/{id}/history",
+      "requiredQuery": [
+        "interval",
+        "start",
+        "end"
+      ],
+      "sourceOptions": [
+        "candlesticks",
+        "midpoint"
+      ]
+    }
+  },
+  "candidates": {
+    "count": 0,
+    "top": []
+  }
+}

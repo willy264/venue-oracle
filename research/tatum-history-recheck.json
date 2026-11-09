@@ -1,0 +1,42 @@
+{
+  "observedAt": "2026-11-09T05:17:23.799Z",
+  "documentedEndpoint": "GET /v4/data/prediction/markets/{id}/history",
+  "documentedParameters": {
+    "id": "platform-native market identifier, not an outcome token ID",
+    "interval": "1d",
+    "start": "ISO-8601 timestamp",
+    "end": "ISO-8601 timestamp",
+    "source": "midpoint for Polymarket, candlesticks for Kalshi"
+  },
+  "creditsPerCall": 200,
+  "calls": [
+    {
+      "platform": "polymarket",
+      "marketId": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+      "source": "midpoint",
+      "status": 200,
+      "candleCount": 8,
+      "partial": false,
+      "first": { "timestamp": "2026-11-02T00:00:00.000Z", "open": 0.175, "high": 0.175, "low": 0.165, "close": 0.175, "volume": 0 }
+    },
+    {
+      "platform": "polymarket",
+      "marketId": "0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
+      "source": "midpoint",
+      "status": 200,
+      "candleCount": 8,
+      "partial": false,
+      "first": { "timestamp": "2026-11-02T00:00:00.000Z", "open": 0.0115, "high": 0.0115, "low": 0.0105, "close": 0.0105, "volume": 0 }
+    },
+    {
+      "platform": "kalshi",
+      "marketId": "KXELONMARS-99",
+      "source": "candlesticks",
+      "status": 200,
+      "candleCount": 7,
+      "partial": false,
+      "first": { "timestamp": "2026-11-03T00:00:00.000Z", "open": 0.1, "high": 0.1, "low": 0.08, "close": 0.08, "volume": 2 }
+    }
+  ],
+  "conclusion": "Tatum history works when called with the platform-native market ID and documented time parameters. It is too expensive for bulk history and will not be used as the replay-history source."
+}

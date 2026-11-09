@@ -1,0 +1,12 @@
+packages:
+  - apps/*
+  - packages/*
+overrides:
+  esbuild@0.18.20: 0.25.12
+allowBuilds:
+  esbuild: true
+  protobufjs: false
+minimumReleaseAgeExclude:
+  - "@mysten/bcs@2.1.4"
+  - "@mysten/seal@1.5.4"
+  - "@mysten/sui@2.39.1"

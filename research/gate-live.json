@@ -1,0 +1,42 @@
+{
+  "observedAt": "2026-11-08T23:03:34.469Z",
+  "memwal": {
+    "healthStatus": "ok",
+    "namespace": "vo-gate-79cb7005baf8840c",
+    "acceptedJob": true,
+    "blobId": "vuYOO0YfNjxehASkXfL-EJLslooXGQolx7NjywAE8R4",
+    "owner": "0xe4184cab2248117a50b8f08deee352cd401bc127c077613a64f7122c90259a33",
+    "recalled": true,
+    "recalledDistance": 0.0000010188636633268189,
+    "storedKeys": [
+      "blob_id",
+      "id",
+      "job_id",
+      "namespace",
+      "owner"
+    ],
+    "recalledKeys": [
+      "blob_id",
+      "created_at",
+      "distance",
+      "text"
+    ]
+  },
+  "tatumGrpc": {
+    "host": "sui-mainnet-grpc.gateway.tatum.io:443",
+    "balanceReturned": true,
+    "balanceFields": [
+      "balance",
+      "coinType"
+    ],
+    "accountObjectId": "0xa3347a93fe583ffc64fffd80e092425e661eeb3606e7fe15e0368678a7f152a0",
+    "accountObjectReturned": true,
+    "accountObjectFields": [
+      "objectId",
+      "owner",
+      "version"
+    ],
+    "accountObjectError": null
+  },
+  "commitmentAssessment": "The MemWal blob_id is a Walrus blob identifier, not a Sui object or transaction digest. The memory write can provide evidence, but it cannot replace a dedicated Sui commitment transaction for the no-hindsight proof."
+}

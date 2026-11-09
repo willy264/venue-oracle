@@ -1,0 +1,13 @@
+{
+  "observedAt": "2026-11-09T05:20:16.834Z",
+  "publicSources": [
+    "https://gamma-api.polymarket.com/markets?closed=true",
+    "https://api.elections.kalshi.com/trade-api/v2/historical/markets"
+  ],
+  "calls": 52,
+  "polymarketRows": 2100,
+  "kalshiRows": 3000,
+  "candidates": 0,
+  "byFamily": {},
+  "reviewStatus": "ownerDecision is blank; no candidate is eligible for scoring or memory writes"
+}

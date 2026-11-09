@@ -1,0 +1,21 @@
+{
+  "observedAt": "2026-11-09T05:18:00Z",
+  "polymarket": {
+    "metadataSource": "https://gamma-api.polymarket.com/markets",
+    "historySource": "https://clob.polymarket.com/prices-history",
+    "auth": "none",
+    "parametersVerified": ["market token ID", "startTs", "endTs", "fidelity", "history[].t", "history[].p"],
+    "probes": [
+      { "tokenId": "55115078421062885512539156303747803058407616201213034911037320915726138659123", "status": 200, "points": 8, "first": { "t": 1793664017, "p": 0.165 } },
+      { "tokenId": "69324317355037271422943965141382095011871956039434394956830818206664869608517", "status": 200, "points": 8, "first": { "t": 1793664032, "p": 0.0105 } }
+    ]
+  },
+  "kalshi": {
+    "metadataSource": "https://api.elections.kalshi.com/trade-api/v2/markets",
+    "historySource": "https://api.elections.kalshi.com/trade-api/v2/series/{series_ticker}/markets/{ticker}/candlesticks",
+    "auth": "none",
+    "parametersVerified": ["series_ticker", "ticker", "start_ts", "end_ts", "period_interval", "candlesticks[].price", "candlesticks[].volume_fp"],
+    "probe": { "seriesTicker": "KXELONMARS", "ticker": "KXELONMARS-99", "status": 200, "points": 7, "periodInterval": 1440, "firstEndPeriodTs": 1793682000, "firstCloseDollars": "0.0800", "firstVolumeFp": "2.00" }
+  },
+  "conclusion": "Both public venue history endpoints return real history without authentication. They are selected for replay history; Tatum remains the discovery/live/outcome/Sui verification source."
+}

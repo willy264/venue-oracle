@@ -1,0 +1,361 @@
+{
+  "observedAt": "2026-11-09T05:08:24.150Z",
+  "source": "Tatum Prediction API",
+  "calls": 30,
+  "documentedCredits": {
+    "events": 100,
+    "markets": 100,
+    "history": 200
+  },
+  "events": {
+    "polymarket": {
+      "rows": 500,
+      "statusCounts": {
+        "closed": 500
+      },
+      "categories": {
+        "Sports": 198,
+        "Chess": 18,
+        "Pop-Culture": 35,
+        "NFTs": 13,
+        "Ukraine & Russia": 11,
+        "Business": 20,
+        "Crypto": 54,
+        "US-current-affairs": 52,
+        "NBA Playoffs": 20,
+        "Coronavirus": 32,
+        "Art": 18,
+        "All": 3,
+        "Olympics": 6,
+        "Poker": 2,
+        "Global Politics": 7,
+        "Science": 11
+      },
+      "embeddedMarkets": 500
+    },
+    "kalshi": {
+      "rows": 500,
+      "statusCounts": {
+        "open": 500
+      },
+      "categories": {
+        "Science and Technology": 23,
+        "Elections": 253,
+        "Climate and Weather": 9,
+        "Politics": 33,
+        "Sports": 71,
+        "Financials": 14,
+        "Economics": 61,
+        "Entertainment": 27,
+        "Health": 2,
+        "Companies": 5,
+        "World": 2
+      },
+      "embeddedMarkets": 2610
+    }
+  },
+  "resolvedMarkets": {
+    "polymarket": {
+      "rows": 120,
+      "outcomes": {
+        "NO": 57,
+        "YES": 35,
+        "CELTICS": 1,
+        "KANSAS": 1,
+        "$35": 1,
+        "$1,000": 1,
+        "MAX VERSTAPPEN": 2,
+        "EMIN GUN SIRER": 1,
+        "OILERS": 2,
+        "HEAT": 1,
+        "AVALANCHE": 2,
+        "INDIANA": 1,
+        "PROCHAZKA": 1,
+        "BOSTON RED SOX": 1,
+        "DOODLES": 1,
+        "LIGHTNING": 2,
+        "EINTRACHT": 1,
+        "CHIMAEV": 1,
+        "ARGENTINA": 1,
+        "ENGLAND": 1,
+        "PAKISTAN": 1,
+        "CUELLAR": 1,
+        "AGAINST": 1,
+        "RAMS": 1,
+        "HURRICANES": 1,
+        "SHEVCHENKO": 1
+      },
+      "categories": {
+        "Chess": 2,
+        "Pop-Culture": 10,
+        "NFTs": 11,
+        "Ukraine & Russia": 10,
+        "Business": 13,
+        "Sports": 30,
+        "Crypto": 24,
+        "US-current-affairs": 12,
+        "Coronavirus": 2,
+        "Global Politics": 4,
+        "Art": 1,
+        "Science": 1
+      }
+    },
+    "kalshi": {
+      "rows": 18,
+      "outcomes": {
+        "NO": 16,
+        "YES": 2
+      },
+      "categories": {
+        "Sports": 14,
+        "Companies": 1,
+        "Entertainment": 1,
+        "Science and Technology": 2
+      }
+    }
+  },
+  "historySamples": [
+    {
+      "platform": "polymarket",
+      "id": "0x9749f460b3ba6edb376b662d03c2c7cc377a7e2d1f47c347cc1ef20d36c99e2a",
+      "status": "resolved",
+      "category": "Chess",
+      "closeTime": "2022-06-11T00:00:00.000Z",
+      "source": "midpoint",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "polymarket",
+      "id": "0x2c47a9a854830a66e12ef0b8309c98e8fca44eb443cff2ab4c4472c231679ab7",
+      "status": "resolved",
+      "category": "Pop-Culture",
+      "closeTime": "2022-06-20T00:00:00.000Z",
+      "source": "midpoint",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "polymarket",
+      "id": "0x7d45c60f0f4dce5877cdf158f72b74d33bf86f5cdcf62fb194fa57c86c70f9ea",
+      "status": "resolved",
+      "category": "NFTs",
+      "closeTime": "2022-06-14T00:00:00.000Z",
+      "source": "midpoint",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "polymarket",
+      "id": "0x2797fccc231de0253e8053dc79b7cb583d4f7eb1153bc58daa3790e598f79b7a",
+      "status": "resolved",
+      "category": "Ukraine & Russia",
+      "closeTime": "2022-04-30T00:00:00.000Z",
+      "source": "midpoint",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "YES"
+    },
+    {
+      "platform": "polymarket",
+      "id": "0x6476b9a645d3222aa878869c736fc6c3febb54bcf13f0fe4f80329ca90689338",
+      "status": "resolved",
+      "category": "Ukraine & Russia",
+      "closeTime": "2022-04-30T00:00:00.000Z",
+      "source": "midpoint",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "polymarket",
+      "id": "0x8afaf60a6a775347f504fd167c91957f9ce13c7775ee93d6239ce0188fbb4a25",
+      "status": "resolved",
+      "category": "Business",
+      "closeTime": "2022-06-17T00:00:00.000Z",
+      "source": "midpoint",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "polymarket",
+      "id": "0x7c39412687368e400c321bd93642b9180784a66fea3178471ca1e7940313fd98",
+      "status": "resolved",
+      "category": "Pop-Culture",
+      "closeTime": "2022-04-15T00:00:00.000Z",
+      "source": "midpoint",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "YES"
+    },
+    {
+      "platform": "polymarket",
+      "id": "0x67f0918786144dccda9f5d97c2e487c7f99547a8f8295e09b66bdb9af390784c",
+      "status": "resolved",
+      "category": "Sports",
+      "closeTime": "2022-05-16T00:00:00.000Z",
+      "source": "midpoint",
+      "error": "404 /markets/0x67f0918786144dccda9f5d97c2e487c7f99547a8f8295e09b66bdb9af390784c/history?interval=1d&start=2022-04-16T00%3A00%3A00.000Z&end=2022-05-16T00%3A00%3A00.000Z&source=midpoint: {\"statusCode\":404,\"message\":\"Prediction market 0x67f0918786144dccda9f5d97c2e487c7f99547a8f8295e09b66bdb9af390784c not found\",\"dashboardLog\":\"https://dashboard.tatum.io/errors?time_range=24h&from=2026-11-09T05%3A00%3A00.000Z&to=2026-11-09T06%3A00%3A00.000Z&filter%5Breq_id%5D%5Bin%5D=a57a4e544b7695f3-"
+    },
+    {
+      "platform": "polymarket",
+      "id": "0xdb7aa605ca8a65e9ee18407e48021c13a8f7b46ca9f96e7a9d3b76047637efb1",
+      "status": "resolved",
+      "category": "Sports",
+      "closeTime": "2022-04-04T00:00:00.000Z",
+      "source": "midpoint",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "KANSAS"
+    },
+    {
+      "platform": "polymarket",
+      "id": "0xb083e83a0b0be60768581c31ef083c2956423f7454d739f9515707ca3ee4c764",
+      "status": "resolved",
+      "category": "Pop-Culture",
+      "closeTime": "2022-04-03T00:00:00.000Z",
+      "source": "midpoint",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "kalshi",
+      "id": "KXMLBDEBUT-RCHOLOWSKY-26NOV01",
+      "status": "finalized",
+      "category": "Sports",
+      "closeTime": "2026-11-01T04:59:00.000Z",
+      "source": "candlesticks",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "kalshi",
+      "id": "KXNFLRETIRE-MSTAFFORD9-2627",
+      "status": "finalized",
+      "category": "Sports",
+      "closeTime": "2026-09-09T23:42:18.000Z",
+      "source": "candlesticks",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "kalshi",
+      "id": "KXNFLRETIRE-MEVANS5-2627",
+      "status": "finalized",
+      "category": "Sports",
+      "closeTime": "2026-09-09T23:42:31.000Z",
+      "source": "candlesticks",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "kalshi",
+      "id": "KXNFLRETIRE-KCOUSINS8-2627",
+      "status": "finalized",
+      "category": "Sports",
+      "closeTime": "2026-09-09T23:43:34.000Z",
+      "source": "candlesticks",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "kalshi",
+      "id": "KXNFLRETIRE-JFLACCO16-2627",
+      "status": "finalized",
+      "category": "Sports",
+      "closeTime": "2026-09-09T23:42:58.000Z",
+      "source": "candlesticks",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "kalshi",
+      "id": "KXNFLRETIRE-DHENRY22-2627",
+      "status": "finalized",
+      "category": "Sports",
+      "closeTime": "2026-09-09T23:43:23.000Z",
+      "source": "candlesticks",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "kalshi",
+      "id": "KXNFLRETIRE-DADAMS17-2627",
+      "status": "finalized",
+      "category": "Sports",
+      "closeTime": "2026-09-09T23:43:11.000Z",
+      "source": "candlesticks",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "kalshi",
+      "id": "KXAGICO-COMP-26Q3",
+      "status": "finalized",
+      "category": "Companies",
+      "closeTime": "2026-10-01T03:59:00.000Z",
+      "source": "candlesticks",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "kalshi",
+      "id": "KXTVSEASONRELEASETHELASTOFUS-26-OCT",
+      "status": "finalized",
+      "category": "Entertainment",
+      "closeTime": "2026-10-01T14:00:00.000Z",
+      "source": "candlesticks",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "NO"
+    },
+    {
+      "platform": "kalshi",
+      "id": "KXTOPLLMGENERAL-30JAN01-OAI",
+      "status": "finalized",
+      "category": "Science and Technology",
+      "closeTime": "2026-11-01T15:52:21.000Z",
+      "source": "candlesticks",
+      "candleCount": 0,
+      "partial": null,
+      "availableFrom": null,
+      "outcome": "YES"
+    }
+  ],
+  "candidatePairs": {
+    "scanned": 3920,
+    "matched": 0,
+    "csv": "data/candidate-pairs.csv"
+  }
+}

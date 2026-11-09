@@ -1,0 +1,25 @@
+{
+  "name": "venue-oracle",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.18.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "turbo run typecheck && tsc --noEmit",
+    "lint": "biome check .",
+    "test": "turbo run test",
+    "secret-scan": "tsx scripts/secret-scan.ts",
+    "gate:prediction": "node scripts/gate-prediction.mjs",
+    "gate:live": "node scripts/gate-live.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.5",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "turbo": "2.11.10",
+    "typescript": "7.0.2",
+    "vitest": "5.1.0"
+  }
+}
