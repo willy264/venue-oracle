@@ -30,7 +30,7 @@
 | Mainnet memory writes                              | Done under standing approval      | Replay observation and belief writes completed; no secrets tracked                                                                                      |
 | Move deployment or mainnet spending                | Not done                          | Testnet artifact failed before publish; no mainnet action attempted                                                                                     |
 | Integrity audit and live evidence                  | Done                              | Six records confirmed as real Tatum samples; IDs, venue URLs, endpoints, timestamps, raw prices, blobs, and Sui tx digests are recorded and shown in UI |
-| CI cleanup and duplicate removal                   | In progress                       | Removed `packages/chain/chain`; local checks pass; pending commit/push and GitHub run confirmation                                                         |
+| CI cleanup and duplicate removal                   | Done                              | Removed `packages/chain/chain`; local checks pass; GitHub CI green in run `42658573271`                                                                    |
 | Blog and submission drafts                         | Done as drafts                    | Added `docs/blog-draft.md`; updated README, CLAIMS, and `docs/SUBMISSION.md`; owner-only publication/submission untouched                              |
 
 ## Existing credential inventory
