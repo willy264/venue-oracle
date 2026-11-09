@@ -12,6 +12,9 @@ Gate checks have run, but product tests have not.
 - PASS: Public Polymarket and Kalshi history probes returned 8 and 7 real history points.
 - FAIL: Structured historical listing produced 0 owner-review candidates.
 - FAIL: Structured live listing produced 0 snapshot candidates.
+- PASS: Calibration corpus contains 54 real replay observations.
+- PASS: Walk-forward replay completed with 54 MemWal observation writes and 1 belief write.
+- NEGATIVE RESULT: Raw Brier 0.0983 beat corrected Brier 0.2195; memory calibration did not improve this corpus.
 - PASS: Reused `core` and `memory` test suites, 5 files and 40 tests.
 - PASS: Heuristic secret scan over 49 Git-visible files.
 - BLOCKED: Reused `chain` suite needs a normal pnpm workspace install; the current pnpm shim is broken and the temporary dependency links do not expose all protobuf runtime packages.

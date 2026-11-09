@@ -24,3 +24,10 @@ The reused package names remain `@errata/*` to preserve their tested import surf
 - Reused core and memory suites pass: 5 test files, 40 tests.
 - Secret scan passes over 49 Git-visible files.
 - Chain tests are not yet accepted as passing because the local pnpm shim failed and the temporary junction setup lacks all protobuf runtime packages. A clean workspace install is still required.
+
+## 2026-11-09 - Calibration pivot and replay
+
+- Cross-venue pairing was abandoned after 0 historical and 0 live pairs; the product now calibrates each venue independently.
+- The corpus contains 54 real observations from resolved markets: 12 Polymarket and 42 Kalshi, using public pre-close history and explicit outcomes.
+- Mainnet MemWal received 54 observation memories and 1 calibration-belief memory. Every successful observation has a real blob ID in `results/latest-replay.json`.
+- Walk-forward result: raw venue Brier `0.0983137731`; corrected Brier `0.2194999238`; corrected predictions were used for 44 observations. The learned result is worse and is disclosed as negative evidence.

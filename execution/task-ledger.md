@@ -16,6 +16,11 @@
 | Run reused package checks | Partial | Core/memory: 40 tests pass; chain awaits clean pnpm install |
 | Owner confirms historical/live pairs | Pending | Review CSVs contain no candidates; no scoring or memory writes allowed |
 | Build deterministic engine | Blocked by pair-confirmation gate | Do not start scored run |
+| Pivot to per-venue calibration | Done | Owner decision recorded in `docs/EXPERIMENT.md` |
+| Fetch resolved calibration corpus | Done | 54 observations: 12 Polymarket, 42 Kalshi; public history sources |
+| Run walk-forward replay and memory writes | Done | 54 observation writes, 1 belief write, real blob IDs in `results/latest-replay.json` |
+| Evaluate learning curve | Done | Raw Brier 0.0983; corrected Brier 0.2195; negative result disclosed |
+| Snapshot live markets and prepare calls | Pending | Tatum live prices and Sui testnet commitment layer remain |
 | Build web application | Blocked by research gate | Not started |
 | Mainnet memory writes | Awaiting explicit approval | Never perform automatically |
 | Move deployment or mainnet spending | Awaiting explicit approval | Never perform automatically |
