@@ -1,0 +1,26 @@
+{
+  "observedAt": "2026-11-09T06:37:42.012Z",
+  "corpusLimit": 10000,
+  "discovery": {
+    "polymarketRows": 2100,
+    "kalshiRows": 8072
+  },
+  "selected": {
+    "polymarket": 1447,
+    "kalshi": 3068
+  },
+  "observations": {
+    "polymarket": 12,
+    "kalshi": 538,
+    "total": 550
+  },
+  "calls": 4619,
+  "historyFailures": 2039,
+  "historySources": {
+    "polymarket": "https://clob.polymarket.com/prices-history",
+    "kalshi": [
+      "https://api.elections.kalshi.com/trade-api/v2/historical/markets/{ticker}/candlesticks",
+      "https://api.elections.kalshi.com/trade-api/v2/series/{series_ticker}/markets/{ticker}/candlesticks"
+    ]
+  }
+}

@@ -13,6 +13,8 @@ Gate checks have run, but product tests have not.
 - FAIL: Structured historical listing produced 0 owner-review candidates.
 - FAIL: Structured live listing produced 0 snapshot candidates.
 - PASS: Calibration corpus contains 54 real replay observations.
+- PASS: v2 corpus scanned 2,100 Polymarket and 8,072 Kalshi listings; 1,447 and 3,068 resolved candidates; 550 usable observations from 4,619 public-history calls.
+- DISCLOSED: 2,039 history requests failed or lacked usable history and were excluded; no values were imputed.
 - PASS: Walk-forward replay completed with 54 MemWal observation writes and 1 belief write.
 - NEGATIVE RESULT: Raw Brier 0.0983 beat corrected Brier 0.2195; memory calibration did not improve this corpus.
 - PASS: Live calibration sampled 3 Polymarket and 3 Kalshi markets through Tatum, wrote 6 completed `vo-live` memories, and recorded deterministic SHA-256 call digests.
