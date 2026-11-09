@@ -23,9 +23,10 @@
 | Snapshot live markets and prepare calls | Done | 6 Tatum price calls, 6 `vo-live` MemWal writes; blob IDs and SHA-256 call digests in `results/live-calls.json` |
 | Sui testnet commitment layer | Blocked | `suiup` installed, but testnet v1.83.1 artifact returns repeated HTTP 504; Move source is present, no tx sent |
 | Web app shell | Done | Live Board, Learning Curve, Memory Inspector, Track Record, and Method pages added |
-| Build web application | Blocked by research gate | Not started |
-| Mainnet memory writes | Awaiting explicit approval | Never perform automatically |
-| Move deployment or mainnet spending | Awaiting explicit approval | Never perform automatically |
+| Build web application | Done with local build gap | Five Next pages committed; local Next package is incomplete and production build remains unverified |
+| Mainnet memory writes | Done under standing approval | Replay observation and belief writes completed; no secrets tracked |
+| Move deployment or mainnet spending | Not done | Testnet artifact failed before publish; no mainnet action attempted |
+| Final submission docs | Done as drafts | README, CLAIMS, demo, and submission checklist committed; owner-only publication/submission untouched |
 
 ## Existing credential inventory
 
@@ -41,4 +42,4 @@
 
 ## Hours left
 
-Unknown until the deadline and available credentials are confirmed.
+Known blocker: restore Sui testnet CLI artifact, run Move tests, publish testnet, commit one live call, verify through Tatum, then deploy the web app. No remote is configured.

@@ -34,3 +34,9 @@ Gate checks have run, but product tests have not.
 - [ ] Typecheck, lint, and build pass
 - [ ] Move tests pass
 - [ ] Integration tests pass when credentials are available
+
+## Final handoff state
+
+- The repository is not submission-ready: Sui testnet publish/commit/verification and Vercel deployment remain incomplete.
+- No blog, social post, video upload, public-repo push, or form submission was performed.
+- No mainnet SUI or USDC was spent.
