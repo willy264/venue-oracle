@@ -15,6 +15,8 @@ Gate checks have run, but product tests have not.
 - PASS: Calibration corpus contains 54 real replay observations.
 - PASS: Walk-forward replay completed with 54 MemWal observation writes and 1 belief write.
 - NEGATIVE RESULT: Raw Brier 0.0983 beat corrected Brier 0.2195; memory calibration did not improve this corpus.
+- PASS: Live calibration sampled 3 Polymarket and 3 Kalshi markets through Tatum, wrote 6 completed `vo-live` memories, and recorded deterministic SHA-256 call digests.
+- PENDING: Sui commitment transactions and Tatum verification; no transaction has been sent yet.
 - PASS: Reused `core` and `memory` test suites, 5 files and 40 tests.
 - PASS: Heuristic secret scan over 49 Git-visible files.
 - BLOCKED: Reused `chain` suite needs a normal pnpm workspace install; the current pnpm shim is broken and the temporary dependency links do not expose all protobuf runtime packages.

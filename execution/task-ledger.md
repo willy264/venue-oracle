@@ -20,7 +20,8 @@
 | Fetch resolved calibration corpus | Done | 54 observations: 12 Polymarket, 42 Kalshi; public history sources |
 | Run walk-forward replay and memory writes | Done | 54 observation writes, 1 belief write, real blob IDs in `results/latest-replay.json` |
 | Evaluate learning curve | Done | Raw Brier 0.0983; corrected Brier 0.2195; negative result disclosed |
-| Snapshot live markets and prepare calls | Pending | Tatum live prices and Sui testnet commitment layer remain |
+| Snapshot live markets and prepare calls | Done | 6 Tatum price calls, 6 `vo-live` MemWal writes; blob IDs and SHA-256 call digests in `results/live-calls.json` |
+| Sui testnet commitment layer | In progress | Live calls are pending testnet package publish and Tatum verification |
 | Build web application | Blocked by research gate | Not started |
 | Mainnet memory writes | Awaiting explicit approval | Never perform automatically |
 | Move deployment or mainnet spending | Awaiting explicit approval | Never perform automatically |
@@ -34,6 +35,7 @@
 - Gate MemWal namespace: `vo-gate-79cb7005baf8840c`.
 - Sui object read: configured MemWal account object returned through Tatum gRPC.
 - Sui Move commitment transactions: none yet; testnet package path and tests are still required before any approved spend.
+- Live calibration run: 6 calls, 6 completed `vo-live` memories, no Sui tx yet; all call digests are recorded in `results/live-calls.json`.
 
 ## Hours left
 
