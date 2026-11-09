@@ -8,7 +8,7 @@
 | Memory improved the first run                         | `results/latest-replay.json`                                   | False for this run; raw Brier beat corrected Brier                                        |
 | Six live calls are committed on Sui                   | `results/live-calls.json`, `results/testnet-verification.json` | Verified: six real Tatum snapshots, six testnet commitments, six Tatum gRPC event matches |
 | Sui verification through Tatum works                  | `research/gate-live.json`, `results/testnet-verification.json` | Mainnet read and six testnet commitment events verified                                   |
-| Web demo is deployed                                  | Vercel production deployment                                   | Ready at `https://venue-oracle.vercel.app`                                     |
+| Web demo is deployed                                  | Vercel production deployment                                   | Ready at `https://venue-oracle.vercel.app`                                                |
 | Cross-venue matching works                            | `data/candidate-pairs.csv`                                     | False; zero pairs found and the feature was removed from the core                         |
 
 All replay numbers are historical replay evidence, not a guarantee about future markets.
