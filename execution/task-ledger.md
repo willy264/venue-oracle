@@ -32,7 +32,7 @@
 | Integrity audit and live evidence                  | Done                              | Six records confirmed as real Tatum samples; IDs, venue URLs, endpoints, timestamps, raw prices, blobs, and Sui tx digests are recorded and shown in UI |
 | CI cleanup and duplicate removal                   | Done                              | Removed `packages/chain/chain`; local checks pass; GitHub CI green in run `42658573271`                                                                    |
 | Blog and submission drafts                         | Done as drafts                    | Added `docs/blog-draft.md`; updated README, CLAIMS, and `docs/SUBMISSION.md`; owner-only publication/submission untouched                              |
-| Live workflow dispatch                             | Failed, blocked by setup          | Run [42708210198](https://github.com/willy264/venue-oracle/actions/runs/42708210198) failed before sampling because MemWal was not declared at the repository root |
+| Live workflow dispatch                             | Done                              | Successful end-to-end run [42716287032](https://github.com/willy264/venue-oracle/actions/runs/42716287032): Tatum samples, MemWal recall/write, Sui testnet commits, and Tatum gRPC verification; earlier setup failures retained in history |
 | MemWal identity match                              | Done                              | Local derivation from `MEMWAL_KEY_CHECKER` exactly matched `MEMWAL_AGENT_ID` on 2026-11-09; lengths 64/64; values not committed |
 | MPP paid signal                                    | Branch only                       | `mpp` branch commit `7cb7b8d`; testnet route builds, but Tatum-gRPC payment verification and funded testnet end-to-end proof are incomplete, so it is not merged or in submission materials |
 | Replace novelty live set                          | Done                              | Six real Polymarket sports markets closing 14–16 Nov sampled through Tatum; six `vo-live` writes, six Sui testnet commits, and six Tatum gRPC verifications. No correction was forced because the Polymarket sports bucket is below minimum sample. Original six preserved as `results/live-calls-first-sample.json`. |
@@ -47,10 +47,10 @@
 - Gate MemWal namespace: `vo-gate-79cb7005baf8840c`.
 - Sui object read: configured MemWal account object returned through Tatum gRPC.
 - Sui Move commitment transactions: six testnet transactions verified through Tatum; no mainnet action attempted.
-- Live calibration run: 6 calls, 6 completed `vo-live` memories, six testnet Sui txs; all evidence is recorded in `results/live-calls.json`.
+- Live calibration run: successful Actions run [42716287032](https://github.com/willy264/venue-oracle/actions/runs/42716287032); 6 Tatum-sampled calls, 6 completed `vo-live` memories, 6 testnet Sui txs, and 6 Tatum gRPC verifications. Evidence is recorded in `results/live-calls.json`, `results/testnet-commitments.json`, and `results/testnet-verification.json`.
 - Sui tooling: pinned testnet binary `1.83.1` downloaded from the official GitHub release after `suiup` timed out.
 - Sui testnet evidence: faucet `6Zfcj68SupgD5ZL9DF35UNTDRAQoaEYGJgWrgCrVPHGH`; publish `GecMo7gRiohB7wWmqsgSUajTvUGXzvpDrrZQKjDoPqXg`; package `0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363`; six commitment and Tatum verification digests are in `results/testnet-commitments.json` and `results/testnet-verification.json`.
 
 ## Remaining external setup
 
-GitHub Actions still needs `TATUM_API_KEY`, `MEMWAL_ACCOUNT_ID`, `TATUM_TESTNET_API_KEY`, and `VO_TESTNET_PACKAGE_ID`; only three of the six required names are currently visible via `gh secret list`. After all six are visible, dispatch the live workflow again and link the successful run here. MPP remains branch-only until its separate payment proof is complete.
+The required GitHub Actions secrets are present and the live workflow has completed successfully. MPP remains branch-only until its separate payment proof is complete. Blog publication, social posts, video upload, and hackathon form submission remain owner-only actions.
