@@ -20,7 +20,7 @@
 | Fetch resolved calibration corpus | Done | 54 observations: 12 Polymarket, 42 Kalshi; public history sources |
 | Fetch expanded v2 corpus | Done | 2,100 Polymarket + 8,072 Kalshi listings; 550 usable observations after 4,619 history calls and 2,039 bounded failures |
 | Run walk-forward replay and memory writes | Done | 54 observation writes, 1 belief write, real blob IDs in `results/latest-replay.json` |
-| Run v2 held-out replay and summary memories | In progress | v2 method committed in `docs/EXPERIMENT-v2.md`; pending mainnet replay |
+| Run v2 held-out replay and summary memories | Done with mixed result | 550 observations, 440/110 time split, 9 summary writes, 20 individual writes; held-out raw Brier 0.1955 vs corrected 0.1984; calibration error improved |
 | Evaluate learning curve | Done | Raw Brier 0.0983; corrected Brier 0.2195; negative result disclosed |
 | Snapshot live markets and prepare calls | Done | 6 Tatum price calls, 6 `vo-live` MemWal writes; blob IDs and SHA-256 call digests in `results/live-calls.json` |
 | Sui testnet commitment layer | Blocked | `suiup` installed, but testnet v1.83.1 artifact returns repeated HTTP 504; Move source is present, no tx sent |

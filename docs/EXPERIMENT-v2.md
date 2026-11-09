@@ -40,3 +40,7 @@ Namespaces use `vo-v2-replay-<runId>-<venue>-<category>` for summaries and `vo-v
 ## Disclosures
 
 This is historical replay written now to Walrus Memory. It is not simulated market data. The v1 negative result remains in `results/` and is not overwritten. V2 will publish its full counts and whatever result it produces, including no edge or negative performance.
+
+## V2 run result
+
+The expanded run used 550 observations: 440 in the walk-forward training prefix and 110 in the time-held-out suffix. Public history produced 12 Polymarket observations and 538 Kalshi observations. V2 wrote 9 bucket-summary memories and 20 capped individual memories. On the held-out suffix, raw Brier was `0.1954927` and corrected Brier was `0.1984114`; raw calibration error was `0.1452727` and corrected calibration error was `0.1022125`. The correction improved calibration error but slightly worsened Brier, so this run is reported as mixed with no demonstrated predictive edge. Bootstrap 95% intervals are recorded in `results/latest-replay-v2.json`.
