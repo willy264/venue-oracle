@@ -32,7 +32,7 @@ jobs:
           MEMWAL_ACCOUNT_ID: ${{ secrets.MEMWAL_ACCOUNT_ID }}
           MEMWAL_KEY_CHECKER: ${{ secrets.MEMWAL_KEY_CHECKER }}
           MEMWAL_SERVER_URL: https://relayer.memory.walrus.xyz
-        run: pnpm live:v2
+			run: pnpm live:refresh
       - name: Install the pinned Sui testnet CLI
         run: |
           curl --fail --location --retry 3 --output sui.tgz https://github.com/MystenLabs/sui/releases/download/testnet-v1.83.1/sui-testnet-v1.83.1-ubuntu-x86_64.tgz

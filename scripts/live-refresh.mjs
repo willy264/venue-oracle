@@ -3,7 +3,12 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { MemWal } from "@mysten-incubation/memwal";
 
 const root = new URL("../", import.meta.url);
-const envText = await readFile(new URL(".env", root), "utf8");
+let envText = "";
+try {
+	envText = await readFile(new URL(".env", root), "utf8");
+} catch {
+	// GitHub Actions supplies the same values through the process environment.
+}
 for (const line of envText.split(/\r?\n/)) {
 	const match = line.match(/^\s*([^#=\s]+)\s*=\s*(.*)\s*$/);
 	if (match && !process.env[match[1]]) {
@@ -50,7 +55,11 @@ const memory = MemWal.create({
 	serverUrl: process.env.MEMWAL_SERVER_URL,
 	namespace: "vo-live",
 });
+const replay = JSON.parse(
+	await readFile(new URL("results/latest-replay-v2.json", root), "utf8"),
+);
 const rows = [];
+const recallCounts = [];
 for (const id of ids) {
 	const market = (await tatum(`/markets/${encodeURIComponent(id)}`)).data;
 	const price = await tatum(`/markets/${encodeURIComponent(id)}/price`);
@@ -60,6 +69,13 @@ for (const id of ids) {
 	const ts = price.data.timestamp ?? new Date().toISOString();
 	const cat = category(market);
 	const bucket = timeBucket(market.closeTime);
+	const recalled = await memory.recall({
+		query: `Calibration summary polymarket ${cat} ${bucket} live price ${raw.toFixed(2)}`,
+		namespace: `vo-v2-replay-${replay.runId}-polymarket-${cat}`,
+		limit: 20,
+		sort: "relevance",
+	});
+	recallCounts.push({ marketId: id, count: recalled.results?.length ?? 0 });
 	const canonical = {
 		pairId: `polymarket:${id}`,
 		ts,
@@ -115,6 +131,7 @@ const output = {
 	tatumCalls: calls,
 	calls: rows,
 	memoryWrite,
+	recallCounts,
 	commitment: "Pending testnet commitment script.",
 };
 await mkdir(new URL("results/", root), { recursive: true });
