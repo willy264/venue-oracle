@@ -47,6 +47,7 @@ jobs:
           "$SUI_BIN" client new-env --alias testnet --rpc https://fullnode.testnet.sui.io:443 || true
           "$SUI_BIN" keytool import "$SUI_PRIVATE_KEY" ed25519
           "$SUI_BIN" client switch --env testnet
+          "$SUI_BIN" client faucet --url https://faucet.testnet.sui.io/v2/gas --json
       - name: Commit and verify through Tatum testnet gRPC
         env:
           SUI_BIN: ${{ env.SUI_BIN }}
