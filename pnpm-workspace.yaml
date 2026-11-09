@@ -7,6 +7,7 @@ allowBuilds:
   esbuild: true
   protobufjs: false
 minimumReleaseAgeExclude:
+  - "@mysten-incubation/memwal@0.1.13"
   - "@mysten/bcs@2.1.4"
   - "@mysten/seal@1.5.4"
   - "@mysten/sui@2.39.1"
