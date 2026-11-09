@@ -6,7 +6,7 @@ import { readFile, writeFile } from "node:fs/promises";
 const root = new URL("../", import.meta.url);
 const envText = await readFile(new URL(".env", root), "utf8");
 for (const line of envText.split(/\r?\n/)) { const match = line.match(/^\s*([^#=\s]+)\s*=\s*(.*)\s*$/); if (match && !process.env[match[1]]) process.env[match[1]] = match[2].replace(/^['"]|['"]$/g, ""); }
-const apiKey = process.env.tatum_testnet_api_key;
+const apiKey = process.env.tatum_testnet_api_key ?? process.env.TATUM_TESTNET_API_KEY;
 if (!apiKey) throw new Error("tatum_testnet_api_key is required");
 const transport = new GrpcTransport({ host: "sui-testnet-grpc.gateway.tatum.io:443", channelCredentials: credentials.createSsl() });
 const client = new SuiGrpcClient({ network: "testnet", transport });

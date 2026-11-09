@@ -13,6 +13,7 @@
     "secret-scan": "tsx scripts/secret-scan.ts",
     "replay": "tsx scripts/replay-calibration.ts",
     "live": "tsx scripts/live-calibration.ts",
+    "live:v2": "tsx scripts/live-calibration-v2.ts",
     "gate:prediction": "node scripts/gate-prediction.mjs",
     "gate:live": "node scripts/gate-live.mjs"
   },
