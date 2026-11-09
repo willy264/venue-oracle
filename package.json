@@ -18,6 +18,11 @@
 		"gate:prediction": "node scripts/gate-prediction.mjs",
 		"gate:live": "node scripts/gate-live.mjs"
 	},
+	"dependencies": {
+		"@grpc/grpc-js": "1.14.7",
+		"@mysten/sui": "2.39.1",
+		"@protobuf-ts/grpc-transport": "2.11.1"
+	},
 	"devDependencies": {
 		"@mysten-incubation/memwal": "0.1.13",
 		"@biomejs/biome": "2.6.5",
