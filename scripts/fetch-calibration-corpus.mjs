@@ -7,7 +7,7 @@ for (const line of envText.split(/\r?\n/)) { const m = line.match(/^\s*([^#=\s]+
 let calls = 0;
 let historyFailures = 0;
 const corpusLimit = Number(process.env.VO_CORPUS_LIMIT ?? 80);
-async function get(url) { await sleep(calls++ ? 150 : 0); const response = await fetch(url); const body = await response.text(); if (!response.ok) throw new Error(`${response.status} ${url}: ${body.slice(0, 160)}`); return JSON.parse(body); }
+async function get(url) { await sleep(calls++ ? 150 : 0); const response = await fetch(url, { signal: AbortSignal.timeout(20000) }); const body = await response.text(); if (!response.ok) throw new Error(`${response.status} ${url}: ${body.slice(0, 160)}`); return JSON.parse(body); }
 async function getPolyMarkets() {
   const rows = [];
   for (let offset = 0; offset < 2200; offset += 100) {
