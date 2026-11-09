@@ -4,7 +4,12 @@ import { SuiGrpcClient } from "@mysten/sui/grpc";
 import { GrpcTransport } from "@protobuf-ts/grpc-transport";
 
 const root = new URL("../", import.meta.url);
-const envText = await readFile(new URL(".env", root), "utf8");
+let envText = "";
+try {
+	envText = await readFile(new URL(".env", root), "utf8");
+} catch {
+	// GitHub Actions supplies credentials through the process environment.
+}
 for (const line of envText.split(/\r?\n/)) {
 	const match = line.match(/^\s*([^#=\s]+)\s*=\s*(.*)\s*$/);
 	if (match && !process.env[match[1]])
