@@ -47,8 +47,8 @@ function Diagram({ venue }: { venue: Row["venue"] }) {
 						</text>
 					</g>
 				))}
-				{points.map((point, index) => (
-					<g key={index}>
+				{points.map((point) => (
+					<g key={`${point.mean}-${point.observed}`}>
 						<circle
 							className="reliability-point"
 							cx={44 + point.mean * 336}

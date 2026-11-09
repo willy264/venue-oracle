@@ -1,7 +1,7 @@
-import { decisionFor, liveCalls } from "./live-data";
+import replay from "../../../results/latest-replay-v2.json";
 import { ProbabilityRail } from "./components/probability-rail";
 import { WhyDrawer } from "./components/why-drawer";
-import replay from "../../../results/latest-replay-v2.json";
+import { decisionFor, liveCalls } from "./live-data";
 
 const holdout = replay.metrics.holdout;
 

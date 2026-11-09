@@ -22,17 +22,19 @@ export function WhyDrawer({ call }: { call: LiveCall }) {
 				Why this number?
 			</button>
 			{open && (
-				<div
+				<dialog
+					open
 					className="drawer-backdrop"
-					role="presentation"
-					onClick={() => setOpen(false)}
+					onClick={(event) =>
+						event.target === event.currentTarget && setOpen(false)
+					}
+					onKeyDown={(event) => event.key === "Escape" && setOpen(false)}
 				>
 					<aside
 						className="drawer"
 						role="dialog"
 						aria-modal="true"
 						aria-labelledby={`why-${call.id}`}
-						onClick={(event) => event.stopPropagation()}
 					>
 						<button
 							className="drawer-close"
@@ -62,7 +64,7 @@ export function WhyDrawer({ call }: { call: LiveCall }) {
 							unchanged.
 						</div>
 					</aside>
-				</div>
+				</dialog>
 			)}
 		</>
 	);
