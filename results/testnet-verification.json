@@ -1,0 +1,289 @@
+{
+  "network": "testnet",
+  "host": "sui-testnet-grpc.gateway.tatum.io:443",
+  "verifications": [
+    {
+      "pairId": "polymarket:0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+      "txDigest": "9MzxmJUdqBmLXrec3mqHhfNQZXwLNWczbz8zNyXEsYuc",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794225493578"
+                }
+              },
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "6/MeaRIM6T+cFMLC9wAAV8Sy0JulYKvN2x8r2G2ksTI="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "cG9seW1hcmtldDoweDVkYjk5OWZhZDMyMmNlYTI5MTQ1MzVhYWU1NTE3MDYwYzNmODBhZDZkOGMwMjMxY2RlMjEyNGE0MzRkMTY4NDY="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404545149",
+      "timestamp": {
+        "seconds": "1794225493",
+        "nanos": 578000000
+      },
+      "error": null
+    },
+    {
+      "pairId": "polymarket:0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
+      "txDigest": "EGgcLvfkG8MD67drcBxwNcqT8fmdXWkDGQcU1VwW5QyD",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "sci+w1bH0ZenFqCPxXAXZy26SxetBJH8D95w6fivGMo="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "cG9seW1hcmtldDoweDBiNGNjM2I3MzllMWRmZTVkNzMyNzQ3NDBlNzMwOGI2ZmIzODljNWFmMDQwYzNhMTc0OTIzZDkyOGQxMzRiZWU="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              },
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794225495904"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404545159",
+      "timestamp": {
+        "seconds": "1794225495",
+        "nanos": 965000000
+      },
+      "error": null
+    },
+    {
+      "pairId": "polymarket:0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1",
+      "txDigest": "BMwaPzUvU4EAzCkqAF3PwCTVJm6qXDAJdk51UXsFMt2d",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "qIeW8eotOA1N+yEP5lqNrVVM09lg0afyd4Wl0q62ofg="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "cG9seW1hcmtldDoweDgzNmI4NTBmYzgzODE5NTM3NDg2MjU1MWEzNmYxYzg2OTFkOTZmZjAxZTU4YjBhMDcxZjBmYzFhMGUzNTdmYjE="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              },
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794225498178"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404545169",
+      "timestamp": {
+        "seconds": "1794225498",
+        "nanos": 360000000
+      },
+      "error": null
+    },
+    {
+      "pairId": "kalshi:KXELONMARS-99",
+      "txDigest": "AWr5qNs71SP5otjxpAM2DoJnVgY4PYusGTRf9v3fjw82",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "S8Q/l6WRFL+1fVG3hUAXavtiHF73Q6DpeHTYux5E9qc="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "a2Fsc2hpOktYRUxPTk1BUlMtOTk="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              },
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794225500521"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404545178",
+      "timestamp": {
+        "seconds": "1794225500",
+        "nanos": 521000000
+      },
+      "error": null
+    },
+    {
+      "pairId": "kalshi:KXPERSONPRESFUENTES-45",
+      "txDigest": "29AvQ2Ukwo1BrJwgunqNBq4B5bGGXszLeb3cEVKFFHN4",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794225502809"
+                }
+              },
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "9Ra7b2gvCbfD0cu65h8492qtO6RefXTzQxp+dLOS8ic="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "a2Fsc2hpOktYUEVSU09OUFJFU0ZVRU5URVMtNDU="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404545188",
+      "timestamp": {
+        "seconds": "1794225502",
+        "nanos": 992000000
+      },
+      "error": null
+    },
+    {
+      "pairId": "kalshi:KXPERSONPRESMAM-45",
+      "txDigest": "4EusGRrvCV2brZquWXqCbyB2mBXUeY5Hgcak9d15xNFa",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794225505174"
+                }
+              },
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "x7VyVSxBrCKp55Xv0VGauNPdwF19XuQgkwkONT9RSms="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "a2Fsc2hpOktYUEVSU09OUFJFU01BTS00NQ=="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404545197",
+      "timestamp": {
+        "seconds": "1794225505",
+        "nanos": 236000000
+      },
+      "error": null
+    }
+  ],
+  "observedAt": "2026-11-09T15:57:22.093Z"
+}

@@ -37,3 +37,4 @@ The reused package names remain `@errata/*` to preserve their tested import surf
 - Tatum live sampling produced six calls: three Polymarket and three Kalshi. Each call has a real `vo-live` blob ID and a SHA-256 digest in `results/live-calls.json`.
 - A minimal `venue_oracle::commit` Move package and test were added. `suiup 0.1.1` installed, but both testnet binary downloads returned HTTP 504. No package publish, gas spend, or commitment transaction was attempted.
 - The web shell is deliberately evidence-led: unresolved Sui calls display `PENDING TESTNET`, and the negative replay result is shown rather than hidden.
+- Testnet commitment path is now verified: package `0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363`, publish digest `GecMo7gRiohB7wWmqsgSUajTvUGXzvpDrrZQKjDoPqXg`, six call digests in `results/testnet-commitments.json`, and six Tatum gRPC event verifications in `results/testnet-verification.json`. Mainnet publish was not attempted.

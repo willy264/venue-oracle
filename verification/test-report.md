@@ -26,6 +26,7 @@ Gate checks have run, but product tests have not.
 - PASS: Current heuristic secret scan over 89 Git-visible files.
 - BLOCKED: Reused `chain` suite needs a normal pnpm workspace install; the current pnpm shim is broken and the temporary dependency links do not expose all protobuf runtime packages.
 - PASS: Direct GitHub release download supplied Sui `1.83.1`; Move unit test passes 1/1. The CLI warning is non-fatal (`public entry` is redundant).
+- PASS: Six testnet commitment transactions were sent and all six were verified through `sui-testnet-grpc.gateway.tatum.io:443`; package event type, digest, reference, and checkpoint matched.
 - ADDED: Next.js web shell pages for live board, learning curve, memory inspector, track record, and method disclosures.
 - BLOCKED: Web production build could not complete because the local npm install left an incomplete Next package and the pnpm shim is unavailable.
 

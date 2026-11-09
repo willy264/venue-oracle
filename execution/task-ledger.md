@@ -23,7 +23,7 @@
 | Run v2 held-out replay and summary memories | Done with mixed result | 550 observations, 440/110 time split, 9 summary writes, 20 individual writes; held-out raw Brier 0.1955 vs corrected 0.1984; calibration error improved |
 | Evaluate learning curve | Done | Raw Brier 0.0983; corrected Brier 0.2195; negative result disclosed |
 | Snapshot live markets and prepare calls | Done | 6 Tatum price calls, 6 `vo-live` MemWal writes; blob IDs and SHA-256 call digests in `results/live-calls.json` |
-| Sui testnet commitment layer | In progress | Direct GitHub release workaround succeeded; Move unit test passes; testnet publish pending |
+| Sui testnet commitment layer | Done | Move test 1/1; testnet package published; 6 live digests committed and verified through Tatum testnet gRPC |
 | Web app shell | Done | Live Board, Learning Curve, Memory Inspector, Track Record, and Method pages added |
 | Build web application | Done with local build gap | Five Next pages committed; local Next package is incomplete and production build remains unverified |
 | Mainnet memory writes | Done under standing approval | Replay observation and belief writes completed; no secrets tracked |
@@ -41,6 +41,7 @@
 - Sui Move commitment transactions: none yet; testnet package path and tests are still required before any approved spend.
 - Live calibration run: 6 calls, 6 completed `vo-live` memories, no Sui tx yet; all call digests are recorded in `results/live-calls.json`.
 - Sui tooling: `suiup 0.1.1` installed; testnet binary download failed twice with HTTP 504. No spend and no transaction occurred.
+- Sui testnet evidence: faucet `6Zfcj68SupgD5ZL9DF35UNTDRAQoaEYGJgWrgCrVPHGH`; publish `GecMo7gRiohB7wWmqsgSUajTvUGXzvpDrrZQKjDoPqXg`; package `0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363`; six commitment and Tatum verification digests are in `results/testnet-commitments.json` and `results/testnet-verification.json`.
 
 ## Hours left
 
