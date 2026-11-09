@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Venue Oracle</title>
+  <desc id="desc">A calibrated probability mark with two venue lines and an accent point.</desc>
+  <rect width="64" height="64" rx="12" fill="#11161d"/>
+  <path d="M15 42 25 23l8 14 7-11 9 16" fill="none" stroke="#7dd4e8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="42" cy="26" r="5" fill="#7ce2a7"/>
+</svg>

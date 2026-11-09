@@ -57,6 +57,12 @@ a {
 	font-weight: 800;
 	font-size: 15px;
 	white-space: nowrap;
+	display: inline-flex;
+	align-items: center;
+	gap: 9px;
+}
+.brand img {
+	border-radius: 8px;
 }
 .brand span {
 	color: var(--cyan);
@@ -118,6 +124,13 @@ main {
 	line-height: 1.7;
 	margin: 0 0 32px;
 	font-size: 18px;
+}
+.headline-result {
+	max-width: 760px;
+	border-left: 2px solid var(--green);
+	padding: 10px 14px;
+	font-size: 17px;
+	line-height: 1.6;
 }
 .toolbar {
 	display: flex;
@@ -445,6 +458,204 @@ details.proof summary:hover {
 	color: var(--green);
 	font-size: 13px;
 }
+.trust-links {
+	display: flex;
+	gap: 14px;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	color: var(--green);
+	font-size: 13px;
+}
+.why-button {
+	margin-top: 16px;
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	background: transparent;
+	color: var(--cyan);
+	padding: 9px 12px;
+	font: inherit;
+	cursor: pointer;
+	transition:
+		transform 180ms ease,
+		background 180ms ease;
+}
+.why-button:hover {
+	transform: translateY(-2px);
+	background: var(--panel2);
+}
+.probability-rail {
+	margin: 26px 0 10px;
+}
+.rail-track {
+	height: 34px;
+	position: relative;
+	border-bottom: 2px solid var(--line);
+	background: linear-gradient(
+		90deg,
+		transparent 24.8%,
+		var(--line) 25%,
+		transparent 25.2%,
+		transparent 49.8%,
+		var(--line) 50%,
+		transparent 50.2%,
+		transparent 74.8%,
+		var(--line) 75%,
+		transparent 75.2%
+	);
+}
+.rail-tick {
+	position: absolute;
+	bottom: -5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--line);
+	transform: translateX(-50%);
+}
+.tick-25 {
+	left: 25%;
+}
+.tick-50 {
+	left: 50%;
+}
+.tick-75 {
+	left: 75%;
+}
+.rail-connector {
+	position: absolute;
+	bottom: -2px;
+	height: 3px;
+	background: var(--green);
+	transform: translateY(50%);
+}
+.rail-marker {
+	position: absolute;
+	bottom: -6px;
+	width: 13px;
+	height: 13px;
+	border: 2px solid var(--cyan);
+	border-radius: 50%;
+	background: var(--panel);
+	transform: translateX(-50%);
+	z-index: 1;
+}
+.calibrated-marker {
+	border-color: var(--green);
+	background: var(--green);
+}
+.rail-marker span {
+	position: absolute;
+	bottom: 19px;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	color: var(--muted);
+	font-size: 11px;
+}
+.rail-scale {
+	display: flex;
+	justify-content: space-between;
+	color: var(--muted);
+	font-size: 11px;
+	margin-top: 8px;
+}
+.rail-note {
+	color: var(--muted);
+	display: block;
+	margin-top: 8px;
+}
+.drawer-backdrop {
+	position: fixed;
+	inset: 0;
+	z-index: 40;
+	background: #0009;
+	display: flex;
+	justify-content: flex-end;
+	animation: reveal 180ms ease;
+}
+.drawer {
+	width: min(470px, 100%);
+	height: 100%;
+	overflow: auto;
+	background: var(--panel);
+	border-left: 1px solid var(--line);
+	padding: 32px;
+	position: relative;
+	animation: drawer-in 220ms ease;
+}
+.drawer h2 {
+	font-size: 26px;
+	margin: 10px 0 18px;
+}
+.drawer-close {
+	position: absolute;
+	top: 18px;
+	right: 20px;
+	border: 0;
+	background: transparent;
+	color: var(--muted);
+	font-size: 28px;
+	cursor: pointer;
+}
+.arithmetic,
+.drawer-memory {
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	padding: 14px;
+	margin: 14px 0 22px;
+	background: var(--panel2);
+	line-height: 1.6;
+}
+@keyframes drawer-in {
+	from {
+		transform: translateX(30px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+.honesty-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 18px;
+}
+.honesty-panel h2 {
+	text-transform: capitalize;
+}
+.reliability-chart {
+	position: relative;
+	max-width: 520px;
+}
+.reliability-chart svg {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.reliability-chart text {
+	fill: var(--muted);
+	font: 11px var(--font-ui);
+}
+.gridline {
+	stroke: var(--line);
+	stroke-width: 1;
+}
+.diagonal {
+	stroke: var(--muted);
+	stroke-width: 1.5;
+	stroke-dasharray: 5 5;
+}
+.reliability-point {
+	fill: var(--green);
+	stroke: var(--text);
+	stroke-width: 1.5;
+}
+.chart-axis-label {
+	text-align: center;
+	color: var(--muted);
+	font-size: 12px;
+}
 @keyframes reveal {
 	from {
 		opacity: 0;
@@ -487,6 +698,9 @@ details.proof summary:hover {
 		grid-template-columns: 1fr 1fr;
 	}
 	.two {
+		grid-template-columns: 1fr;
+	}
+	.honesty-grid {
 		grid-template-columns: 1fr;
 	}
 }

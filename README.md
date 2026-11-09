@@ -13,8 +13,9 @@ This repository contains a real historical replay and six real live calibration 
 - V2 corpus: 550 observations, with 440 training-prefix observations and 110 time-held-out observations.
 - V2 held-out Brier: raw `0.1955` (95% CI `[0.1705, 0.2239]`), corrected `0.1984` (95% CI `[0.1730, 0.2288]`); calibration error improved from `0.1453` to `0.1022`. Brier was slightly worse after correction, so this is mixed evidence and makes no accuracy-improvement claim.
 - Mainnet MemWal: 54 observation memories and one belief memory. Blob IDs are in [`results/latest-replay.json`](results/latest-replay.json).
-- Live calls: six real Tatum-sampled `vo-live` records. Each record includes a venue market ID and URL, Tatum price endpoint, snapshot timestamp, raw price, Walrus blob ID, and deterministic SHA-256/Sui evidence in [`results/live-calls.json`](results/live-calls.json).
-- Testnet proof: six Sui commitments verified through Tatum testnet gRPC; evidence is in [`results/testnet-verification.json`](results/testnet-verification.json).
+- Live calls: six real Polymarket sports markets sampled through Tatum on 9 Nov 2026, closing 14–16 Nov. The v2 corpus has no Polymarket sports bucket at the minimum sample, so each call honestly abstains and retains the raw price. IDs, URLs, Tatum endpoints, snapshots, Walrus blobs, and Sui evidence are in [`results/live-calls.json`](results/live-calls.json).
+- First sample: the original six long-dated records remain preserved and labelled in [`results/live-calls-first-sample.json`](results/live-calls-first-sample.json).
+- Testnet proof: six current Sui commitments verified through Tatum testnet gRPC; evidence is in [`results/testnet-verification.json`](results/testnet-verification.json).
 - Demo: https://venue-oracle.vercel.app
 
 The web app has the Live Board, Learning Curve, Memory Inspector, Track Record, and Method views under `apps/web`.

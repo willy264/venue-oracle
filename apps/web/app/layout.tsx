@@ -27,10 +27,12 @@ export default function Layout({
 				<div className="shell">
 					<header className="topbar">
 						<Link className="brand" href="/">
+							<img src="/logo.svg" alt="" width="30" height="30" />
 							VENUE <span>ORACLE</span>
 						</Link>
 						<nav>
 							<Link href="/">Live board</Link>
+							<Link href="/honesty">Venue honesty</Link>
 							<Link href="/learning">Learning curve</Link>
 							<Link href="/memory">Memory</Link>
 							<Link href="/track-record">Track record</Link>

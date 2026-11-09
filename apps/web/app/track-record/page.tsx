@@ -1,4 +1,4 @@
-import { liveCalls } from "../live-data";
+import { firstSampleCalls, liveCalls } from "../live-data";
 
 export default function TrackRecord() {
 	return (
@@ -10,7 +10,9 @@ export default function TrackRecord() {
 				endpoint, Walrus memory, and verified Sui testnet commitment.
 			</p>
 			<details className="proof">
-				<summary>Open proof details for all six calls</summary>
+				<summary>
+					Open proof details for current calls and the first sample
+				</summary>
 				<div className="proof-body">
 					<table className="table">
 						<thead>
@@ -22,10 +24,14 @@ export default function TrackRecord() {
 							</tr>
 						</thead>
 						<tbody>
-							{liveCalls.map((call) => (
+							{[...liveCalls, ...firstSampleCalls].map((call) => (
 								<tr key={call.id}>
 									<td>
 										{call.id}
+										<br />
+										<span className="pill">
+											{call.firstSample ? "FIRST SAMPLE" : "CURRENT LIVE"}
+										</span>
 										<br />
 										<span className="muted">{call.snapshotAt}</span>
 									</td>
@@ -50,9 +56,27 @@ export default function TrackRecord() {
 											{call.blobId.slice(0, 12)}...
 										</a>
 										<br />
-										<span className="pill">
-											VERIFIED {call.txDigest.slice(0, 10)}...
-										</span>
+										<a
+											className="pill"
+											href={`https://suiexplorer.testnet.sui.io/txblock/${call.txDigest}`}
+											target="_blank"
+											rel="noreferrer"
+										>
+											VERIFIED {call.txDigest.slice(0, 10)}... ↗
+										</a>
+										<br />
+										<a className="blob" href={`/memory#${call.blobId}`}>
+											memory ↗
+										</a>
+										<br />
+										<a
+											className="blob"
+											href={`https://suiexplorer.testnet.sui.io/object/${call.packageId}`}
+											target="_blank"
+											rel="noreferrer"
+										>
+											package ↗
+										</a>
 									</td>
 								</tr>
 							))}

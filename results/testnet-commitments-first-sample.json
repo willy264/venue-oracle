@@ -1,0 +1,36 @@
+{
+  "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+  "commitments": [
+    {
+      "pairId": "polymarket:0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+      "txDigest": "9MzxmJUdqBmLXrec3mqHhfNQZXwLNWczbz8zNyXEsYuc",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "polymarket:0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
+      "txDigest": "EGgcLvfkG8MD67drcBxwNcqT8fmdXWkDGQcU1VwW5QyD",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "polymarket:0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1",
+      "txDigest": "BMwaPzUvU4EAzCkqAF3PwCTVJm6qXDAJdk51UXsFMt2d",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "kalshi:KXELONMARS-99",
+      "txDigest": "AWr5qNs71SP5otjxpAM2DoJnVgY4PYusGTRf9v3fjw82",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "kalshi:KXPERSONPRESFUENTES-45",
+      "txDigest": "29AvQ2Ukwo1BrJwgunqNBq4B5bGGXszLeb3cEVKFFHN4",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "kalshi:KXPERSONPRESMAM-45",
+      "txDigest": "4EusGRrvCV2brZquWXqCbyB2mBXUeY5Hgcak9d15xNFa",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    }
+  ],
+  "observedAt": "2026-11-09T11:58:24.057Z"
+}

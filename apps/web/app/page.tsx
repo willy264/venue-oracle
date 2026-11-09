@@ -1,8 +1,9 @@
 import { decisionFor, liveCalls } from "./live-data";
+import { ProbabilityRail } from "./components/probability-rail";
+import { WhyDrawer } from "./components/why-drawer";
+import replay from "../../../results/latest-replay-v2.json";
 
-function percent(value: number) {
-	return `${(value * 100).toFixed(value < 0.01 ? 2 : 1)}%`;
-}
+const holdout = replay.metrics.holdout;
 
 export default function Home() {
 	return (
@@ -14,21 +15,25 @@ export default function Home() {
 				real Tatum snapshots, with their market IDs, source links, Walrus
 				memories, and Sui testnet commitments exposed for inspection.
 			</p>
+			<p className="headline-result">
+				Better calibrated (error 0.145 → 0.102), not more accurate on held-out
+				data (Brier 0.1955 → 0.1984).
+			</p>
 			<div className="stats">
 				<div className="stat">
-					<b>550</b>
+					<b>{replay.corpus.total}</b>
 					<span>v2 resolved observations</span>
 				</div>
 				<div className="stat">
-					<b>0.1955</b>
+					<b>{holdout.rawBrier.toFixed(4)}</b>
 					<span>held-out raw Brier</span>
 				</div>
 				<div className="stat">
-					<b>0.1984</b>
+					<b>{holdout.correctedBrier.toFixed(4)}</b>
 					<span>held-out corrected Brier</span>
 				</div>
 				<div className="stat">
-					<b>6</b>
+					<b>{liveCalls.length}</b>
 					<span>verified testnet calls</span>
 				</div>
 			</div>
@@ -41,21 +46,16 @@ export default function Home() {
 					<article className="card" key={call.id}>
 						<div className="cardhead">
 							<span className="venue">{call.venue.toUpperCase()}</span>
-							<span>{call.id} / VERIFIED</span>
+							<span>
+								{call.id} / {call.provenance ?? "LIVE"}
+							</span>
 						</div>
 						<div className="event">{call.question}</div>
-						<div className="prices">
-							<div className="price">
-								<span className="price-label">RAW TATUM PRICE</span>
-								<strong>{percent(call.rawPrice)}</strong>
-							</div>
-							<div className="price">
-								<span className="price-label">CORRECTED</span>
-								<strong className="warning">
-									{percent(call.correctedProbability)}
-								</strong>
-							</div>
-						</div>
+						<ProbabilityRail
+							raw={call.rawPrice}
+							corrected={call.correctedProbability}
+							label={call.question}
+						/>
 						<div className="metricrow">
 							<span>calibration decision</span>
 							<b>{decisionFor(call)}</b>
@@ -88,6 +88,23 @@ export default function Home() {
 							</a>
 							<span className="tx">SUI {call.txDigest.slice(0, 12)}...</span>
 						</div>
+						<div className="trust-links">
+							<a
+								href={`https://suiexplorer.testnet.sui.io/txblock/${call.txDigest}`}
+								target="_blank"
+								rel="noreferrer"
+							>
+								Sui proof ↗
+							</a>
+							<a
+								href={`https://suiexplorer.testnet.sui.io/object/${call.packageId}`}
+								target="_blank"
+								rel="noreferrer"
+							>
+								Package ↗
+							</a>
+						</div>
+						<WhyDrawer call={call} />
 					</article>
 				))}
 			</div>

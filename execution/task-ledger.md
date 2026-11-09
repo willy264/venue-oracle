@@ -35,6 +35,8 @@
 | Live workflow dispatch                             | Failed, blocked by setup          | Run [42708210198](https://github.com/willy264/venue-oracle/actions/runs/42708210198) failed before sampling because MemWal was not declared at the repository root |
 | MemWal identity match                              | Done                              | Local derivation from `MEMWAL_KEY_CHECKER` exactly matched `MEMWAL_AGENT_ID` on 2026-11-09; lengths 64/64; values not committed |
 | MPP paid signal                                    | Branch only                       | `mpp` branch commit `7cb7b8d`; testnet route builds, but Tatum-gRPC payment verification and funded testnet end-to-end proof are incomplete, so it is not merged or in submission materials |
+| Replace novelty live set                          | Done                              | Six real Polymarket sports markets closing 14–16 Nov sampled through Tatum; six `vo-live` writes, six Sui testnet commits, and six Tatum gRPC verifications. No correction was forced because the Polymarket sports bucket is below minimum sample. Original six preserved as `results/live-calls-first-sample.json`. |
+| UI redesign slice                                  | Done                              | Probability rail, `/honesty` reliability diagrams, “Why this number?” drawer, clickable blob/Sui/package links, logo, and headline result sentence. Build and typecheck pass. |
 
 ## Existing credential inventory
 

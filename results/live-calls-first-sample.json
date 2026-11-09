@@ -1,0 +1,672 @@
+{
+  "observedAt": "2026-11-09T05:48:39.102Z",
+  "source": "live",
+  "tatumCalls": 8,
+  "calls": [
+    {
+      "pairId": "polymarket:0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+      "ts": "2026-11-09T05:47:53.173Z",
+      "venue": "polymarket",
+      "marketId": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+      "rawPrice": 0.115,
+      "correctedProbability": 0.115,
+      "method": "raw",
+      "citedBlobIds": [],
+      "question": "Will the U.S. invade Iran before 2027?",
+      "category": "u-s-x-iran",
+      "closeTime": "2027-01-01T00:00:00.000Z",
+      "confidence": 0.1,
+      "digest": "ebf31e69120ce93f9c14c2c2f7000057c4b2d09ba560abcddb1f2bd86da4b132",
+      "commitmentStatus": "testnet-committed",
+      "commitmentTxDigest": "9MzxmJUdqBmLXrec3mqHhfNQZXwLNWczbz8zNyXEsYuc",
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846/price",
+        "snapshotTimestamp": "2026-11-09T05:47:53.173Z",
+        "rawPrice": 0.115,
+        "marketResponseFields": [
+          "category",
+          "chain",
+          "closeTime",
+          "createdAt",
+          "description",
+          "eventId",
+          "id",
+          "imageUrl",
+          "liquidity",
+          "openTime",
+          "outcomes",
+          "platform",
+          "question",
+          "resolution",
+          "settleTime",
+          "source",
+          "status",
+          "tags",
+          "volume",
+          "volumeUnit"
+        ]
+      },
+      "venueUrl": "https://polymarket.com/market/will-the-us-invade-iran-before-2027",
+      "venueUrlStatus": "verified-from-polymarket-clob-market_slug",
+      "marketIdSource": "Tatum prediction API market listing and price response",
+      "venueMarketSlug": "will-the-us-invade-iran-before-2027"
+    },
+    {
+      "pairId": "polymarket:0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
+      "ts": "2026-11-09T05:47:56.053Z",
+      "venue": "polymarket",
+      "marketId": "0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
+      "rawPrice": 0.0065,
+      "correctedProbability": 0.0065,
+      "method": "raw",
+      "citedBlobIds": [],
+      "question": "Will Jesus Christ return before 2027?",
+      "category": "culture",
+      "closeTime": "2027-01-01T00:00:00.000Z",
+      "confidence": 0.1,
+      "digest": "b1c8bec356c7d197a716a08fc57017672dba4b17ad0491fc0fde70e9f8af18ca",
+      "commitmentStatus": "testnet-committed",
+      "commitmentTxDigest": "EGgcLvfkG8MD67drcBxwNcqT8fmdXWkDGQcU1VwW5QyD",
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee/price",
+        "snapshotTimestamp": "2026-11-09T05:47:56.053Z",
+        "rawPrice": 0.0065,
+        "marketResponseFields": [
+          "category",
+          "chain",
+          "closeTime",
+          "createdAt",
+          "description",
+          "eventId",
+          "id",
+          "imageUrl",
+          "liquidity",
+          "openTime",
+          "outcomes",
+          "platform",
+          "question",
+          "resolution",
+          "settleTime",
+          "source",
+          "status",
+          "tags",
+          "volume",
+          "volumeUnit"
+        ]
+      },
+      "venueUrl": "https://polymarket.com/market/will-jesus-christ-return-before-2027",
+      "venueUrlStatus": "verified-from-polymarket-clob-market_slug",
+      "marketIdSource": "Tatum prediction API market listing and price response",
+      "venueMarketSlug": "will-jesus-christ-return-before-2027"
+    },
+    {
+      "pairId": "polymarket:0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1",
+      "ts": "2026-11-09T05:47:58.628Z",
+      "venue": "polymarket",
+      "marketId": "0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1",
+      "rawPrice": 0.0005,
+      "correctedProbability": 0.0005,
+      "method": "raw",
+      "citedBlobIds": [],
+      "question": "Will LeBron James win the 2028 US Presidential Election?",
+      "category": "president",
+      "closeTime": "2028-11-08T00:00:00.000Z",
+      "confidence": 0.1,
+      "digest": "a88796f1ea2d380d4dfb210fe65a8dad554cd3d960d1a7f27785a5d2aeb6a1f8",
+      "commitmentStatus": "testnet-committed",
+      "commitmentTxDigest": "BMwaPzUvU4EAzCkqAF3PwCTVJm6qXDAJdk51UXsFMt2d",
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1/price",
+        "snapshotTimestamp": "2026-11-09T05:47:58.628Z",
+        "rawPrice": 0.0005,
+        "marketResponseFields": [
+          "category",
+          "chain",
+          "closeTime",
+          "createdAt",
+          "description",
+          "eventId",
+          "id",
+          "imageUrl",
+          "liquidity",
+          "openTime",
+          "outcomes",
+          "platform",
+          "question",
+          "resolution",
+          "settleTime",
+          "source",
+          "status",
+          "tags",
+          "volume",
+          "volumeUnit"
+        ]
+      },
+      "venueUrl": "https://polymarket.com/market/will-lebron-james-win-the-2028-us-presidential-election",
+      "venueUrlStatus": "verified-from-polymarket-clob-market_slug",
+      "marketIdSource": "Tatum prediction API market listing and price response",
+      "venueMarketSlug": "will-lebron-james-win-the-2028-us-presidential-election"
+    },
+    {
+      "pairId": "kalshi:KXELONMARS-99",
+      "ts": "2026-11-09T05:48:01.966Z",
+      "venue": "kalshi",
+      "marketId": "KXELONMARS-99",
+      "rawPrice": 0.12,
+      "correctedProbability": 0.12,
+      "method": "raw",
+      "citedBlobIds": [],
+      "question": "Will Elon Musk visit Mars before Aug 1, 2099?",
+      "category": "science-and-technology",
+      "closeTime": "2099-08-01T04:59:00.000Z",
+      "confidence": 0.1,
+      "digest": "4bc43f97a59114bfb57d51b78540176afb621c5ef743a0e97874d8bb1e44f6a7",
+      "commitmentStatus": "testnet-committed",
+      "commitmentTxDigest": "AWr5qNs71SP5otjxpAM2DoJnVgY4PYusGTRf9v3fjw82",
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/KXELONMARS-99",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/KXELONMARS-99/price",
+        "snapshotTimestamp": "2026-11-09T05:48:01.966Z",
+        "rawPrice": 0.12,
+        "marketResponseFields": [
+          "category",
+          "chain",
+          "closeTime",
+          "createdAt",
+          "description",
+          "eventId",
+          "id",
+          "imageUrl",
+          "liquidity",
+          "openTime",
+          "outcomes",
+          "platform",
+          "question",
+          "resolution",
+          "settleTime",
+          "source",
+          "status",
+          "tags",
+          "volume",
+          "volumeUnit"
+        ]
+      },
+      "venueUrl": "https://kalshi.com/markets/KXELONMARS-99",
+      "venueUrlStatus": "canonical-ticker-url-public-market-confirmed",
+      "marketIdSource": "Tatum prediction API market listing and price response"
+    },
+    {
+      "pairId": "kalshi:KXPERSONPRESFUENTES-45",
+      "ts": "2026-11-09T05:48:04.186Z",
+      "venue": "kalshi",
+      "marketId": "KXPERSONPRESFUENTES-45",
+      "rawPrice": 0.21,
+      "correctedProbability": 0.21,
+      "method": "raw",
+      "citedBlobIds": [],
+      "question": "Will Nick Fuentes become President of the United States before 2045?",
+      "category": "elections",
+      "closeTime": "2045-01-08T15:00:00.000Z",
+      "confidence": 0.1,
+      "digest": "f516bb6f682f09b7c3d1cbbae61f38f76aad3ba45e7d74f3431a7e74b392f227",
+      "commitmentStatus": "testnet-committed",
+      "commitmentTxDigest": "29AvQ2Ukwo1BrJwgunqNBq4B5bGGXszLeb3cEVKFFHN4",
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/KXPERSONPRESFUENTES-45",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/KXPERSONPRESFUENTES-45/price",
+        "snapshotTimestamp": "2026-11-09T05:48:04.186Z",
+        "rawPrice": 0.21,
+        "marketResponseFields": [
+          "category",
+          "chain",
+          "closeTime",
+          "createdAt",
+          "description",
+          "eventId",
+          "id",
+          "imageUrl",
+          "liquidity",
+          "openTime",
+          "outcomes",
+          "platform",
+          "question",
+          "resolution",
+          "settleTime",
+          "source",
+          "status",
+          "tags",
+          "volume",
+          "volumeUnit"
+        ]
+      },
+      "venueUrl": "https://kalshi.com/markets/KXPERSONPRESFUENTES-45",
+      "venueUrlStatus": "canonical-ticker-url-public-market-confirmed",
+      "marketIdSource": "Tatum prediction API market listing and price response"
+    },
+    {
+      "pairId": "kalshi:KXPERSONPRESMAM-45",
+      "ts": "2026-11-09T05:48:06.397Z",
+      "venue": "kalshi",
+      "marketId": "KXPERSONPRESMAM-45",
+      "rawPrice": 0.16,
+      "correctedProbability": 0.16,
+      "method": "raw",
+      "citedBlobIds": [],
+      "question": "Will Zohran Mamdani become President of the United States before Jan 22, 2045?",
+      "category": "politics",
+      "closeTime": "2045-01-29T15:00:00.000Z",
+      "confidence": 0.1,
+      "digest": "c7b572552c41ac22a9e795efd1519ab8d3ddc05d7d5ee42093090e353f514a6b",
+      "commitmentStatus": "testnet-committed",
+      "commitmentTxDigest": "4EusGRrvCV2brZquWXqCbyB2mBXUeY5Hgcak9d15xNFa",
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/KXPERSONPRESMAM-45",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/KXPERSONPRESMAM-45/price",
+        "snapshotTimestamp": "2026-11-09T05:48:06.397Z",
+        "rawPrice": 0.16,
+        "marketResponseFields": [
+          "category",
+          "chain",
+          "closeTime",
+          "createdAt",
+          "description",
+          "eventId",
+          "id",
+          "imageUrl",
+          "liquidity",
+          "openTime",
+          "outcomes",
+          "platform",
+          "question",
+          "resolution",
+          "settleTime",
+          "source",
+          "status",
+          "tags",
+          "volume",
+          "volumeUnit"
+        ]
+      },
+      "venueUrl": "https://kalshi.com/markets/KXPERSONPRESMAM-45",
+      "venueUrlStatus": "canonical-ticker-url-public-market-confirmed",
+      "marketIdSource": "Tatum prediction API market listing and price response"
+    }
+  ],
+  "memoryWrite": {
+    "results": [
+      {
+        "id": "7c7d5092-eeae-4aae-ac97-6e917b68aacd",
+        "blob_id": "SB3tgey0tZjMhLUJs0UH4_G62ZDookLDhagNqYFlZXk",
+        "status": "done",
+        "namespace": "vo-live"
+      },
+      {
+        "id": "f6772e32-2759-4c7c-97ea-511c9d6e4ef2",
+        "blob_id": "WVl8UlRuUnOXDruLUhR0IqUoGpzMPZHYzom6HBCE5WA",
+        "status": "done",
+        "namespace": "vo-live"
+      },
+      {
+        "id": "16981900-5665-4ff5-948b-f3f2f18f51ce",
+        "blob_id": "EWpeYh7pWSLc_JAH1XSfqNA_uLck6_Gc5ndljxAXEQ0",
+        "status": "done",
+        "namespace": "vo-live"
+      },
+      {
+        "id": "4e1d8c78-0083-4873-aeee-2fc1fc94562a",
+        "blob_id": "OFzX4Nr8jLg9SVhQU3vypUil0FrVHsyk02sE9pVNUQc",
+        "status": "done",
+        "namespace": "vo-live"
+      },
+      {
+        "id": "7dbf7297-05f2-4e7b-8809-bffa0f353dd5",
+        "blob_id": "CV841lGMtlnYvZbiROJ3yIKoVBIw5PdTTC0DHHq0XuA",
+        "status": "done",
+        "namespace": "vo-live"
+      },
+      {
+        "id": "4e96a62f-8bee-4df7-99dd-bf1749fe476a",
+        "blob_id": "Eh7PX7nUJwtEFjBWnU3mkezk4wOMQmpQpb-8yaxpjBk",
+        "status": "done",
+        "namespace": "vo-live"
+      }
+    ],
+    "total": 6,
+    "succeeded": 6,
+    "failed": 0
+  },
+  "commitment": "Testnet Sui commitments; verify each digest through Tatum testnet gRPC.",
+  "testnetPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+  "testnetCommitments": [
+    {
+      "pairId": "polymarket:0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+      "txDigest": "9MzxmJUdqBmLXrec3mqHhfNQZXwLNWczbz8zNyXEsYuc",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "polymarket:0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
+      "txDigest": "EGgcLvfkG8MD67drcBxwNcqT8fmdXWkDGQcU1VwW5QyD",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "polymarket:0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1",
+      "txDigest": "BMwaPzUvU4EAzCkqAF3PwCTVJm6qXDAJdk51UXsFMt2d",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "kalshi:KXELONMARS-99",
+      "txDigest": "AWr5qNs71SP5otjxpAM2DoJnVgY4PYusGTRf9v3fjw82",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "kalshi:KXPERSONPRESFUENTES-45",
+      "txDigest": "29AvQ2Ukwo1BrJwgunqNBq4B5bGGXszLeb3cEVKFFHN4",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "kalshi:KXPERSONPRESMAM-45",
+      "txDigest": "4EusGRrvCV2brZquWXqCbyB2mBXUeY5Hgcak9d15xNFa",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    }
+  ],
+  "updatedAt": "2026-11-09T15:57:22.093Z",
+  "tatumTestnetVerification": [
+    {
+      "pairId": "polymarket:0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+      "txDigest": "9MzxmJUdqBmLXrec3mqHhfNQZXwLNWczbz8zNyXEsYuc",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794225493578"
+                }
+              },
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "6/MeaRIM6T+cFMLC9wAAV8Sy0JulYKvN2x8r2G2ksTI="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "cG9seW1hcmtldDoweDVkYjk5OWZhZDMyMmNlYTI5MTQ1MzVhYWU1NTE3MDYwYzNmODBhZDZkOGMwMjMxY2RlMjEyNGE0MzRkMTY4NDY="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404545149",
+      "timestamp": {
+        "seconds": "1794225493",
+        "nanos": 578000000
+      },
+      "error": null
+    },
+    {
+      "pairId": "polymarket:0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
+      "txDigest": "EGgcLvfkG8MD67drcBxwNcqT8fmdXWkDGQcU1VwW5QyD",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "sci+w1bH0ZenFqCPxXAXZy26SxetBJH8D95w6fivGMo="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "cG9seW1hcmtldDoweDBiNGNjM2I3MzllMWRmZTVkNzMyNzQ3NDBlNzMwOGI2ZmIzODljNWFmMDQwYzNhMTc0OTIzZDkyOGQxMzRiZWU="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              },
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794225495904"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404545159",
+      "timestamp": {
+        "seconds": "1794225495",
+        "nanos": 965000000
+      },
+      "error": null
+    },
+    {
+      "pairId": "polymarket:0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1",
+      "txDigest": "BMwaPzUvU4EAzCkqAF3PwCTVJm6qXDAJdk51UXsFMt2d",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "qIeW8eotOA1N+yEP5lqNrVVM09lg0afyd4Wl0q62ofg="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "cG9seW1hcmtldDoweDgzNmI4NTBmYzgzODE5NTM3NDg2MjU1MWEzNmYxYzg2OTFkOTZmZjAxZTU4YjBhMDcxZjBmYzFhMGUzNTdmYjE="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              },
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794225498178"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404545169",
+      "timestamp": {
+        "seconds": "1794225498",
+        "nanos": 360000000
+      },
+      "error": null
+    },
+    {
+      "pairId": "kalshi:KXELONMARS-99",
+      "txDigest": "AWr5qNs71SP5otjxpAM2DoJnVgY4PYusGTRf9v3fjw82",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "S8Q/l6WRFL+1fVG3hUAXavtiHF73Q6DpeHTYux5E9qc="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "a2Fsc2hpOktYRUxPTk1BUlMtOTk="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              },
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794225500521"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404545178",
+      "timestamp": {
+        "seconds": "1794225500",
+        "nanos": 521000000
+      },
+      "error": null
+    },
+    {
+      "pairId": "kalshi:KXPERSONPRESFUENTES-45",
+      "txDigest": "29AvQ2Ukwo1BrJwgunqNBq4B5bGGXszLeb3cEVKFFHN4",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794225502809"
+                }
+              },
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "9Ra7b2gvCbfD0cu65h8492qtO6RefXTzQxp+dLOS8ic="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "a2Fsc2hpOktYUEVSU09OUFJFU0ZVRU5URVMtNDU="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404545188",
+      "timestamp": {
+        "seconds": "1794225502",
+        "nanos": 992000000
+      },
+      "error": null
+    },
+    {
+      "pairId": "kalshi:KXPERSONPRESMAM-45",
+      "txDigest": "4EusGRrvCV2brZquWXqCbyB2mBXUeY5Hgcak9d15xNFa",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794225505174"
+                }
+              },
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "x7VyVSxBrCKp55Xv0VGauNPdwF19XuQgkwkONT9RSms="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "a2Fsc2hpOktYUEVSU09OUFJFU01BTS00NQ=="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404545197",
+      "timestamp": {
+        "seconds": "1794225505",
+        "nanos": 236000000
+      },
+      "error": null
+    }
+  ],
+  "commitmentVerification": "verified-through-tatum-testnet-grpc",
+  "integrity": {
+    "status": "real-tatum-sampled-records",
+    "checkedAt": "2026-11-09T16:44:34.810Z",
+    "interpretation": "The six records retain their original Sui commitment digests. Venue URLs are shown only when returned by Tatum; otherwise the market ID and Tatum endpoints are the available primary evidence."
+  }
+}
