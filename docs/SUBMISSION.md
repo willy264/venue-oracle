@@ -9,6 +9,23 @@
 - Video URL: owner-only upload, not done.
 - Hackathon form: owner-only submission, not done.
 
+## Draft form fields
+
+- Email: owner enters the submitting email; not stored in this repository.
+- Discord: owner enters the submitting Discord handle; not stored in this repository.
+- LinkedIn: owner enters the submitting LinkedIn URL; not stored in this repository.
+- Tatum ID: verified in the local `.env` as `TATUM_ID`.
+- SUI address: verified in the local `.env` as `SUI_ADDRESS`; it is the testnet commitment signer address.
+- SUI Account ID: verified in the local `.env` as `MEMWAL_ACCOUNT_ID`.
+- `MEMWAL_AGENT_ID`: verified in the local `.env`.
+- MemWal identity check: `MEMWAL_KEY_CHECKER` derives the same 64-character public key as `MEMWAL_AGENT_ID` (exact match confirmed locally on 2026-11-09).
+- Description: “Venue Oracle measures whether Polymarket and Kalshi prices are calibrated, independently by venue, category, and time-to-close. It writes resolved observations and bucket summaries to Walrus Memory, recalls them during walk-forward replay and live calibration, and commits live call digests on Sui testnet verified through Tatum gRPC. V2 held-out Brier was slightly worse after correction, while calibration error improved; no accuracy improvement is claimed.”
+- Video: owner uploads the 2–3 minute demo video; not uploaded yet.
+- Repository: https://github.com/willy264/venue-oracle
+- Blog: owner publishes [`docs/blog-draft.md`](blog-draft.md); publication URL not available yet.
+- Walrus feedback: “Walrus Memory made the calibration history inspectable and durable. The visible blob lineage is useful, but fresh recall and write-rate limits require batching, retries, and explicit disclosures.”
+- AI Builder feedback: “The deterministic engine remained the source of truth; AI coding assistance was used for implementation and documentation, not for autonomous market decisions.”
+
 ## Proof to include
 
 - MemWal agent ID: read from the owner's local `.env`; never commit the value.
