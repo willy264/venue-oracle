@@ -20,6 +20,9 @@ Gate checks have run, but product tests have not.
 - PASS: Reused `core` and `memory` test suites, 5 files and 40 tests.
 - PASS: Heuristic secret scan over 49 Git-visible files.
 - BLOCKED: Reused `chain` suite needs a normal pnpm workspace install; the current pnpm shim is broken and the temporary dependency links do not expose all protobuf runtime packages.
+- BLOCKED: Sui Move test/publish could not start because the testnet CLI artifact returned HTTP 504 twice after `suiup` itself installed successfully.
+- ADDED: Next.js web shell pages for live board, learning curve, memory inspector, track record, and method disclosures.
+- BLOCKED: Web production build could not complete because the local npm install left an incomplete Next package and the pnpm shim is unavailable.
 
 ## Required evidence
 
