@@ -12,7 +12,7 @@ export default function Home() {
     <div className="eyebrow">LIVE CALIBRATION / 09 NOV 2026</div>
     <h1 className="title">How honest is each venue?</h1>
     <p className="lede">Venue Oracle learns whether a price of p actually happens. It calibrates Polymarket and Kalshi independently, then corrects live probabilities using resolved market memories.</p>
-    <div className="stats"><div className="stat"><b>54</b><span>resolved observations</span></div><div className="stat"><b>0.0983</b><span>raw Brier score</span></div><div className="stat"><b>0.2195</b><span>memory Brier score</span></div><div className="stat"><b>6</b><span>live calls in memory</span></div></div>
+    <div className="stats"><div className="stat"><b>550</b><span>v2 resolved observations</span></div><div className="stat"><b>0.1955</b><span>held-out raw Brier</span></div><div className="stat"><b>0.1984</b><span>held-out corrected Brier</span></div><div className="stat"><b>6</b><span>verified testnet calls</span></div></div>
     <div className="toolbar"><h2>Open calibration calls</h2><span>3 Polymarket / 3 Kalshi / Tatum live prices</span></div>
     <div className="grid">{calls.map((c) => <article className="card" key={c[5]}><div className="cardhead"><span className="venue">{c[0].toUpperCase()}</span><span>LIVE / UNRESOLVED</span></div><div className="event">{c[1]}</div><div className="prices"><div className="price"><label>RAW VENUE PRICE</label><strong>{c[2]}</strong></div><div className="price"><label>CALIBRATED</label><strong className={c[4] === "No edge" ? "warning" : "accent"}>{c[3]}</strong></div></div><div className="metricrow"><span>decision</span><b>{c[4]}</b></div><a className="why" href={`/memory#${c[5]}`}>WHY? / {c[5].slice(0, 12)}...</a></article>)}</div>
   </>;

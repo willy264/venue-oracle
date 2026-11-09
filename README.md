@@ -10,8 +10,12 @@ This repository contains a real historical replay and six real live calibration 
 - Replay baseline Brier: `0.0983137731`.
 - First memory-corrected Brier: `0.2194999238` over 44 corrected observations.
 - Result: negative. The baseline wins this run; the product publishes that result and does not claim an edge.
+- V2 corpus: 550 observations, with 440 training-prefix observations and 110 time-held-out observations.
+- V2 held-out Brier: raw `0.1954927`, corrected `0.1984114`; calibration error improved from `0.1452727` to `0.1022125`. This is mixed evidence, not a predictive edge.
 - Mainnet MemWal: 54 observation memories and one belief memory. Blob IDs are in [`results/latest-replay.json`](results/latest-replay.json).
 - Live calls: six `vo-live` records and deterministic SHA-256 digests in [`results/live-calls.json`](results/live-calls.json).
+- Testnet proof: six Sui commitments verified through Tatum testnet gRPC; evidence is in [`results/testnet-verification.json`](results/testnet-verification.json).
+- Demo: https://web-psi-five-oie9hjjwqd.vercel.app
 
 The web app has the Live Board, Learning Curve, Memory Inspector, Track Record, and Method views under `apps/web`.
 

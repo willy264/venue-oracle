@@ -28,6 +28,7 @@ Gate checks have run, but product tests have not.
 - PASS: Direct GitHub release download supplied Sui `1.83.1`; Move unit test passes 1/1. The CLI warning is non-fatal (`public entry` is redundant).
 - PASS: Six testnet commitment transactions were sent and all six were verified through `sui-testnet-grpc.gateway.tatum.io:443`; package event type, digest, reference, and checkpoint matched.
 - ADDED: Next.js web shell pages for live board, learning curve, memory inspector, track record, and method disclosures.
+- PASS: Vercel production build completed after declaring TypeScript and React type dependencies; public URL returned HTTP 200.
 - BLOCKED: Web production build could not complete because the local npm install left an incomplete Next package and the pnpm shim is unavailable.
 
 ## Required evidence

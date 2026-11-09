@@ -24,11 +24,12 @@
 | Evaluate learning curve | Done | Raw Brier 0.0983; corrected Brier 0.2195; negative result disclosed |
 | Snapshot live markets and prepare calls | Done | 6 Tatum price calls, 6 `vo-live` MemWal writes; blob IDs and SHA-256 call digests in `results/live-calls.json` |
 | Sui testnet commitment layer | Done | Move test 1/1; testnet package published; 6 live digests committed and verified through Tatum testnet gRPC |
-| Web app shell | Done | Live Board, Learning Curve, Memory Inspector, Track Record, and Method pages added |
+| Web app shell | Done | Live Board, Learning Curve, Memory Inspector, Track Record, and Method pages deployed |
+| Vercel deployment | Done | Public production URL: `https://web-psi-five-oie9hjjwqd.vercel.app` |
 | Build web application | Done with local build gap | Five Next pages committed; local Next package is incomplete and production build remains unverified |
 | Mainnet memory writes | Done under standing approval | Replay observation and belief writes completed; no secrets tracked |
 | Move deployment or mainnet spending | Not done | Testnet artifact failed before publish; no mainnet action attempted |
-| Final submission docs | Done as drafts | README, CLAIMS, demo, and submission checklist committed; owner-only publication/submission untouched |
+| Final submission docs | Done as drafts | README, CLAIMS, demo, and submission checklist updated with v2, testnet proof, and deployment URL; owner-only publication/submission untouched |
 
 ## Existing credential inventory
 

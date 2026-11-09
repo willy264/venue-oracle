@@ -2,8 +2,8 @@
 
 ## Required links
 
-- Demo URL: pending Vercel deployment.
-- Public repository: pending owner-provided remote and push approval.
+- Demo URL: https://web-psi-five-oie9hjjwqd.vercel.app
+- Public repository: https://github.com/willy264/venue-oracle
 - Blog URL: owner-only publication, not done.
 - Video URL: owner-only upload, not done.
 - Hackathon form: owner-only submission, not done.
@@ -13,7 +13,7 @@
 - MemWal agent ID: read from the owner's local `.env`; never commit the value.
 - Mainnet blob IDs: [`results/latest-replay.json`](../results/latest-replay.json) and [`research/gate-live.json`](../research/gate-live.json).
 - Live call blob IDs and hashes: [`results/live-calls.json`](../results/live-calls.json).
-- Sui commitment transaction links: pending testnet Move publish and commit.
+- Sui commitment transaction links: [`results/testnet-commitments.json`](../results/testnet-commitments.json); all six are verified in [`results/testnet-verification.json`](../results/testnet-verification.json).
 - Tatum Sui gRPC: mainnet balance and MemWal account-object read recorded in `research/gate-live.json`.
 
 ## Honest demo wording
