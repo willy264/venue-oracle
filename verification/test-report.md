@@ -17,8 +17,9 @@ Gate checks have run, but product tests have not.
 - NEGATIVE RESULT: Raw Brier 0.0983 beat corrected Brier 0.2195; memory calibration did not improve this corpus.
 - PASS: Live calibration sampled 3 Polymarket and 3 Kalshi markets through Tatum, wrote 6 completed `vo-live` memories, and recorded deterministic SHA-256 call digests.
 - PENDING: Sui commitment transactions and Tatum verification; no transaction has been sent yet.
-- PASS: Reused `core` and `memory` test suites, 5 files and 40 tests.
+- PASS: Engine plus reused `core` and `memory` suites, 6 files and 44 tests.
 - PASS: Heuristic secret scan over 49 Git-visible files.
+- PASS: Current heuristic secret scan over 89 Git-visible files.
 - BLOCKED: Reused `chain` suite needs a normal pnpm workspace install; the current pnpm shim is broken and the temporary dependency links do not expose all protobuf runtime packages.
 - BLOCKED: Sui Move test/publish could not start because the testnet CLI artifact returned HTTP 504 twice after `suiup` itself installed successfully.
 - ADDED: Next.js web shell pages for live board, learning curve, memory inspector, track record, and method disclosures.

@@ -11,6 +11,8 @@
     "lint": "biome check .",
     "test": "turbo run test",
     "secret-scan": "tsx scripts/secret-scan.ts",
+    "replay": "tsx scripts/replay-calibration.ts",
+    "live": "tsx scripts/live-calibration.ts",
     "gate:prediction": "node scripts/gate-prediction.mjs",
     "gate:live": "node scripts/gate-live.mjs"
   },

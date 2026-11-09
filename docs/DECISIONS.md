@@ -31,3 +31,9 @@ The reused package names remain `@errata/*` to preserve their tested import surf
 - The corpus contains 54 real observations from resolved markets: 12 Polymarket and 42 Kalshi, using public pre-close history and explicit outcomes.
 - Mainnet MemWal received 54 observation memories and 1 calibration-belief memory. Every successful observation has a real blob ID in `results/latest-replay.json`.
 - Walk-forward result: raw venue Brier `0.0983137731`; corrected Brier `0.2194999238`; corrected predictions were used for 44 observations. The learned result is worse and is disclosed as negative evidence.
+
+## 2026-11-09 - Live and product status
+
+- Tatum live sampling produced six calls: three Polymarket and three Kalshi. Each call has a real `vo-live` blob ID and a SHA-256 digest in `results/live-calls.json`.
+- A minimal `venue_oracle::commit` Move package and test were added. `suiup 0.1.1` installed, but both testnet binary downloads returned HTTP 504. No package publish, gas spend, or commitment transaction was attempted.
+- The web shell is deliberately evidence-led: unresolved Sui calls display `PENDING TESTNET`, and the negative replay result is shown rather than hidden.
