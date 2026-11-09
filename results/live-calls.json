@@ -19,7 +19,39 @@
       "digest": "ebf31e69120ce93f9c14c2c2f7000057c4b2d09ba560abcddb1f2bd86da4b132",
       "commitmentStatus": "testnet-committed",
       "commitmentTxDigest": "9MzxmJUdqBmLXrec3mqHhfNQZXwLNWczbz8zNyXEsYuc",
-      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846/price",
+        "snapshotTimestamp": "2026-11-09T05:47:53.173Z",
+        "rawPrice": 0.115,
+        "marketResponseFields": [
+          "category",
+          "chain",
+          "closeTime",
+          "createdAt",
+          "description",
+          "eventId",
+          "id",
+          "imageUrl",
+          "liquidity",
+          "openTime",
+          "outcomes",
+          "platform",
+          "question",
+          "resolution",
+          "settleTime",
+          "source",
+          "status",
+          "tags",
+          "volume",
+          "volumeUnit"
+        ]
+      },
+      "venueUrl": "https://polymarket.com/market/will-the-us-invade-iran-before-2027",
+      "venueUrlStatus": "verified-from-polymarket-clob-market_slug",
+      "marketIdSource": "Tatum prediction API market listing and price response",
+      "venueMarketSlug": "will-the-us-invade-iran-before-2027"
     },
     {
       "pairId": "polymarket:0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
@@ -37,7 +69,39 @@
       "digest": "b1c8bec356c7d197a716a08fc57017672dba4b17ad0491fc0fde70e9f8af18ca",
       "commitmentStatus": "testnet-committed",
       "commitmentTxDigest": "EGgcLvfkG8MD67drcBxwNcqT8fmdXWkDGQcU1VwW5QyD",
-      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee/price",
+        "snapshotTimestamp": "2026-11-09T05:47:56.053Z",
+        "rawPrice": 0.0065,
+        "marketResponseFields": [
+          "category",
+          "chain",
+          "closeTime",
+          "createdAt",
+          "description",
+          "eventId",
+          "id",
+          "imageUrl",
+          "liquidity",
+          "openTime",
+          "outcomes",
+          "platform",
+          "question",
+          "resolution",
+          "settleTime",
+          "source",
+          "status",
+          "tags",
+          "volume",
+          "volumeUnit"
+        ]
+      },
+      "venueUrl": "https://polymarket.com/market/will-jesus-christ-return-before-2027",
+      "venueUrlStatus": "verified-from-polymarket-clob-market_slug",
+      "marketIdSource": "Tatum prediction API market listing and price response",
+      "venueMarketSlug": "will-jesus-christ-return-before-2027"
     },
     {
       "pairId": "polymarket:0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1",
@@ -55,7 +119,39 @@
       "digest": "a88796f1ea2d380d4dfb210fe65a8dad554cd3d960d1a7f27785a5d2aeb6a1f8",
       "commitmentStatus": "testnet-committed",
       "commitmentTxDigest": "BMwaPzUvU4EAzCkqAF3PwCTVJm6qXDAJdk51UXsFMt2d",
-      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1/price",
+        "snapshotTimestamp": "2026-11-09T05:47:58.628Z",
+        "rawPrice": 0.0005,
+        "marketResponseFields": [
+          "category",
+          "chain",
+          "closeTime",
+          "createdAt",
+          "description",
+          "eventId",
+          "id",
+          "imageUrl",
+          "liquidity",
+          "openTime",
+          "outcomes",
+          "platform",
+          "question",
+          "resolution",
+          "settleTime",
+          "source",
+          "status",
+          "tags",
+          "volume",
+          "volumeUnit"
+        ]
+      },
+      "venueUrl": "https://polymarket.com/market/will-lebron-james-win-the-2028-us-presidential-election",
+      "venueUrlStatus": "verified-from-polymarket-clob-market_slug",
+      "marketIdSource": "Tatum prediction API market listing and price response",
+      "venueMarketSlug": "will-lebron-james-win-the-2028-us-presidential-election"
     },
     {
       "pairId": "kalshi:KXELONMARS-99",
@@ -73,7 +169,38 @@
       "digest": "4bc43f97a59114bfb57d51b78540176afb621c5ef743a0e97874d8bb1e44f6a7",
       "commitmentStatus": "testnet-committed",
       "commitmentTxDigest": "AWr5qNs71SP5otjxpAM2DoJnVgY4PYusGTRf9v3fjw82",
-      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/KXELONMARS-99",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/KXELONMARS-99/price",
+        "snapshotTimestamp": "2026-11-09T05:48:01.966Z",
+        "rawPrice": 0.12,
+        "marketResponseFields": [
+          "category",
+          "chain",
+          "closeTime",
+          "createdAt",
+          "description",
+          "eventId",
+          "id",
+          "imageUrl",
+          "liquidity",
+          "openTime",
+          "outcomes",
+          "platform",
+          "question",
+          "resolution",
+          "settleTime",
+          "source",
+          "status",
+          "tags",
+          "volume",
+          "volumeUnit"
+        ]
+      },
+      "venueUrl": "https://kalshi.com/markets/KXELONMARS-99",
+      "venueUrlStatus": "canonical-ticker-url-public-market-confirmed",
+      "marketIdSource": "Tatum prediction API market listing and price response"
     },
     {
       "pairId": "kalshi:KXPERSONPRESFUENTES-45",
@@ -91,7 +218,38 @@
       "digest": "f516bb6f682f09b7c3d1cbbae61f38f76aad3ba45e7d74f3431a7e74b392f227",
       "commitmentStatus": "testnet-committed",
       "commitmentTxDigest": "29AvQ2Ukwo1BrJwgunqNBq4B5bGGXszLeb3cEVKFFHN4",
-      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/KXPERSONPRESFUENTES-45",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/KXPERSONPRESFUENTES-45/price",
+        "snapshotTimestamp": "2026-11-09T05:48:04.186Z",
+        "rawPrice": 0.21,
+        "marketResponseFields": [
+          "category",
+          "chain",
+          "closeTime",
+          "createdAt",
+          "description",
+          "eventId",
+          "id",
+          "imageUrl",
+          "liquidity",
+          "openTime",
+          "outcomes",
+          "platform",
+          "question",
+          "resolution",
+          "settleTime",
+          "source",
+          "status",
+          "tags",
+          "volume",
+          "volumeUnit"
+        ]
+      },
+      "venueUrl": "https://kalshi.com/markets/KXPERSONPRESFUENTES-45",
+      "venueUrlStatus": "canonical-ticker-url-public-market-confirmed",
+      "marketIdSource": "Tatum prediction API market listing and price response"
     },
     {
       "pairId": "kalshi:KXPERSONPRESMAM-45",
@@ -109,7 +267,38 @@
       "digest": "c7b572552c41ac22a9e795efd1519ab8d3ddc05d7d5ee42093090e353f514a6b",
       "commitmentStatus": "testnet-committed",
       "commitmentTxDigest": "4EusGRrvCV2brZquWXqCbyB2mBXUeY5Hgcak9d15xNFa",
-      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/KXPERSONPRESMAM-45",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/KXPERSONPRESMAM-45/price",
+        "snapshotTimestamp": "2026-11-09T05:48:06.397Z",
+        "rawPrice": 0.16,
+        "marketResponseFields": [
+          "category",
+          "chain",
+          "closeTime",
+          "createdAt",
+          "description",
+          "eventId",
+          "id",
+          "imageUrl",
+          "liquidity",
+          "openTime",
+          "outcomes",
+          "platform",
+          "question",
+          "resolution",
+          "settleTime",
+          "source",
+          "status",
+          "tags",
+          "volume",
+          "volumeUnit"
+        ]
+      },
+      "venueUrl": "https://kalshi.com/markets/KXPERSONPRESMAM-45",
+      "venueUrlStatus": "canonical-ticker-url-public-market-confirmed",
+      "marketIdSource": "Tatum prediction API market listing and price response"
     }
   ],
   "memoryWrite": {
@@ -474,5 +663,10 @@
       "error": null
     }
   ],
-  "commitmentVerification": "verified-through-tatum-testnet-grpc"
+  "commitmentVerification": "verified-through-tatum-testnet-grpc",
+  "integrity": {
+    "status": "real-tatum-sampled-records",
+    "checkedAt": "2026-11-09T16:44:34.810Z",
+    "interpretation": "The six records retain their original Sui commitment digests. Venue URLs are shown only when returned by Tatum; otherwise the market ID and Tatum endpoints are the available primary evidence."
+  }
 }

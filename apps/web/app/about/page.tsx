@@ -1,1 +1,38 @@
-export default function About() { return <div className="about"><div className="eyebrow">METHOD / DISCLOSURES</div><h1 className="title">Calibration, not prediction theater</h1><p className="lede">A venue that says 70% should resolve YES about 70% of the time. Venue Oracle measures that claim directly, separately for each venue and market context.</p><h2>How it learns</h2><p>Resolved observations are sorted by snapshot time. Before each outcome is written, prior Walrus summary memories are recalled from the venue, category, and time-to-close bucket. V2 shrinks the raw price toward the observed bucket rate, with weight n/(n+20). The raw venue price remains the baseline.</p><h2>Data lineage</h2><p>Tatum provides market discovery, sampled live prices, outcomes where available, and Sui gRPC verification. Historical price points come from the public Polymarket CLOB price-history endpoint and Kalshi public candlesticks, disclosed because Tatum history is credit-expensive. Replay writes historical data now and is labelled as replay.</p><h2>Limits</h2><p>V2 contains 550 observations: 12 Polymarket and 538 Kalshi. Held-out raw Brier was 0.1955 versus corrected 0.1984; calibration error improved from 0.1453 to 0.1022. No predictive edge is claimed. Liquidity and category coverage remain uneven, and live calls are unresolved until their markets close.</p></div> }
+export default function About() {
+	return (
+		<div className="about">
+			<div className="eyebrow">METHOD / DISCLOSURES</div>
+			<h1 className="title">Calibration, not prediction theater</h1>
+			<p className="lede">
+				A venue that says 70% should resolve YES about 70% of the time. Venue
+				Oracle measures that claim directly, separately for each venue and
+				market context.
+			</p>
+			<h2>How it learns</h2>
+			<p>
+				Resolved observations are sorted by snapshot time. Before each outcome
+				is written, prior Walrus summary memories are recalled from the venue,
+				category, and time-to-close bucket. V2 shrinks the raw price toward the
+				observed bucket rate, with weight n/(n+20). The raw venue price remains
+				the baseline.
+			</p>
+			<h2>Data lineage</h2>
+			<p>
+				Tatum provides market discovery, sampled live prices, outcomes where
+				available, and Sui gRPC verification. Historical price points come from
+				the public Polymarket CLOB price-history endpoint and Kalshi public
+				candlesticks, disclosed because Tatum history is credit-expensive.
+				Replay writes historical data now and is labelled as replay.
+			</p>
+			<h2>Limits</h2>
+			<p>
+				V2 contains 550 observations: 12 Polymarket and 538 Kalshi. Held-out raw
+				Brier was 0.1955 versus corrected 0.1984, with the corrected score
+				slightly worse; calibration error improved from 0.1453 to 0.1022. No
+				accuracy improvement or predictive edge is claimed. Liquidity and
+				category coverage remain uneven, and live calls are unresolved until
+				their markets close.
+			</p>
+		</div>
+	);
+}

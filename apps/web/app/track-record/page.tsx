@@ -1,1 +1,60 @@
-export default function TrackRecord() { return <><div className="eyebrow">IMMUTABLE CALL LOG / TATUM TESTNET VERIFIED</div><h1 className="title">Track record</h1><p className="lede">Each live call was hashed from canonical JSON, committed by the tested Move package on Sui testnet, and verified through Tatum testnet gRPC by matching the `Committed` event digest and reference.</p><table className="table"><thead><tr><th>CALL</th><th>VENUE</th><th>MEMORY</th><th>COMMITMENT</th></tr></thead><tbody>{["SB3tgey0tZjMhLUJs0UH4_G62ZDookLDhagNqYFlZXk","WVl8UlRuUnOXDruLUhR0IqUoGpzMPZHYzom6HBCE5WA","EWpeYh7pWSLc_JAH1XSfqNA_uLck6_Gc5ndljxAXEQ0","OFzX4Nr8jLg9SVhQU3vypUil0FrVHsyk02sE9pVNUQc","CV841lGMtlnYvZbiROJ3yIKoVBIw5PdTTC0DHHq0XuA","Eh7PX7nUJwtEFjBWnU3mkezk4wOMQmpQpb-8yaxpjBk"].map((id,i)=><tr key={id}><td>VO-{String(i+1).padStart(3,"0")}</td><td>{i<3?"Kalshi":"Polymarket"}</td><td><a className="blob" href={`/memory#${id}`}>{id.slice(0,16)}...</a></td><td><span className="pill">VERIFIED TESTNET</span></td></tr>)}</tbody></table></> }
+import { liveCalls } from "../live-data";
+
+export default function TrackRecord() {
+	return (
+		<>
+			<div className="eyebrow">IMMUTABLE CALL LOG / TATUM TESTNET VERIFIED</div>
+			<h1 className="title">Track record</h1>
+			<p className="lede">
+				Each call below is linked to its real venue market, Tatum price
+				endpoint, Walrus memory, and verified Sui testnet commitment.
+			</p>
+			<table className="table">
+				<thead>
+					<tr>
+						<th>CALL</th>
+						<th>VENUE / MARKET</th>
+						<th>TATUM SNAPSHOT</th>
+						<th>MEMORY / SUI</th>
+					</tr>
+				</thead>
+				<tbody>
+					{liveCalls.map((call) => (
+						<tr key={call.id}>
+							<td>
+								{call.id}
+								<br />
+								<span className="muted">{call.snapshotAt}</span>
+							</td>
+							<td>
+								<a href={call.marketUrl} target="_blank" rel="noreferrer">
+									{call.question}
+								</a>
+								<br />
+								<span className="muted">{call.marketId}</span>
+							</td>
+							<td>
+								<a
+									href={call.tatumPriceEndpoint}
+									target="_blank"
+									rel="noreferrer"
+								>
+									raw {(call.rawPrice * 100).toFixed(2)}%
+								</a>
+							</td>
+							<td>
+								<a className="blob" href={`/memory#${call.blobId}`}>
+									{call.blobId.slice(0, 12)}...
+								</a>
+								<br />
+								<span className="pill">
+									VERIFIED {call.txDigest.slice(0, 10)}...
+								</span>
+							</td>
+						</tr>
+					))}
+				</tbody>
+			</table>
+		</>
+	);
+}

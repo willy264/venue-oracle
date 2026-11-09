@@ -1,1 +1,52 @@
-export default function Learning() { return <><div className="eyebrow">WALK-FORWARD REPLAY / REAL DATA</div><h1 className="title">Learning curve</h1><p className="lede">Each market is scored before its outcome memory is written. V2 contains 550 historical observations from public Polymarket CLOB and Kalshi candlestick history, with the final 20% held out by time.</p><div className="stats"><div className="stat"><b>0.1955</b><span>held-out raw Brier</span></div><div className="stat"><b>0.1984</b><span>held-out corrected Brier</span></div><div className="stat"><b>0.1453</b><span>raw calibration error</span></div><div className="stat"><b>0.1022</b><span>corrected calibration error</span></div></div><section className="section"><h2>Held-out comparison</h2><div className="chart"><div className="line raw"/><div className="line learned"/><span className="chartlabel raw">RAW BRIER 0.1955</span><span className="chartlabel learned">CORRECTED 0.1984</span><div className="axis"><span>training prefix</span><span>time-held-out suffix</span></div></div></section><section className="section"><h2>Interpretation</h2><p className="lede">V2 improved calibration error but slightly worsened Brier score. That is a mixed result, not a predictive edge. The raw price remains the safer baseline until more evidence arrives.</p></section></> }
+export default function Learning() {
+	return (
+		<>
+			<div className="eyebrow">WALK-FORWARD REPLAY / REAL DATA</div>
+			<h1 className="title">Learning curve</h1>
+			<p className="lede">
+				Each market is scored before its outcome memory is written. V2 contains
+				550 historical observations from public Polymarket CLOB and Kalshi
+				candlestick history, with the final 20% held out by time.
+			</p>
+			<div className="stats">
+				<div className="stat">
+					<b>0.1955</b>
+					<span>held-out raw Brier</span>
+				</div>
+				<div className="stat">
+					<b>0.1984</b>
+					<span>held-out corrected Brier</span>
+				</div>
+				<div className="stat">
+					<b>0.1453</b>
+					<span>raw calibration error</span>
+				</div>
+				<div className="stat">
+					<b>0.1022</b>
+					<span>corrected calibration error</span>
+				</div>
+			</div>
+			<section className="section">
+				<h2>Held-out comparison</h2>
+				<div className="chart">
+					<div className="line raw" />
+					<div className="line learned" />
+					<span className="chartlabel raw">RAW BRIER 0.1955</span>
+					<span className="chartlabel learned">CORRECTED 0.1984</span>
+					<div className="axis">
+						<span>training prefix</span>
+						<span>time-held-out suffix</span>
+					</div>
+				</div>
+			</section>
+			<section className="section">
+				<h2>Interpretation</h2>
+				<p className="lede">
+					V2 improved calibration error but slightly worsened Brier score. That
+					is a mixed result, not a predictive edge. The raw price remains the
+					safer baseline until more evidence arrives.
+				</p>
+			</section>
+		</>
+	);
+}

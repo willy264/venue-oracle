@@ -9,6 +9,6 @@
 		"esModuleInterop": true,
 		"types": ["node"]
 	},
-	"include": ["scripts/**/*.ts", "packages/**/*.ts"],
+	"include": ["packages/**/*.ts"],
 	"exclude": ["node_modules"]
 }

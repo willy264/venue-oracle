@@ -1,14 +1,16 @@
 # Claims and Evidence
 
-| Claim | Evidence | Status |
-|---|---|---|
-| Venue Oracle calibrates each venue independently | `packages/engine`, `docs/EXPERIMENT.md` | Implemented |
-| Replay uses real resolved observations | `data/observations.json`, `research/corpus-fetch.json` | Verified |
-| Historical observations were written to Walrus Memory | `results/latest-replay.json` | Verified: 54 observation writes and one belief write |
-| Memory improved the first run | `results/latest-replay.json` | False for this run; raw Brier beat corrected Brier |
-| Six live calls are committed on Sui | `results/live-calls.json` | Not yet; hashes exist, transactions pending Move CLI recovery |
-| Sui verification through Tatum works | `research/gate-live.json`, `results/testnet-verification.json` | Mainnet read and six testnet commitment events verified |
-| Web demo is deployed | Vercel production deployment | Ready at `https://web-psi-five-oie9hjjwqd.vercel.app` |
-| Cross-venue matching works | `data/candidate-pairs.csv` | False; zero pairs found and the feature was removed from the core |
+| Claim                                                 | Evidence                                                       | Status                                                                                    |
+| ----------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Venue Oracle calibrates each venue independently      | `packages/engine`, `docs/EXPERIMENT.md`                        | Implemented                                                                               |
+| Replay uses real resolved observations                | `data/observations.json`, `research/corpus-fetch.json`         | Verified                                                                                  |
+| Historical observations were written to Walrus Memory | `results/latest-replay.json`                                   | Verified: 54 observation writes and one belief write                                      |
+| Memory improved the first run                         | `results/latest-replay.json`                                   | False for this run; raw Brier beat corrected Brier                                        |
+| Six live calls are committed on Sui                   | `results/live-calls.json`, `results/testnet-verification.json` | Verified: six real Tatum snapshots, six testnet commitments, six Tatum gRPC event matches |
+| Sui verification through Tatum works                  | `research/gate-live.json`, `results/testnet-verification.json` | Mainnet read and six testnet commitment events verified                                   |
+| Web demo is deployed                                  | Vercel production deployment                                   | Ready at `https://web-psi-five-oie9hjjwqd.vercel.app`                                     |
+| Cross-venue matching works                            | `data/candidate-pairs.csv`                                     | False; zero pairs found and the feature was removed from the core                         |
 
 All replay numbers are historical replay evidence, not a guarantee about future markets.
+
+The v2 held-out Brier score was slightly worse after correction: `0.1984` versus raw `0.1955` (bootstrap 95% intervals are in `results/latest-replay-v2.json`). Calibration error improved from `0.1453` to `0.1022`. No accuracy-improvement claim is made. The six live calls are real records, not placeholders; each market ID, venue URL, Tatum price endpoint, snapshot timestamp, raw price, Walrus blob, and Sui transaction digest is recorded in `results/live-calls.json`.
