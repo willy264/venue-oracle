@@ -7,7 +7,13 @@ for (const line of envText.split(/\r?\n/)) { const m = line.match(/^\s*([^#=\s]+
 let calls = 0;
 let historyFailures = 0;
 const corpusLimit = Number(process.env.VO_CORPUS_LIMIT ?? 80);
-async function get(url) { await sleep(calls++ ? 150 : 0); const response = await fetch(url, { signal: AbortSignal.timeout(20000) }); const body = await response.text(); if (!response.ok) throw new Error(`${response.status} ${url}: ${body.slice(0, 160)}`); return JSON.parse(body); }
+async function get(url) { await sleep(calls++ ? 150 : 0); const response = await fetch(url, { signal: AbortSignal.timeout(5000) }); const body = await response.text(); if (!response.ok) throw new Error(`${response.status} ${url}: ${body.slice(0, 160)}`); return JSON.parse(body); }
+async function mapConcurrent(items, worker, limit = 5) {
+  const output = []; let cursor = 0;
+  async function run() { while (cursor < items.length) { const index = cursor++; output[index] = await worker(items[index]); } }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, () => run()));
+  return output;
+}
 async function getPolyMarkets() {
   const rows = [];
   for (let offset = 0; offset < 2200; offset += 100) {
@@ -72,20 +78,21 @@ function pickPrice(candles, targetSeconds, platform) {
 }
 async function polyObservations(markets) {
   const selected = markets.filter((row) => outcomePoly(row) !== null && row.clobTokenIds && row.endDate && Number(row.volume ?? 0) > 0).sort((a, b) => new Date(b.endDate) - new Date(a.endDate)).slice(0, corpusLimit);
-  const observations = [];
-  for (const row of selected) {
+  const batches = await mapConcurrent(selected, async (row) => {
+    const observations = [];
     const tokens = parseJson(row.clobTokenIds, []); const close = new Date(row.endDate); const start = new Date(close.getTime() - 10 * 86400000); const end = new Date(close.getTime() + 86400000);
     try {
       const response = await get(`https://clob.polymarket.com/prices-history?market=${encodeURIComponent(tokens[0])}&startTs=${Math.floor(start.getTime() / 1000)}&endTs=${Math.floor(end.getTime() / 1000)}&fidelity=1440`);
       for (const days of [7, 3, 1]) { const target = new Date(close.getTime() - days * 86400000); const point = pickPrice(response.history ?? [], target.getTime() / 1000, "polymarket"); if (!point) continue; observations.push({ venue: "polymarket", marketId: row.conditionId ?? row.id, sourceId: tokens[0], category: category(row.category, row.question), snapshotAt: new Date(point.timestamp * 1000).toISOString(), closeAt: close.toISOString(), price: point.price, outcome: outcomePoly(row), liquidity: liquidity(row.volume, row.liquidity), timeBucket: targetBucket(days), provenance: "replay", source: "polymarket-clob-prices-history" }); }
     } catch { historyFailures++; /* Missing/retired CLOB history is excluded and counted below. */ }
-  }
-  return { selected: selected.length, observations };
+    return observations;
+  });
+  return { selected: selected.length, observations: batches.flat() };
 }
 async function kalshiObservations(markets) {
   const selected = markets.filter((row) => ["yes", "no"].includes(String(row.result).toLowerCase()) && row.ticker && row.close_time && !String(row.ticker).includes("CROSSCATEGORY")).sort((a, b) => new Date(b.close_time) - new Date(a.close_time)).slice(0, corpusLimit);
-  const observations = [];
-  for (const row of selected) {
+  const batches = await mapConcurrent(selected, async (row) => {
+    const observations = [];
     const close = new Date(row.close_time); const start = new Date(close.getTime() - 10 * 86400000); const end = new Date(close.getTime() + 86400000); const series = row.series_ticker ?? String(row.ticker).split("-").slice(0, 1)[0];
     try {
       const series = row._series ?? row.series_ticker ?? String(row.ticker).split("-")[0];
@@ -93,8 +100,9 @@ async function kalshiObservations(markets) {
       const response = await get(`https://api.elections.kalshi.com/trade-api/v2/${path}?start_ts=${Math.floor(start.getTime() / 1000)}&end_ts=${Math.floor(end.getTime() / 1000)}&period_interval=1440`);
       for (const days of [7, 3, 1]) { const target = new Date(close.getTime() - days * 86400000); const point = pickPrice(response.candlesticks ?? [], target.getTime() / 1000, "kalshi"); if (!point) continue; observations.push({ venue: "kalshi", marketId: row.ticker, sourceId: series, category: category(row.category, row.title), snapshotAt: new Date(point.timestamp * 1000).toISOString(), closeAt: close.toISOString(), price: point.price, outcome: String(row.result).toLowerCase() === "yes" ? 1 : 0, liquidity: liquidity(row.volume_fp, null), timeBucket: targetBucket(days), provenance: "replay", source: "kalshi-public-candlesticks" }); }
     } catch { historyFailures++; /* Missing historical cutoff data is excluded and counted below. */ }
-  }
-  return { selected: selected.length, observations };
+    return observations;
+  });
+  return { selected: selected.length, observations: batches.flat() };
 }
 const [polyMarkets, kalshiMarkets] = await Promise.all([getPolyMarkets(), getKalshiMarkets()]);
 const [poly, kalshi] = await Promise.all([polyObservations(polyMarkets), kalshiObservations(kalshiMarkets)]);
