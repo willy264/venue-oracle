@@ -30,7 +30,7 @@ The historical corpus is uneven: only 12 Polymarket observations were usable com
 
 ## Links
 
-- Demo: https://web-psi-five-oie9hjjwqd.vercel.app
+- Demo: https://venue-oracle.vercel.app
 - Repository: https://github.com/willy264/venue-oracle
 - Mainnet and replay blob evidence: [`results/latest-replay.json`](../results/latest-replay.json), [`results/latest-replay-v2.json`](../results/latest-replay-v2.json)
 - Live blob and commitment evidence: [`results/live-calls.json`](../results/live-calls.json)

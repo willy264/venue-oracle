@@ -15,7 +15,7 @@ This repository contains a real historical replay and six real live calibration 
 - Mainnet MemWal: 54 observation memories and one belief memory. Blob IDs are in [`results/latest-replay.json`](results/latest-replay.json).
 - Live calls: six real Tatum-sampled `vo-live` records. Each record includes a venue market ID and URL, Tatum price endpoint, snapshot timestamp, raw price, Walrus blob ID, and deterministic SHA-256/Sui evidence in [`results/live-calls.json`](results/live-calls.json).
 - Testnet proof: six Sui commitments verified through Tatum testnet gRPC; evidence is in [`results/testnet-verification.json`](results/testnet-verification.json).
-- Demo: https://web-psi-five-oie9hjjwqd.vercel.app
+- Demo: https://venue-oracle.vercel.app
 
 The web app has the Live Board, Learning Curve, Memory Inspector, Track Record, and Method views under `apps/web`.
 

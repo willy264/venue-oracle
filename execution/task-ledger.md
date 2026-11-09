@@ -25,13 +25,16 @@
 | Snapshot live markets and prepare calls            | Done                              | 6 Tatum price calls, 6 `vo-live` MemWal writes; blob IDs and SHA-256 call digests in `results/live-calls.json`                                          |
 | Sui testnet commitment layer                       | Done                              | Move test 1/1; testnet package published; 6 live digests committed and verified through Tatum testnet gRPC                                              |
 | Web app shell                                      | Done                              | Live Board, Learning Curve, Memory Inspector, Track Record, and Method pages deployed                                                                   |
-| Vercel deployment                                  | Done                              | Public production URL: `https://web-psi-five-oie9hjjwqd.vercel.app`                                                                                     |
+| Vercel deployment                                  | Done                              | Project renamed `venue-oracle`; current clean alias: `https://venue-oracle.vercel.app`                                                                   |
 | Build web application                              | Done                              | Direct `next build --webpack` passed locally; Vercel production build also passed                                                                        |
 | Mainnet memory writes                              | Done under standing approval      | Replay observation and belief writes completed; no secrets tracked                                                                                      |
 | Move deployment or mainnet spending                | Not done                          | Testnet artifact failed before publish; no mainnet action attempted                                                                                     |
 | Integrity audit and live evidence                  | Done                              | Six records confirmed as real Tatum samples; IDs, venue URLs, endpoints, timestamps, raw prices, blobs, and Sui tx digests are recorded and shown in UI |
 | CI cleanup and duplicate removal                   | Done                              | Removed `packages/chain/chain`; local checks pass; GitHub CI green in run `42658573271`                                                                    |
 | Blog and submission drafts                         | Done as drafts                    | Added `docs/blog-draft.md`; updated README, CLAIMS, and `docs/SUBMISSION.md`; owner-only publication/submission untouched                              |
+| Live workflow dispatch                             | Failed, blocked by setup          | Run [42708210198](https://github.com/willy264/venue-oracle/actions/runs/42708210198) failed before sampling because MemWal was not declared at the repository root |
+| MemWal identity match                              | Done                              | Local derivation from `MEMWAL_KEY_CHECKER` exactly matched `MEMWAL_AGENT_ID` on 2026-11-09; lengths 64/64; values not committed |
+| MPP paid signal                                    | Branch only                       | `mpp` branch commit `7cb7b8d`; testnet route builds, but Tatum-gRPC payment verification and funded testnet end-to-end proof are incomplete, so it is not merged or in submission materials |
 
 ## Existing credential inventory
 
@@ -48,4 +51,4 @@
 
 ## Remaining external setup
 
-GitHub Actions still needs repository secrets before the scheduled workflow can be proven end to end. MPP and owner-only publication actions remain gated until the core workflow is verified.
+GitHub Actions still needs `TATUM_API_KEY`, `MEMWAL_ACCOUNT_ID`, `TATUM_TESTNET_API_KEY`, and `VO_TESTNET_PACKAGE_ID`; only three of the six required names are currently visible via `gh secret list`. After all six are visible, dispatch the live workflow again and link the successful run here. MPP remains branch-only until its separate payment proof is complete.

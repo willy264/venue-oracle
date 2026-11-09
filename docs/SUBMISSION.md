@@ -2,9 +2,9 @@
 
 ## Required links
 
-- Demo URL: https://web-psi-five-oie9hjjwqd.vercel.app
+- Demo URL: https://venue-oracle.vercel.app
 - Public repository: https://github.com/willy264/venue-oracle
-- Vercel project root: `apps/web` with Node `22.x` (required for the monorepo Git deployment).
+- Vercel project: `venue-oracle`; root `apps/web`, Node `22.x`.
 - Blog URL: owner-only publication, not done.
 - Video URL: owner-only upload, not done.
 - Hackathon form: owner-only submission, not done.
