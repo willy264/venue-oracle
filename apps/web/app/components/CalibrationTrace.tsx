@@ -5,12 +5,12 @@ import replay from "../../../../results/latest-replay-v2.json";
 import liveEvidence from "../../../../results/live-calls.json";
 import firstSampleEvidence from "../../../../results/live-calls-first-sample.json";
 import testnet from "../../../../results/testnet-verification.json";
+import { suiscanObjectUrl, suiscanTransactionUrl } from "../links";
 import type { LiveCall } from "../live-data";
 import { categoryDisplay } from "../live-data";
 import { CalibrationDrawer } from "./CalibrationDrawer";
 import { IdChip } from "./id-chip";
 import { ProbabilityRail } from "./probability-rail";
-import { suiscanObjectUrl, suiscanTransactionUrl } from "../links";
 
 const minimumN = 5;
 const shrinkageK = 20;

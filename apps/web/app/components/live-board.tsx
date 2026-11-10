@@ -1,11 +1,11 @@
 "use client";
 
+import { suiscanObjectUrl, suiscanTransactionUrl } from "../links";
 import type { LiveCall } from "../live-data";
 import { decisionFor } from "../live-data";
 import { CalibrationTrace } from "./CalibrationTrace";
 import { IdChip } from "./id-chip";
 import { ProbabilityRail } from "./probability-rail";
-import { suiscanObjectUrl, suiscanTransactionUrl } from "../links";
 
 export function LiveBoard({ calls }: { calls: LiveCall[] }) {
 	return (
