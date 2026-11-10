@@ -1,0 +1,39 @@
+{
+  "observedAt": "2026-11-10T06:11:41.3414314Z",
+  "network": "mainnet",
+  "source": "MemWal SDK 0.1.13 listMemories, fully paginated",
+  "scope": "all namespaces whose name starts with vo-",
+  "totalAccountMemoriesListed": 343,
+  "voNamespaces": 19,
+  "voMemoriesAudited": 342,
+  "expiryFieldsPresent": {
+    "end_epoch": 342,
+    "expires_at": 342,
+    "missing": 0
+  },
+  "earliestExpiry": {
+    "namespace": "vo-gate-79cb7005baf8840c",
+    "blobId": "vuYOO0YfNjxehASkXfL-EJLslooXGQolx7NjywAE8R4",
+    "endEpoch": 58,
+    "expiresAt": "2027-06-06T23:06:13.828038Z"
+  },
+  "target": "2026-11-17T23:59:00Z",
+  "allVoMemoriesReadableThroughTarget": true,
+  "minExpiryAcrossVoMemories": "2027-06-06T23:06:13.828038Z",
+  "epochStatus": {
+    "walrusCurrentEpoch": null,
+    "walrusEpochEndTime": null,
+    "walrusEpochDuration": "Not exposed by the installed MemWal SDK or public aggregator endpoint checked",
+    "suiGraphqlCurrentEpoch": 1307,
+    "suiGraphqlStartTime": "2026-11-10T00:05:44.743Z",
+    "suiGraphqlEndTime": null,
+    "note": "Sui epoch 1307 is not reported as a Walrus storage epoch and is not used to interpret end_epoch 58."
+  },
+  "methodsTried": [
+    "MemWal listMemories with full pagination",
+    "MemWal memory end_epoch and expires_at fields",
+    "Walrus mainnet aggregator OpenAPI endpoint",
+    "Sui mainnet GraphQL epoch query",
+    "Sui JSON-RPC system-state query; unavailable because public fullnode JSON-RPC is deprecated"
+  ]
+}
