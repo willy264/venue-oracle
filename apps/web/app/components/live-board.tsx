@@ -17,7 +17,7 @@ export function LiveBoard({ calls }: { calls: LiveCall[] }) {
 				>
 					<div className="cardhead">
 						<span className="venue">{call.venue.toUpperCase()}</span>
-						<span>
+						<span className="card-provenance">
 							{call.id} / {call.provenance ?? "LIVE"}
 						</span>
 					</div>

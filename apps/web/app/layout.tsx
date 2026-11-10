@@ -17,6 +17,7 @@ const fontImport = `https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@4
 export const metadata: Metadata = {
 	title: "Venue Oracle",
 	description: "Venue calibration for prediction markets.",
+	icons: { icon: "/logo.svg", apple: "/logo.svg" },
 };
 
 export default function Layout({

@@ -24,6 +24,25 @@
 * {
 	box-sizing: border-box;
 }
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--accent) var(--surface-2);
+}
+*::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+*::-webkit-scrollbar-track {
+	background: var(--surface-2);
+}
+*::-webkit-scrollbar-thumb {
+	background: var(--muted);
+	border: 2px solid var(--surface-2);
+	border-radius: 999px;
+}
+*::-webkit-scrollbar-thumb:hover {
+	background: var(--accent);
+}
 html {
 	background: var(--bg);
 	color: var(--text);
@@ -62,7 +81,7 @@ a:hover {
 	min-height: 100vh;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 24px;
+	padding: 0 16px;
 }
 .topbar {
 	position: sticky;
@@ -81,7 +100,7 @@ a:hover {
 	max-width: 1200px;
 	height: 64px;
 	margin: 0 auto;
-	padding: 0 24px;
+	padding: 0 16px;
 	display: flex;
 	align-items: center;
 	gap: 24px;
@@ -1244,6 +1263,115 @@ details.proof summary:hover {
 	}
 	.dot-plot-grid {
 		grid-template-columns: 1fr;
+	}
+}
+
+/* Compact card treatment and responsive pill motion. */
+.live-card {
+	position: relative;
+	overflow: hidden;
+	padding: 16px;
+}
+.live-card::before {
+	content: "";
+	position: absolute;
+	inset: 0 0 auto;
+	height: 3px;
+	background: var(--accent);
+	transform: scaleX(0.16);
+	transform-origin: left;
+	transition: transform 220ms ease;
+}
+.live-card:hover::before,
+.live-card:focus-within::before {
+	transform: scaleX(1);
+}
+.cardhead {
+	align-items: center;
+}
+.venue {
+	padding: 5px 9px;
+	border: 1px solid currentColor;
+	border-radius: 999px;
+	animation: pill-settle 420ms ease both;
+}
+.card-provenance {
+	padding: 5px 8px;
+	border: 1px solid var(--rule);
+	border-radius: 999px;
+	color: var(--muted);
+	white-space: nowrap;
+}
+.event {
+	margin: 16px 0 14px;
+	font-weight: 600;
+}
+.metricrow b {
+	padding: 5px 9px;
+	border: 1px solid var(--rule);
+	border-radius: 999px;
+	font-size: 13px;
+}
+.why-button {
+	width: 100%;
+	margin-top: 14px;
+	padding: 10px 14px;
+	border: 1px solid var(--accent);
+	border-radius: 999px;
+	background: transparent;
+	color: var(--accent);
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+	transition:
+		background 180ms ease,
+		color 180ms ease,
+		transform 180ms ease;
+}
+.why-button:hover {
+	background: var(--accent);
+	color: var(--bg);
+	transform: translateY(-2px);
+}
+.site-nav a,
+.status {
+	animation: pill-settle 420ms ease both;
+}
+.status {
+	animation-name: pill-pulse;
+	animation-duration: 3.5s;
+	animation-iteration-count: infinite;
+}
+@keyframes pill-settle {
+	from {
+		opacity: 0;
+		transform: translateY(4px) scale(0.98);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+@keyframes pill-pulse {
+	0%,
+	100% {
+		box-shadow: 0 0 0 0 transparent;
+	}
+	50% {
+		box-shadow: 0 0 0 4px color-mix(in srgb, var(--ok) 12%, transparent);
+	}
+}
+@media (max-width: 900px) {
+	.shell {
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+	.site-nav a,
+	.status,
+	.venue {
+		animation: none;
 	}
 }
 @media (max-width: 580px) {
