@@ -31,10 +31,12 @@
 - MemWal agent ID: `7fa3afb61d0fe09e3b842f81186753e96a6cc4fb645412a995ca35e930934b5e` (public delegate key; verified against the local checker key).
 - Mainnet blob IDs: [`results/latest-replay.json`](../results/latest-replay.json) and [`research/gate-live.json`](../research/gate-live.json).
 - Live call blob IDs and hashes: [`results/live-calls.json`](../results/live-calls.json).
+- Live set: 9 calls (6 sports and 3 US current-affairs); the current-affairs bucket has n=4 and all 9 abstain. The track record keeps 6 first-sample calls separately.
 - Sui testnet package: `0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363`.
 - Sui commitment transaction links: [`results/testnet-commitments.json`](../results/testnet-commitments.json); all nine are verified in [`results/testnet-verification.json`](../results/testnet-verification.json).
 - Mainnet memory verification: 343 memories across 20 namespaces, verified by [`scripts/verify-mainnet-memories.mjs`](../scripts/verify-mainnet-memories.mjs); evidence is [`results/mainnet-memory-verification.json`](../results/mainnet-memory-verification.json).
 - Tatum Sui gRPC: mainnet balance and MemWal account-object read recorded in `research/gate-live.json`.
+- Restore evidence: [`results/mainnet-restore-verification.json`](../results/mainnet-restore-verification.json) records 20 namespaces, 19 recalled `vo-live` records, and an identical next price.
 
 ## Honest demo wording
 

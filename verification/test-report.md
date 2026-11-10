@@ -57,3 +57,12 @@ Gate checks have run, but product tests have not.
 - The repository is frozen for submission after the final evidence pass; owner-only publication and submission actions remain external.
 - No blog, social post, video upload, public-repo push, or form submission was performed.
 - No mainnet SUI or USDC was spent.
+
+## Final display pass (2026-11-10)
+
+- Data integrity: all 9 live cards use `results/live-calls.json`; invalid or non-positive source prices render `Price unavailable` without a probability marker. The card-to-drawer mapping uses the selected call ID.
+- Memory evidence: `results/mainnet-memory-verification.json` reports 343 mainnet memories across 20 namespaces. `results/mainnet-restore-verification.json` records a real server-side restore check at `2026-11-10T02:22:48.272Z`: 20 namespaces listed, 19 records recalled, rebuild completed, and the next deterministic price was identical.
+- Flat background/header checks: repository search found no `linear-gradient`, `radial-gradient`, `conic-gradient`, `bg-gradient`, or `backdrop-filter`. The header is 64px, sticky, full-width, flat, and uses one bottom rule.
+- Contrast pairs checked against WCAG AA: dark `--text/#0E1013`, dark `--ink/#161A20`, dark `--muted/#161A20`, dark `--link/#0E1013`, light `--text/#F5F3EE`, light `--ink/#FFFFFF`, light `--muted/#FFFFFF`, and light `--link/#F5F3EE`. Body pairs meet 4.5:1; large headings and links meet 3:1 or better.
+- Responsive checks: CSS constraints cover 360px, 768px, and 1280px; the mobile drawer is a full-width bottom sheet below 640px and the navigation sheet opens below 768px. Browser screenshot automation was unavailable in this environment; owner should check the production URL at those widths in both system themes and confirm no horizontal scroll.
+- Commands: `corepack pnpm test` passed (5 tasks, 55 tests); `corepack pnpm --dir apps/web typecheck` passed; `corepack pnpm --dir apps/web build` produced the Next production artifacts; `node scripts/secret-scan.ts` passed 122 files. Biome has no errors, with existing warnings for image optimization and other legacy files.

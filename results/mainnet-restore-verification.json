@@ -1,0 +1,21 @@
+{
+  "observedAt": "2026-11-10T02:22:48.272Z",
+  "network": "mainnet",
+  "status": "verified",
+  "namespace": "vo-live",
+  "namespacesListedBefore": 20,
+  "namespacesListedAfter": 20,
+  "memoryCountBefore": 57,
+  "memoryCountAfter": 57,
+  "restored": 0,
+  "skipped": 19,
+  "failed": 0,
+  "total": 19,
+  "rebuildResult": "vo-live restore completed server-side",
+  "comparison": {
+    "marketId": "0xcb86b71e7ee2e62f8ecf5da5c8bd5f52d896970270abf420294a0ce0413cbf87",
+    "beforePrice": 0.915,
+    "afterPrice": 0.915,
+    "identical": true
+  }
+}

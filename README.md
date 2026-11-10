@@ -12,9 +12,9 @@ This repository contains a real historical replay and nine real live calibration
 - Result: negative. The baseline wins this run; the product publishes that result and does not claim an edge.
 - V2 corpus: 550 observations, with 440 training-prefix observations and 110 time-held-out observations.
 - V2 held-out Brier: raw `0.1955` (95% CI `[0.1705, 0.2239]`), corrected `0.1984` (95% CI `[0.1730, 0.2288]`); calibration error improved from `0.1453` to `0.1022`. Brier was slightly worse after correction, so this is mixed evidence and makes no accuracy-improvement claim.
-- Mainnet MemWal: 54 observation memories and one belief memory. Blob IDs are in [`results/latest-replay.json`](results/latest-replay.json).
+- Mainnet MemWal verification: 343 memories across 20 namespaces. The app shows 9 live-call records from `vo-live`; full evidence is [`results/mainnet-memory-verification.json`](results/mainnet-memory-verification.json).
 - Live calls: nine real Polymarket markets sampled through Tatum on 9–10 Nov 2026, closing 12–16 Nov. The closest v2 current-affairs bucket has n=4 and the sports bucket is below minimum, so all extra calls honestly abstain and retain raw prices. IDs, URLs, Tatum endpoints, snapshots, Walrus blobs, and Sui evidence are in [`results/live-calls.json`](results/live-calls.json).
-- First sample: the original six long-dated records remain preserved and labelled in [`results/live-calls-first-sample.json`](results/live-calls-first-sample.json).
+- First sample: the original six long-dated records remain preserved and labelled in [`results/live-calls-first-sample.json`](results/live-calls-first-sample.json). The current set is 9 live calls: 6 sports and 3 US current-affairs calls; the current-affairs bucket has n=4 and all nine abstain.
 - Testnet proof: nine current Sui commitments verified through Tatum testnet gRPC; evidence is in [`results/testnet-verification.json`](results/testnet-verification.json).
 - Demo: https://venue-oracle.vercel.app
 

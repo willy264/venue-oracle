@@ -1,6 +1,16 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import { SiteNav } from "./components/site-nav";
+
+const memoryEvidence = JSON.parse(
+	readFileSync(
+		join(process.cwd(), "../../results/mainnet-memory-verification.json"),
+		"utf8",
+	),
+) as { status: string; observedAt: string };
 
 const fontImport = `https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap`;
 
@@ -24,24 +34,27 @@ export default function Layout({
 				<link rel="stylesheet" href={fontImport} />
 			</head>
 			<body>
-				<div className="shell">
-					<header className="topbar">
+				<header className="topbar">
+					<div className="topbar-inner">
 						<Link className="brand" href="/">
 							<img src="/logo.svg" alt="" width="30" height="30" />
 							VENUE <span>ORACLE</span>
 						</Link>
-						<nav>
-							<Link href="/">Live board</Link>
-							<Link href="/honesty">Venue honesty</Link>
-							<Link href="/learning">Learning curve</Link>
-							<Link href="/memory">Memory</Link>
-							<Link href="/track-record">Track record</Link>
-							<Link href="/about">Method</Link>
-						</nav>
-						<div className="status">
-							<i /> WALRUS MEMORY ONLINE
+						<SiteNav />
+						<div
+							className={`status${memoryEvidence.status === "verified" ? "" : " degraded"}`}
+							role="status"
+							title={`Last successful MemWal read: ${memoryEvidence.observedAt}`}
+							aria-label={`Walrus Memory ${memoryEvidence.status === "verified" ? "online" : "degraded"}; last successful read ${memoryEvidence.observedAt}`}
+						>
+							<i />{" "}
+							{memoryEvidence.status === "verified"
+								? "WALRUS MEMORY ONLINE"
+								: "WALRUS MEMORY DEGRADED"}
 						</div>
-					</header>
+					</div>
+				</header>
+				<div className="shell">
 					<main>{children}</main>
 					<footer>
 						<span>VENUE ORACLE / TOTAL RECALL</span>
