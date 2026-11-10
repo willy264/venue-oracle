@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { IdChip } from "../components/id-chip";
-import { liveCalls } from "../live-data";
+import { categoryDisplay, liveCalls } from "../live-data";
 
 const replay = JSON.parse(
 	readFileSync(
@@ -143,7 +143,7 @@ export default function Memory() {
 							<span className="pill">REPLAY</span>
 						</div>
 						<p>
-							{row.venue} {row.category} resolved{" "}
+							{row.venue} {categoryDisplay(row.category)} resolved{" "}
 							{row.outcome === 1 ? "YES" : "NO"} at{" "}
 							{percent(row.rawProbability)}.
 						</p>

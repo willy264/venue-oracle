@@ -5,6 +5,7 @@ import replay from "../../../../results/latest-replay-v2.json";
 import liveEvidence from "../../../../results/live-calls.json";
 import firstSampleEvidence from "../../../../results/live-calls-first-sample.json";
 import testnet from "../../../../results/testnet-verification.json";
+import { categoryDisplay } from "../live-data";
 import type { LiveCall } from "../live-data";
 import { CalibrationDrawer } from "./CalibrationDrawer";
 import { IdChip } from "./id-chip";
@@ -22,11 +23,6 @@ const allProof = [
 	timestamp?: { seconds: string; nanos: number };
 }>;
 
-function titleCase(value: string) {
-	return value
-		.replaceAll("-", " ")
-		.replace(/\b\w/g, (letter) => letter.toUpperCase());
-}
 function percent(value: number | null | undefined, digits = 1) {
 	return value == null || !Number.isFinite(value)
 		? "Not available"
@@ -55,7 +51,7 @@ function bucketLabel(call: LiveCall) {
 				: call.timeBucket === "1d"
 					? "1 day"
 					: "Not available";
-	return `${titleCase(call.venue)} · ${titleCase(call.category ?? "unknown")} · ${bucket}`;
+	return `${call.venue === "polymarket" ? "Polymarket" : "Kalshi"} · ${categoryDisplay(call.category)} · ${bucket}`;
 }
 function statsFor(call: LiveCall) {
 	const rows = replay.rows.filter(
@@ -309,7 +305,12 @@ export function CalibrationTrace({
 		<>
 			<div className="eyebrow">CALIBRATION TRACE · {selected.id}</div>
 			<div className="trace-header-row">
-				<h2 id={`trace-title-${selected.id}`} data-drawer-heading tabIndex={-1}>
+				<h2
+					id={`trace-title-${selected.id}`}
+					data-drawer-heading
+					tabIndex={-1}
+					title={selected.question || "Not available"}
+				>
 					{selected.question || "Not available"}
 				</h2>
 				<button

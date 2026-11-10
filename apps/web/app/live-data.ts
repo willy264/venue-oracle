@@ -21,6 +21,22 @@ export type LiveCall = {
 	citedBlobIds?: string[];
 };
 
+const categoryNames: Record<string, string> = {
+	"us-current-affairs": "US current affairs",
+	sports: "Sports",
+	unknown: "Uncategorised",
+};
+
+export function categoryDisplay(value?: string) {
+	if (!value) return "Uncategorised";
+	return (
+		categoryNames[value] ??
+		value
+			.replaceAll("-", " ")
+			.replace(/\b\w/g, (letter) => letter.toUpperCase())
+	);
+}
+
 import refreshed from "../../../results/live-calls.json";
 import firstSample from "../../../results/live-calls-first-sample.json";
 
