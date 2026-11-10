@@ -1,5 +1,6 @@
 import { CalibrationTrace } from "../components/CalibrationTrace";
 import { IdChip } from "../components/id-chip";
+import { suiscanObjectUrl, suiscanTransactionUrl } from "../links";
 import { firstSampleCalls, liveCalls } from "../live-data";
 
 export default function TrackRecord() {
@@ -72,7 +73,7 @@ export default function TrackRecord() {
 										<br />
 										<a
 											className="pill"
-											href={`https://suiexplorer.testnet.sui.io/txblock/${call.txDigest}`}
+											href={suiscanTransactionUrl(call.txDigest)}
 											target="_blank"
 											rel="noreferrer"
 										>
@@ -85,7 +86,7 @@ export default function TrackRecord() {
 										<br />
 										<a
 											className="blob"
-											href={`https://suiexplorer.testnet.sui.io/object/${call.packageId}`}
+											href={suiscanObjectUrl(call.packageId)}
 											target="_blank"
 											rel="noreferrer"
 										>

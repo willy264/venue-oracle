@@ -10,6 +10,7 @@ import { categoryDisplay } from "../live-data";
 import { CalibrationDrawer } from "./CalibrationDrawer";
 import { IdChip } from "./id-chip";
 import { ProbabilityRail } from "./probability-rail";
+import { suiscanObjectUrl, suiscanTransactionUrl } from "../links";
 
 const minimumN = 5;
 const shrinkageK = 20;
@@ -192,10 +193,10 @@ function Trace({ call }: { call: LiveCall }) {
 					<IdChip
 						label="Tx"
 						value={call.txDigest}
-						href={`https://suiexplorer.testnet.sui.io/txblock/${call.txDigest}`}
+						href={suiscanTransactionUrl(call.txDigest)}
 					/>{" "}
 					<a
-						href={`https://suiexplorer.testnet.sui.io/txblock/${call.txDigest}`}
+						href={suiscanTransactionUrl(call.txDigest)}
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -207,7 +208,7 @@ function Trace({ call }: { call: LiveCall }) {
 					<IdChip
 						label="Package"
 						value={call.packageId}
-						href={`https://suiexplorer.testnet.sui.io/object/${call.packageId}`}
+						href={suiscanObjectUrl(call.packageId)}
 					/>
 				</p>
 				<p className="verified">Verified through Tatum Sui gRPC ✓</p>

@@ -5,6 +5,7 @@ import { decisionFor } from "../live-data";
 import { CalibrationTrace } from "./CalibrationTrace";
 import { IdChip } from "./id-chip";
 import { ProbabilityRail } from "./probability-rail";
+import { suiscanObjectUrl, suiscanTransactionUrl } from "../links";
 
 export function LiveBoard({ calls }: { calls: LiveCall[] }) {
 	return (
@@ -66,7 +67,7 @@ export function LiveBoard({ calls }: { calls: LiveCall[] }) {
 					</div>
 					<div className="trust-links">
 						<a
-							href={`https://suiexplorer.testnet.sui.io/txblock/${call.txDigest}`}
+							href={suiscanTransactionUrl(call.txDigest)}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -75,10 +76,10 @@ export function LiveBoard({ calls }: { calls: LiveCall[] }) {
 						<IdChip
 							label="Tx"
 							value={call.txDigest}
-							href={`https://suiexplorer.testnet.sui.io/txblock/${call.txDigest}`}
+							href={suiscanTransactionUrl(call.txDigest)}
 						/>
 						<a
-							href={`https://suiexplorer.testnet.sui.io/object/${call.packageId}`}
+							href={suiscanObjectUrl(call.packageId)}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -87,7 +88,7 @@ export function LiveBoard({ calls }: { calls: LiveCall[] }) {
 						<IdChip
 							label="Package"
 							value={call.packageId}
-							href={`https://suiexplorer.testnet.sui.io/object/${call.packageId}`}
+							href={suiscanObjectUrl(call.packageId)}
 						/>
 					</div>
 					<button
