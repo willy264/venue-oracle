@@ -5,7 +5,7 @@
 - Demo URL: https://venue-oracle.vercel.app
 - Public repository: https://github.com/willy264/venue-oracle
 - Vercel project: `venue-oracle`; root `apps/web`, Node `22.x`.
-- Final UI/data implementation commit: `16d06d764b4578c7b133cf8c645e54ab5b7c2de2`.
+- Final UI/data implementation commit: `bde8a15989b6fd900182c2e357520dadc2fd76f1`.
 - Final accessibility patch before freeze: `4c266e34cbb6b955add0a0993c8481feb77eb918`.
 - Blog URL: owner-only publication, not done.
 - Video URL: owner-only upload, not done.
