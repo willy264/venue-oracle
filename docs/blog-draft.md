@@ -14,7 +14,7 @@ V2 was documented before scoring. It treats the raw market price as the prior an
 corrected = raw + n/(n+20) * (bucketRate - bucketMeanPrice)
 ```
 
-The final 20% of observations by snapshot time was held out. The replay scores each observation before storing its outcome. Bucket summaries and a capped sample of observations are written to Walrus Memory and recalled during decisions. Tatum remains the source for discovery, sampled live prices, outcomes where available, and Sui verification; public Polymarket CLOB and Kalshi candlesticks supply the bulk historical prices because Tatum history is credit-expensive.
+The final 20% of observations by snapshot time was held out. The replay scores each observation before storing its outcome. Bucket summaries and a capped sample of observations are written to Walrus Memory and recalled during replay decisions. Tatum remains the source for discovery, sampled live prices, outcomes where available, and Sui verification; public Polymarket CLOB and Kalshi candlesticks supply the bulk historical prices because Tatum history is credit-expensive. Live calls have empty `citedBlobIds`, so the product says that a call's bucket in Walrus Memory holds n past cases rather than claiming those memories were cited at live decision time.
 
 ## Result
 
@@ -22,7 +22,7 @@ V2 used 550 observations: 440 in the training prefix and 110 held out. On held-o
 
 ## Evidence and integrity
 
-The live board contains six real Tatum-sampled records, not placeholders. Each record exposes its venue market ID and URL, Tatum price endpoint, snapshot timestamp, raw price, Walrus memory blob, and Sui testnet transaction digest. The six commitments use Move package [`0xf12f...1363`](https://suiexplorer.testnet.sui.io/object/0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363) and were verified through Tatum testnet gRPC. The full evidence is in [`results/live-calls.json`](../results/live-calls.json) and [`results/testnet-verification.json`](../results/testnet-verification.json).
+The live board contains nine real Tatum-sampled records, not placeholders. Each record exposes its venue market ID and URL, Tatum price endpoint, snapshot timestamp, raw price, Walrus memory blob, and Sui testnet transaction digest. The nine commitments use Move package [`0xf12f...1363`](https://suiexplorer.testnet.sui.io/object/0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363) and were verified through Tatum testnet gRPC. `VO-LIVE-01` and `VO-LIVE-03` were committed with Tatum `rawPrice: 0` and are shown as `Price unavailable`. The full evidence is in [`results/live-calls.json`](../results/live-calls.json) and [`results/testnet-verification.json`](../results/testnet-verification.json).
 
 ## Limits
 

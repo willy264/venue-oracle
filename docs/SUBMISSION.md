@@ -21,7 +21,7 @@
 - SUI Account ID: `0xa3347a93fe583ffc64fffd80e092425e661eeb3606e7fe15e0368678a7f152a0` (verified MemWal account object).
 - `MEMWAL_AGENT_ID`: `7fa3afb61d0fe09e3b842f81186753e96a6cc4fb645412a995ca35e930934b5e`.
 - MemWal identity check: `MEMWAL_KEY_CHECKER` derives the same 64-character public key as `MEMWAL_AGENT_ID` (exact match confirmed locally on 2026-11-09).
-- Description: “Venue Oracle measures whether Polymarket and Kalshi prices are calibrated, independently by venue, category, and time-to-close. It writes resolved observations and bucket summaries to Walrus Memory, recalls them during walk-forward replay and live calibration, and commits live call digests on Sui testnet verified through Tatum gRPC. V2 held-out Brier was slightly worse after correction, while calibration error improved; no accuracy improvement is claimed.”
+- Description: “Venue Oracle measures whether Polymarket and Kalshi prices are calibrated, independently by venue, category, and time-to-close. It writes resolved observations and bucket summaries to Walrus Memory, recalls them during walk-forward replay, and uses each live call's recorded bucket history conservatively; live citedBlobIds are empty and are disclosed. It commits live call digests on Sui testnet verified through Tatum gRPC. V2 held-out Brier was slightly worse after correction, while calibration error improved; no accuracy improvement is claimed.”
 - Video: owner uploads the 2–3 minute demo video; not uploaded yet.
 - Repository: https://github.com/willy264/venue-oracle
 - Blog: owner publishes [`docs/blog-draft.md`](blog-draft.md); publication URL not available yet.
@@ -34,6 +34,7 @@
 - Mainnet blob IDs: [`results/latest-replay.json`](../results/latest-replay.json) and [`research/gate-live.json`](../research/gate-live.json).
 - Live call blob IDs and hashes: [`results/live-calls.json`](../results/live-calls.json).
 - Live set: 9 calls (6 sports and 3 US current-affairs); the current-affairs bucket has n=4 and all 9 abstain. The track record keeps 6 first-sample calls separately.
+- Live memory citation disclosure: `results/live-calls.json` records empty `citedBlobIds`; the product wording is “the call's bucket in Walrus Memory holds n past cases,” not “this call cited memories at decision time.” `VO-LIVE-01` and `VO-LIVE-03` have committed Tatum `rawPrice: 0` and are displayed as `Price unavailable`.
 - Sui testnet package: `0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363`.
 - Sui commitment transaction links: [`results/testnet-commitments.json`](../results/testnet-commitments.json); all nine are verified in [`results/testnet-verification.json`](../results/testnet-verification.json).
 - Mainnet memory verification: 343 memories across 20 namespaces, verified by [`scripts/verify-mainnet-memories.mjs`](../scripts/verify-mainnet-memories.mjs); evidence is [`results/mainnet-memory-verification.json`](../results/mainnet-memory-verification.json).

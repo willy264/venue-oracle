@@ -60,7 +60,9 @@ export default function Memory() {
 			<h1 className="title">The evidence layer</h1>
 			<p className="lede">
 				Every observation is stored as a readable sentence with a structured
-				JSON tail. Live calls cite the records used to form their correction.
+				JSON tail. Each live call reports how many past cases its bucket holds;
+				live citedBlobIds are empty, so the page does not claim live-time
+				citations.
 			</p>
 			<section className="memory-writer" aria-labelledby="writer-title">
 				<h2 id="writer-title">Writer delegate</h2>
