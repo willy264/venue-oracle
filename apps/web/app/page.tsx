@@ -113,7 +113,7 @@ export default function Home() {
 								target="_blank"
 								rel="noreferrer"
 							>
-								Sui commit -&gt;
+								Sui commit ↗
 							</a>
 							<IdChip label="Tx" value={call.txDigest} />
 							<a
@@ -121,7 +121,7 @@ export default function Home() {
 								target="_blank"
 								rel="noreferrer"
 							>
-								Package -&gt;
+								Package ↗
 							</a>
 							<IdChip label="Package" value={call.packageId} />
 						</div>
