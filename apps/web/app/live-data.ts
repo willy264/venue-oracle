@@ -18,6 +18,7 @@ export type LiveCall = {
 	sourceCategory?: string;
 	provenance?: "LIVE" | "TESTNET" | "REPLAY";
 	firstSample?: boolean;
+	citedBlobIds?: string[];
 };
 
 import refreshed from "../../../results/live-calls.json";
@@ -29,6 +30,7 @@ type EvidenceCall = {
 	marketId: string;
 	rawPrice: number;
 	correctedProbability: number;
+	citedBlobIds?: string[];
 	ts: string;
 	category?: string;
 	timeBucket?: string;
@@ -72,6 +74,7 @@ function mapCall(
 		sourceCategory: call.sourceCategory,
 		provenance: first ? "TESTNET" : "LIVE",
 		firstSample: first,
+		citedBlobIds: call.citedBlobIds ?? [],
 	};
 }
 

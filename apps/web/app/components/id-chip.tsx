@@ -21,7 +21,9 @@ export function IdChip({
 		setCopied(true);
 		window.setTimeout(() => setCopied(false), 1200);
 	};
-	const content = <span className="id-value">{shorten(value)}</span>;
+	const content = (
+		<span className="id-value">{value ? shorten(value) : "Not available"}</span>
+	);
 	return (
 		<span className="id-chip" title={value}>
 			{label && <span className="id-label">{label}</span>}
@@ -32,14 +34,16 @@ export function IdChip({
 			) : (
 				content
 			)}
-			<button
-				type="button"
-				onClick={copy}
-				aria-label={`Copy ${label ?? "ID"}`}
-				title={`Copy ${value}`}
-			>
-				{copied ? "Copied" : "Copy"}
-			</button>
+			{value && (
+				<button
+					type="button"
+					onClick={copy}
+					aria-label={`Copy ${label ?? "ID"}`}
+					title={`Copy ${value}`}
+				>
+					{copied ? "Copied" : "Copy"}
+				</button>
+			)}
 		</span>
 	);
 }

@@ -1,8 +1,6 @@
 import replay from "../../../results/latest-replay-v2.json";
-import { IdChip } from "./components/id-chip";
-import { ProbabilityRail } from "./components/probability-rail";
-import { WhyDrawer } from "./components/why-drawer";
-import { decisionFor, liveCalls } from "./live-data";
+import { LiveBoard } from "./components/live-board";
+import { liveCalls } from "./live-data";
 
 const holdout = replay.metrics.holdout;
 
@@ -19,7 +17,6 @@ export default function Home() {
 			([venue, count]) => `${count} ${venue[0].toUpperCase()}${venue.slice(1)}`,
 		)
 		.join(" / ");
-
 	return (
 		<>
 			<div className="eyebrow">LIVE CALIBRATION / 09 NOV 2026</div>
@@ -55,80 +52,7 @@ export default function Home() {
 				<h2>Open calibration calls</h2>
 				<span>{subtitle} / Tatum snapshots</span>
 			</div>
-			<div className="grid">
-				{liveCalls.map((call) => (
-					<article className="card" key={call.id}>
-						<div className="cardhead">
-							<span className="venue">{call.venue.toUpperCase()}</span>
-							<span>
-								{call.id} / {call.provenance ?? "LIVE"}
-							</span>
-						</div>
-						<div className="event">{call.question}</div>
-						<ProbabilityRail
-							raw={call.rawPrice}
-							corrected={call.correctedProbability}
-							label={call.question}
-						/>
-						<div className="metricrow">
-							<span>calibration decision</span>
-							<b>{decisionFor(call)}</b>
-						</div>
-						<div className="callmeta">
-							<IdChip
-								label="Market"
-								value={call.marketId}
-								href={call.marketUrl}
-							/>
-							<span>{call.snapshotAt}</span>
-						</div>
-						<div className="links">
-							<a
-								className="why"
-								href={call.marketUrl}
-								target="_blank"
-								rel="noreferrer"
-							>
-								OPEN MARKET
-							</a>
-							<IdChip
-								label="Memory"
-								value={call.blobId}
-								href={`/memory#${call.blobId}`}
-							/>
-						</div>
-						<div className="links">
-							<a
-								className="why"
-								href={call.tatumPriceEndpoint}
-								target="_blank"
-								rel="noreferrer"
-							>
-								TATUM PRICE ENDPOINT
-							</a>
-						</div>
-						<div className="trust-links">
-							<a
-								href={`https://suiexplorer.testnet.sui.io/txblock/${call.txDigest}`}
-								target="_blank"
-								rel="noreferrer"
-							>
-								Sui commit ↗
-							</a>
-							<IdChip label="Tx" value={call.txDigest} />
-							<a
-								href={`https://suiexplorer.testnet.sui.io/object/${call.packageId}`}
-								target="_blank"
-								rel="noreferrer"
-							>
-								Package ↗
-							</a>
-							<IdChip label="Package" value={call.packageId} />
-						</div>
-						<WhyDrawer call={call} />
-					</article>
-				))}
-			</div>
+			<LiveBoard calls={liveCalls} />
 		</>
 	);
 }

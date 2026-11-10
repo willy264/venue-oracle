@@ -3,6 +3,33 @@ import { join } from "node:path";
 import { IdChip } from "../components/id-chip";
 import { liveCalls } from "../live-data";
 
+const replay = JSON.parse(
+	readFileSync(
+		join(process.cwd(), "../../results/latest-replay-v2.json"),
+		"utf8",
+	),
+) as {
+	rows: Array<{
+		index: number;
+		marketId: string;
+		venue: string;
+		category: string;
+		outcome: number;
+		rawProbability: number;
+	}>;
+	memory: { blobIds: Record<string, string> };
+};
+const identity = JSON.parse(
+	readFileSync(
+		join(process.cwd(), "../../results/memwal-identity.json"),
+		"utf8",
+	),
+) as { agentId: string };
+
+function percent(value: number) {
+	return `${(value * 100).toFixed(1)}%`;
+}
+
 const memoryEvidence = JSON.parse(
 	readFileSync(
 		join(process.cwd(), "../../results/mainnet-memory-verification.json"),
@@ -35,6 +62,11 @@ export default function Memory() {
 				Every observation is stored as a readable sentence with a structured
 				JSON tail. Live calls cite the records used to form their correction.
 			</p>
+			<section className="memory-writer" aria-labelledby="writer-title">
+				<h2 id="writer-title">Writer delegate</h2>
+				<p>MEMWAL_AGENT_ID / verified public delegate key</p>
+				<IdChip label="Agent" value={identity.agentId} />
+			</section>
 			<div className="stats memory-stats">
 				<div className="stat">
 					<b>{memoryEvidence.totalMemories}</b>
@@ -75,6 +107,10 @@ export default function Memory() {
 			</section>
 			<section className="namespace-list" aria-labelledby="namespace-title">
 				<h2 id="namespace-title">Mainnet namespace counts</h2>
+				<p className="muted">
+					The errata-b-* and vo-gate-* namespaces are early integration tests on
+					this same account.
+				</p>
 				<div className="namespace-grid">
 					{namespaces.map((namespace) => (
 						<span key={namespace.name}>
@@ -83,6 +119,61 @@ export default function Memory() {
 						</span>
 					))}
 				</div>
+			</section>
+			<section className="memory-samples" aria-labelledby="samples-title">
+				<h2 id="samples-title">Replay evidence samples</h2>
+				<p className="muted">
+					These are representative replay observations and one final bucket
+					summary from the committed replay evidence.
+				</p>
+				{replay.rows.slice(0, 3).map((row) => (
+					<article
+						className="memory sample-memory"
+						id={
+							replay.memory.blobIds[
+								`observation|${row.index}|${row.marketId}` as keyof typeof replay.memory.blobIds
+							]
+						}
+						key={row.marketId}
+					>
+						<div className="cardhead">
+							<span>REPLAY OBSERVATION</span>
+							<span className="pill">REPLAY</span>
+						</div>
+						<p>
+							{row.venue} {row.category} resolved{" "}
+							{row.outcome === 1 ? "YES" : "NO"} at{" "}
+							{percent(row.rawProbability)}.
+						</p>
+						<IdChip
+							label="Blob"
+							value={
+								replay.memory.blobIds[
+									`observation|${row.index}|${row.marketId}` as keyof typeof replay.memory.blobIds
+								] ?? ""
+							}
+						/>
+					</article>
+				))}
+				{(() => {
+					const key =
+						"summary|polymarket|us-current-affairs|7d|final" as keyof typeof replay.memory.blobIds;
+					const blob = replay.memory.blobIds[key];
+					return (
+						<article className="memory sample-memory">
+							<div className="cardhead">
+								<span>BUCKET SUMMARY</span>
+								<span className="pill">REPLAY</span>
+							</div>
+							<p>
+								Polymarket · US current affairs · 7 days: final bucket summary
+								from the v2 replay. Its predecessor link is not available in the
+								committed summary evidence.
+							</p>
+							<IdChip label="Blob" value={blob} href={`/memory#${blob}`} />
+						</article>
+					);
+				})()}
 			</section>
 			{liveCalls.map((call, index) => (
 				<article className="memory" id={call.blobId} key={call.id}>

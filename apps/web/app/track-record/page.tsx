@@ -1,3 +1,4 @@
+import { CalibrationSidebar } from "../components/calibration-sidebar";
 import { IdChip } from "../components/id-chip";
 import { firstSampleCalls, liveCalls } from "../live-data";
 
@@ -10,6 +11,10 @@ export default function TrackRecord() {
 				Each call below is linked to its real venue market, Tatum price
 				endpoint, Walrus memory, and verified Sui testnet commitment.
 			</p>
+			<CalibrationSidebar
+				calls={[...liveCalls, ...firstSampleCalls]}
+				compactTriggers
+			/>
 			<details className="proof">
 				<summary>
 					Open proof details for current calls and the first sample

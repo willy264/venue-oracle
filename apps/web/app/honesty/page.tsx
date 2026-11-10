@@ -47,17 +47,29 @@ function Diagram({ venue }: { venue: Row["venue"] }) {
 						</text>
 					</g>
 				))}
-				{points.map((point) => (
-					<g key={`${point.mean}-${point.observed}`}>
-						<circle
-							className="reliability-point"
-							cx={44 + point.mean * 336}
-							cy={256 - point.observed * 236}
-							r={Math.max(4, Math.min(12, Math.sqrt(point.n || 1)))}
-						/>
-						<title>{`${Math.round(point.mean * 100)}% predicted, ${Math.round(point.observed * 100)}% observed, n=${point.n}`}</title>
-					</g>
-				))}
+				{points
+					.filter((point) => point.n > 0)
+					.map((point) => (
+						<g key={`${point.mean}-${point.observed}`}>
+							<circle
+								className={`reliability-point${point.n < 5 ? " too-few" : ""}`}
+								cx={44 + point.mean * 336}
+								cy={256 - point.observed * 236}
+								r={Math.max(4, Math.min(12, Math.sqrt(point.n || 1)))}
+							/>
+							<title>{`${Math.round(point.mean * 100)}% predicted, ${Math.round(point.observed * 100)}% observed, n=${point.n}`}</title>
+							{point.n < 5 && (
+								<text
+									className="too-few-label"
+									x={44 + point.mean * 336}
+									y={256 - point.observed * 236 - 14}
+									textAnchor="middle"
+								>
+									too few to judge
+								</text>
+							)}
+						</g>
+					))}
 			</svg>
 			<div className="chart-axis-label">Predicted probability</div>
 		</div>
