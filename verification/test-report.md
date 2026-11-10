@@ -34,7 +34,7 @@ Gate checks have run, but product tests have not.
 - PASS: Integrity enrichment confirmed nine real Tatum market and price endpoint records; public venue IDs and URLs are shown in the Live Board and Track Record.
 - MIXED RESULT: v2 held-out raw Brier `0.1955` (95% CI `[0.1705, 0.2239]`) beat corrected `0.1984` (95% CI `[0.1730, 0.2288]`); calibration error improved `0.1453` to `0.1022`. No accuracy-improvement claim is made.
 - PASS: GitHub Actions end-to-end live workflow completed in [run 42716287032](https://github.com/willy264/venue-oracle/actions/runs/42716287032).
-- PASS: Mainnet MemWal verification counted 343 memories across 21 namespaces; evidence is in `results/mainnet-memory-verification.json`.
+- PASS: Mainnet MemWal verification counted 343 memories across 20 namespaces; evidence is in `results/mainnet-memory-verification.json`.
 
 ## Required evidence
 

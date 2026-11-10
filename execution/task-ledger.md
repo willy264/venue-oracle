@@ -38,7 +38,7 @@
 | Replace novelty live set                          | Done                              | Six real Polymarket sports markets closing 14–16 Nov sampled through Tatum; six `vo-live` writes, six Sui testnet commits, and six Tatum gRPC verifications. No correction was forced because the Polymarket sports bucket is below minimum sample. Original six preserved as `results/live-calls-first-sample.json`. |
 | UI redesign slice                                  | Done                              | Probability rail, `/honesty` reliability diagrams, “Why this number?” drawer, clickable blob/Sui/package links, logo, and headline result sentence. Build and typecheck pass. |
 | Final extra live calls                            | Done                              | Added 3 real Polymarket current-affairs markets closing 16 Nov through Tatum. Closest v2 family `us-current-affairs` had n=4 in the 7d bucket; all three recalled 3 records, abstained, and retained raw prices. Three `vo-live` writes, testnet commits, and Tatum gRPC verifications passed. |
-| Mainnet memory verification                       | Done                              | `scripts/verify-mainnet-memories.mjs` verified 343 mainnet memories across 21 namespaces; evidence is in `results/mainnet-memory-verification.json`. |
+| Mainnet memory verification                       | Done                              | `scripts/verify-mainnet-memories.mjs` verified 343 mainnet memories across 20 namespaces; evidence is in `results/mainnet-memory-verification.json`. |
 
 ## Existing credential inventory
 
