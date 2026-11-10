@@ -1,0 +1,153 @@
+{
+  "observedAt": "2026-11-10T01:41:06.938Z",
+  "source": "live-refresh-tatum",
+  "provenance": "LIVE",
+  "selection": "Three real Polymarket current-affairs markets closing 1-7 days; no forced correction",
+  "replayBucketSamples": {
+    "us-current-affairs|7d": 4,
+    "us-current-affairs|3d": 4,
+    "us-current-affairs|1d": 4
+  },
+  "tatumCalls": 6,
+  "calls": [
+    {
+      "pairId": "polymarket:0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea",
+      "ts": "2026-11-10T01:40:01.542Z",
+      "venue": "polymarket",
+      "marketId": "0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea",
+      "rawPrice": 0.0495,
+      "correctedProbability": 0.0495,
+      "method": "abstain-no-qualifying-summary",
+      "citedBlobIds": [],
+      "question": "US announces end of Iranian blockade by November 15, 2026?",
+      "category": "us-current-affairs",
+      "sourceCategory": null,
+      "timeBucket": "7d",
+      "replaySampleN": 4,
+      "closeTime": "2026-11-16T00:00:00.000Z",
+      "liquidity": 169411.53631,
+      "volume": 2174662.9027650002,
+      "confidence": 0.1,
+      "digest": "b3bbae29404a4e3bac7c77b50afff47a856db521c4fe8a226eb8731e9863e478",
+      "commitmentStatus": "pending-testnet-commit",
+      "commitmentTxDigest": null,
+      "marketUrl": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
+      "venueUrl": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea/price",
+        "snapshotTimestamp": "2026-11-10T01:40:01.542Z",
+        "rawPrice": 0.0495
+      },
+      "blobId": "yKIJtLKGXy8xuACDb93D_nOlIr9tMow_QrFGbuvOG5k"
+    },
+    {
+      "pairId": "polymarket:0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9",
+      "ts": "2026-11-10T01:40:36.603Z",
+      "venue": "polymarket",
+      "marketId": "0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9",
+      "rawPrice": 0.945,
+      "correctedProbability": 0.945,
+      "method": "abstain-no-qualifying-summary",
+      "citedBlobIds": [],
+      "question": "Israel x Iran ceasefire continues through November 15?",
+      "category": "us-current-affairs",
+      "sourceCategory": null,
+      "timeBucket": "7d",
+      "replaySampleN": 4,
+      "closeTime": "2026-11-16T00:00:00.000Z",
+      "liquidity": 191708.7129,
+      "volume": 2121505.3981080004,
+      "confidence": 0.1,
+      "digest": "81402b77d79e63a88afa257cc84d0cc27d30419b39790303effca3a43a2adeb3",
+      "commitmentStatus": "pending-testnet-commit",
+      "commitmentTxDigest": null,
+      "marketUrl": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+      "venueUrl": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9/price",
+        "snapshotTimestamp": "2026-11-10T01:40:36.603Z",
+        "rawPrice": 0.945
+      },
+      "blobId": "YWi3QBw5TbGyxtwV1e3EOKCcbQQCov9CVxOy2dKEXTQ"
+    },
+    {
+      "pairId": "polymarket:0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b",
+      "ts": "2026-11-10T01:40:17.996Z",
+      "venue": "polymarket",
+      "marketId": "0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b",
+      "rawPrice": 0.0035,
+      "correctedProbability": 0.0035,
+      "method": "abstain-no-qualifying-summary",
+      "citedBlobIds": [],
+      "question": "Will Anthropic IPO by November 15, 2026?",
+      "category": "us-current-affairs",
+      "sourceCategory": null,
+      "timeBucket": "7d",
+      "replaySampleN": 4,
+      "closeTime": "2026-11-16T00:00:00.000Z",
+      "liquidity": 29838.93196,
+      "volume": 474182.0841769999,
+      "confidence": 0.1,
+      "digest": "2d3e6f8ab157bc0da2eced10093dcfd2e880ac213b64d59ca3aaeca31828ffeb",
+      "commitmentStatus": "pending-testnet-commit",
+      "commitmentTxDigest": null,
+      "marketUrl": "https://polymarket.com/event/anthropic-ipo-by",
+      "venueUrl": "https://polymarket.com/event/anthropic-ipo-by",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b/price",
+        "snapshotTimestamp": "2026-11-10T01:40:17.996Z",
+        "rawPrice": 0.0035
+      },
+      "blobId": "LdSB-c6G6cA27dqc1gWqJgwY3LE960uESQXNBfcPWHY"
+    }
+  ],
+  "memoryWrite": {
+    "results": [
+      {
+        "id": "9872c982-bb25-49f6-8235-ddfaf6409061",
+        "blob_id": "yKIJtLKGXy8xuACDb93D_nOlIr9tMow_QrFGbuvOG5k",
+        "status": "done",
+        "namespace": "vo-live"
+      },
+      {
+        "id": "f2ead692-b3c7-49a8-aec4-a1f15831e9d9",
+        "blob_id": "YWi3QBw5TbGyxtwV1e3EOKCcbQQCov9CVxOy2dKEXTQ",
+        "status": "done",
+        "namespace": "vo-live"
+      },
+      {
+        "id": "b9de22ca-ae5d-48e3-ac28-649a6c4c40a9",
+        "blob_id": "LdSB-c6G6cA27dqc1gWqJgwY3LE960uESQXNBfcPWHY",
+        "status": "done",
+        "namespace": "vo-live"
+      }
+    ],
+    "total": 3,
+    "succeeded": 3,
+    "failed": 0
+  },
+  "recallCounts": [
+    {
+      "marketId": "0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea",
+      "count": 3,
+      "bucket": "us-current-affairs|7d",
+      "replaySampleN": 4
+    },
+    {
+      "marketId": "0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9",
+      "count": 3,
+      "bucket": "us-current-affairs|7d",
+      "replaySampleN": 4
+    },
+    {
+      "marketId": "0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b",
+      "count": 3,
+      "bucket": "us-current-affairs|7d",
+      "replaySampleN": 4
+    }
+  ],
+  "commitment": "Pending testnet commitment script."
+}

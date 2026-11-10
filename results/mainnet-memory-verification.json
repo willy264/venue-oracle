@@ -1,0 +1,148 @@
+{
+  "observedAt": "2026-11-10T01:43:42.302Z",
+  "network": "mainnet",
+  "status": "verified",
+  "totalMemories": 343,
+  "namespaces": [
+    {
+      "id": "errata-b-2c55ffa87cbc963d8a6e5a73005a1d98",
+      "name": "errata-b-2c55ffa87cbc963d8a6e5a73005a1d98",
+      "memory_count": 1,
+      "storage_used": 431,
+      "updated_at": "2026-11-07T15:56:43.927121Z"
+    },
+    {
+      "id": "vo-gate-79cb7005baf8840c",
+      "name": "vo-gate-79cb7005baf8840c",
+      "memory_count": 1,
+      "storage_used": 392,
+      "updated_at": "2026-11-08T23:06:13.831997Z"
+    },
+    {
+      "id": "vo-replay-run-20261109053951-4df9f9-polymarket-us-current-affairs",
+      "name": "vo-replay-run-20261109053951-4df9f9-polymarket-us-current-affairs",
+      "memory_count": 12,
+      "storage_used": 8415,
+      "updated_at": "2026-11-09T05:46:31.598536Z"
+    },
+    {
+      "id": "vo-replay-run-20261109053951-4df9f9-kalshi-unknown",
+      "name": "vo-replay-run-20261109053951-4df9f9-kalshi-unknown",
+      "memory_count": 43,
+      "storage_used": 27362,
+      "updated_at": "2026-11-09T05:46:31.785263Z"
+    },
+    {
+      "id": "vo-v2-replay-run-v2-20261109063818-ccbb0a-polymarket-us-current-affairs",
+      "name": "vo-v2-replay-run-v2-20261109063818-ccbb0a-polymarket-us-current-affairs",
+      "memory_count": 6,
+      "storage_used": 3744,
+      "updated_at": "2026-11-09T06:42:36.382376Z"
+    },
+    {
+      "id": "vo-v2-replay-run-v2-20261109063818-ccbb0a-kalshi-unknown",
+      "name": "vo-v2-replay-run-v2-20261109063818-ccbb0a-kalshi-unknown",
+      "memory_count": 5,
+      "storage_used": 2903,
+      "updated_at": "2026-11-09T06:45:15.827363Z"
+    },
+    {
+      "id": "vo-v2-observations-run-v2-20261109063818-ccbb0a",
+      "name": "vo-v2-observations-run-v2-20261109063818-ccbb0a",
+      "memory_count": 29,
+      "storage_used": 17191,
+      "updated_at": "2026-11-09T06:45:15.903500Z"
+    },
+    {
+      "id": "vo-v2-replay-run-v2-20261109064110-494ae7-kalshi-sports",
+      "name": "vo-v2-replay-run-v2-20261109064110-494ae7-kalshi-sports",
+      "memory_count": 1,
+      "storage_used": 576,
+      "updated_at": "2026-11-09T06:50:46.336624Z"
+    },
+    {
+      "id": "vo-v2-replay-run-v2-20261109064110-494ae7-kalshi-unknown",
+      "name": "vo-v2-replay-run-v2-20261109064110-494ae7-kalshi-unknown",
+      "memory_count": 7,
+      "storage_used": 4067,
+      "updated_at": "2026-11-09T06:50:46.556594Z"
+    },
+    {
+      "id": "vo-v2-replay-run-v2-20261109064110-494ae7-polymarket-us-current-affairs",
+      "name": "vo-v2-replay-run-v2-20261109064110-494ae7-polymarket-us-current-affairs",
+      "memory_count": 6,
+      "storage_used": 3744,
+      "updated_at": "2026-11-09T06:50:46.617193Z"
+    },
+    {
+      "id": "vo-v2-observations-run-v2-20261109064110-494ae7",
+      "name": "vo-v2-observations-run-v2-20261109064110-494ae7",
+      "memory_count": 66,
+      "storage_used": 38124,
+      "updated_at": "2026-11-09T06:55:53.755563Z"
+    },
+    {
+      "id": "vo-v2-replay-run-v2-20261109064546-0c2fed-polymarket-us-current-affairs",
+      "name": "vo-v2-replay-run-v2-20261109064546-0c2fed-polymarket-us-current-affairs",
+      "memory_count": 6,
+      "storage_used": 3744,
+      "updated_at": "2026-11-09T06:55:53.776138Z"
+    },
+    {
+      "id": "vo-v2-replay-run-v2-20261109064546-0c2fed-kalshi-unknown",
+      "name": "vo-v2-replay-run-v2-20261109064546-0c2fed-kalshi-unknown",
+      "memory_count": 7,
+      "storage_used": 4067,
+      "updated_at": "2026-11-09T06:55:53.839283Z"
+    },
+    {
+      "id": "vo-v2-replay-run-v2-20261109064546-0c2fed-kalshi-sports",
+      "name": "vo-v2-replay-run-v2-20261109064546-0c2fed-kalshi-sports",
+      "memory_count": 1,
+      "storage_used": 576,
+      "updated_at": "2026-11-09T06:55:53.876258Z"
+    },
+    {
+      "id": "vo-v2-observations-run-v2-20261109064546-0c2fed",
+      "name": "vo-v2-observations-run-v2-20261109064546-0c2fed",
+      "memory_count": 66,
+      "storage_used": 38124,
+      "updated_at": "2026-11-09T06:55:53.961440Z"
+    },
+    {
+      "id": "vo-v2-observations-run-v2-20261109114733-d322d3",
+      "name": "vo-v2-observations-run-v2-20261109114733-d322d3",
+      "memory_count": 20,
+      "storage_used": 12101,
+      "updated_at": "2026-11-09T11:54:38.713079Z"
+    },
+    {
+      "id": "vo-v2-replay-run-v2-20261109114733-d322d3-polymarket-us-current-affairs",
+      "name": "vo-v2-replay-run-v2-20261109114733-d322d3-polymarket-us-current-affairs",
+      "memory_count": 3,
+      "storage_used": 1875,
+      "updated_at": "2026-11-09T11:54:38.764402Z"
+    },
+    {
+      "id": "vo-v2-replay-run-v2-20261109114733-d322d3-kalshi-unknown",
+      "name": "vo-v2-replay-run-v2-20261109114733-d322d3-kalshi-unknown",
+      "memory_count": 3,
+      "storage_used": 1750,
+      "updated_at": "2026-11-09T11:54:38.770129Z"
+    },
+    {
+      "id": "vo-v2-replay-run-v2-20261109114733-d322d3-kalshi-sports",
+      "name": "vo-v2-replay-run-v2-20261109114733-d322d3-kalshi-sports",
+      "memory_count": 3,
+      "storage_used": 1737,
+      "updated_at": "2026-11-09T11:54:38.798405Z"
+    },
+    {
+      "id": "vo-live",
+      "name": "vo-live",
+      "memory_count": 57,
+      "storage_used": 49316,
+      "updated_at": "2026-11-10T01:42:41.774010Z"
+    }
+  ]
+}

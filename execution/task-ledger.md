@@ -37,6 +37,8 @@
 | MPP paid signal                                    | Branch only                       | `mpp` branch commit `7cb7b8d`; testnet route builds, but Tatum-gRPC payment verification and funded testnet end-to-end proof are incomplete, so it is not merged or in submission materials |
 | Replace novelty live set                          | Done                              | Six real Polymarket sports markets closing 14–16 Nov sampled through Tatum; six `vo-live` writes, six Sui testnet commits, and six Tatum gRPC verifications. No correction was forced because the Polymarket sports bucket is below minimum sample. Original six preserved as `results/live-calls-first-sample.json`. |
 | UI redesign slice                                  | Done                              | Probability rail, `/honesty` reliability diagrams, “Why this number?” drawer, clickable blob/Sui/package links, logo, and headline result sentence. Build and typecheck pass. |
+| Final extra live calls                            | Done                              | Added 3 real Polymarket current-affairs markets closing 16 Nov through Tatum. Closest v2 family `us-current-affairs` had n=4 in the 7d bucket; all three recalled 3 records, abstained, and retained raw prices. Three `vo-live` writes, testnet commits, and Tatum gRPC verifications passed. |
+| Mainnet memory verification                       | Done                              | `scripts/verify-mainnet-memories.mjs` verified 343 mainnet memories across 21 namespaces; evidence is in `results/mainnet-memory-verification.json`. |
 
 ## Existing credential inventory
 
@@ -46,8 +48,8 @@
 - Gate blob ID: `vuYOO0YfNjxehASkXfL-EJLslooXGQolx7NjywAE8R4`.
 - Gate MemWal namespace: `vo-gate-79cb7005baf8840c`.
 - Sui object read: configured MemWal account object returned through Tatum gRPC.
-- Sui Move commitment transactions: six testnet transactions verified through Tatum; no mainnet action attempted.
-- Live calibration run: successful Actions run [42716287032](https://github.com/willy264/venue-oracle/actions/runs/42716287032); 6 Tatum-sampled calls, 6 completed `vo-live` memories, 6 testnet Sui txs, and 6 Tatum gRPC verifications. Evidence is recorded in `results/live-calls.json`, `results/testnet-commitments.json`, and `results/testnet-verification.json`.
+- Sui Move commitment transactions: nine testnet transactions verified through Tatum; no mainnet action attempted.
+- Live calibration run: 9 Tatum-sampled calls, 9 completed `vo-live` memories, 9 testnet Sui txs, and 9 Tatum gRPC verifications. Evidence is recorded in `results/live-calls.json`, `results/testnet-commitments.json`, and `results/testnet-verification.json`.
 - Sui tooling: pinned testnet binary `1.83.1` downloaded from the official GitHub release after `suiup` timed out.
 - Sui testnet evidence: faucet `6Zfcj68SupgD5ZL9DF35UNTDRAQoaEYGJgWrgCrVPHGH`; publish `GecMo7gRiohB7wWmqsgSUajTvUGXzvpDrrZQKjDoPqXg`; package `0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363`; six commitment and Tatum verification digests are in `results/testnet-commitments.json` and `results/testnet-verification.json`.
 

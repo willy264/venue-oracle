@@ -184,6 +184,102 @@
       },
       "blobId": "TzHxpikFioNIttxcVphHvbLJYCLAgNjMDAuTpLp2R1o",
       "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "polymarket:0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea",
+      "ts": "2026-11-10T01:40:01.542Z",
+      "venue": "polymarket",
+      "marketId": "0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea",
+      "rawPrice": 0.0495,
+      "correctedProbability": 0.0495,
+      "method": "abstain-no-qualifying-summary",
+      "citedBlobIds": [],
+      "question": "US announces end of Iranian blockade by November 15, 2026?",
+      "category": "us-current-affairs",
+      "sourceCategory": null,
+      "timeBucket": "7d",
+      "replaySampleN": 4,
+      "closeTime": "2026-11-16T00:00:00.000Z",
+      "liquidity": 169411.53631,
+      "volume": 2174662.9027650002,
+      "confidence": 0.1,
+      "digest": "b3bbae29404a4e3bac7c77b50afff47a856db521c4fe8a226eb8731e9863e478",
+      "commitmentStatus": "testnet-committed",
+      "commitmentTxDigest": "6ArJee8yoNqQqzMLrtVyEoxdinWJjcepbL2ycgJeciac",
+      "marketUrl": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
+      "venueUrl": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea/price",
+        "snapshotTimestamp": "2026-11-10T01:40:01.542Z",
+        "rawPrice": 0.0495
+      },
+      "blobId": "yKIJtLKGXy8xuACDb93D_nOlIr9tMow_QrFGbuvOG5k",
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "polymarket:0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9",
+      "ts": "2026-11-10T01:40:36.603Z",
+      "venue": "polymarket",
+      "marketId": "0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9",
+      "rawPrice": 0.945,
+      "correctedProbability": 0.945,
+      "method": "abstain-no-qualifying-summary",
+      "citedBlobIds": [],
+      "question": "Israel x Iran ceasefire continues through November 15?",
+      "category": "us-current-affairs",
+      "sourceCategory": null,
+      "timeBucket": "7d",
+      "replaySampleN": 4,
+      "closeTime": "2026-11-16T00:00:00.000Z",
+      "liquidity": 191708.7129,
+      "volume": 2121505.3981080004,
+      "confidence": 0.1,
+      "digest": "81402b77d79e63a88afa257cc84d0cc27d30419b39790303effca3a43a2adeb3",
+      "commitmentStatus": "testnet-committed",
+      "commitmentTxDigest": "C2tbvQzE8pM4Qn2eN2JbRKtHeEdE3aDDdm9DMbTysUCW",
+      "marketUrl": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+      "venueUrl": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9/price",
+        "snapshotTimestamp": "2026-11-10T01:40:36.603Z",
+        "rawPrice": 0.945
+      },
+      "blobId": "YWi3QBw5TbGyxtwV1e3EOKCcbQQCov9CVxOy2dKEXTQ",
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "polymarket:0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b",
+      "ts": "2026-11-10T01:40:17.996Z",
+      "venue": "polymarket",
+      "marketId": "0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b",
+      "rawPrice": 0.0035,
+      "correctedProbability": 0.0035,
+      "method": "abstain-no-qualifying-summary",
+      "citedBlobIds": [],
+      "question": "Will Anthropic IPO by November 15, 2026?",
+      "category": "us-current-affairs",
+      "sourceCategory": null,
+      "timeBucket": "7d",
+      "replaySampleN": 4,
+      "closeTime": "2026-11-16T00:00:00.000Z",
+      "liquidity": 29838.93196,
+      "volume": 474182.0841769999,
+      "confidence": 0.1,
+      "digest": "2d3e6f8ab157bc0da2eced10093dcfd2e880ac213b64d59ca3aaeca31828ffeb",
+      "commitmentStatus": "testnet-committed",
+      "commitmentTxDigest": "2tXdHRJyirwvoTTNYjhfVWCSgGAJkYkgEH5dTKia1U6X",
+      "marketUrl": "https://polymarket.com/event/anthropic-ipo-by",
+      "venueUrl": "https://polymarket.com/event/anthropic-ipo-by",
+      "tatum": {
+        "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b",
+        "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b/price",
+        "snapshotTimestamp": "2026-11-10T01:40:17.996Z",
+        "rawPrice": 0.0035
+      },
+      "blobId": "LdSB-c6G6cA27dqc1gWqJgwY3LE960uESQXNBfcPWHY",
+      "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     }
   ],
   "memoryWrite": {
@@ -261,35 +357,50 @@
     {
       "pairId": "polymarket:0x1632539feac2c2879becdd9c82cbf6fe2a9d1a543081bcc4fc6095f3f5195815",
       "txDigest": "BUFruBrFUANcSwKttP7iufFk3ZHhAZbp8gMfmr1LBpqj",
-      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+      "skipped": true
     },
     {
       "pairId": "polymarket:0xcb86b71e7ee2e62f8ecf5da5c8bd5f52d896970270abf420294a0ce0413cbf87",
       "txDigest": "HF5Yawqb4Ny9p9sqoDp28c4A33z9PigWtH1vW5CAfnuj",
-      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+      "skipped": true
     },
     {
       "pairId": "polymarket:0xa0e794b19ec1dda98d7fc518ec033233e25817b17e06f2a8fa4def146c15e15c",
       "txDigest": "Dp5jsiCU3wz3ebS8iQdZ3CcCAKVvChzAdmxawx7hr5Nu",
-      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+      "skipped": true
     },
     {
       "pairId": "polymarket:0xbddb7c7946f22cd2c0fd059473c4cd0b3458e901bfa581afccdae0058ae25380",
       "txDigest": "BVD2BxHtEhCT4ms6xvJpbVJtHuxw7pcbXBFywtxeFqi7",
-      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+      "skipped": true
     },
     {
       "pairId": "polymarket:0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45",
       "txDigest": "2C6PprHCbe4uVvV4cNTkciEiSJAf7ouSGWnAVASg1NQ1",
-      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+      "skipped": true
     },
     {
       "pairId": "polymarket:0x134e5143254278e5df6f0ffcf9502845fa935923b86c56fd627508552240a959",
       "txDigest": "DEq8sARojibdWpZNab4MhJw82Wns1U5Sh2s2rF1xT1oM",
+      "skipped": true
+    },
+    {
+      "pairId": "polymarket:0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea",
+      "txDigest": "6ArJee8yoNqQqzMLrtVyEoxdinWJjcepbL2ycgJeciac",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "polymarket:0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9",
+      "txDigest": "C2tbvQzE8pM4Qn2eN2JbRKtHeEdE3aDDdm9DMbTysUCW",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
+    },
+    {
+      "pairId": "polymarket:0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b",
+      "txDigest": "2tXdHRJyirwvoTTNYjhfVWCSgGAJkYkgEH5dTKia1U6X",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     }
   ],
-  "updatedAt": "2026-11-10T00:22:21.990Z",
+  "updatedAt": "2026-11-10T01:42:33.826Z",
   "tatumTestnetVerification": [
     {
       "pairId": "polymarket:0x1632539feac2c2879becdd9c82cbf6fe2a9d1a543081bcc4fc6095f3f5195815",
@@ -303,12 +414,6 @@
           "oneofKind": "structValue",
           "structValue": {
             "fields": {
-              "digest": {
-                "kind": {
-                  "oneofKind": "stringValue",
-                  "stringValue": "h/m2HhkBoJBdQpBDHcI2BHj4J7uO5y5x4p3XBQREFKg="
-                }
-              },
               "reference": {
                 "kind": {
                   "oneofKind": "stringValue",
@@ -325,6 +430,12 @@
                 "kind": {
                   "oneofKind": "stringValue",
                   "stringValue": "1794270128054"
+                }
+              },
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "h/m2HhkBoJBdQpBDHcI2BHj4J7uO5y5x4p3XBQREFKg="
                 }
               }
             }
@@ -350,6 +461,12 @@
           "oneofKind": "structValue",
           "structValue": {
             "fields": {
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "wk2qkxVXSzzHY4N+v2sUr6Nv3/pGGGATB5xqrK7njFY="
+                }
+              },
               "reference": {
                 "kind": {
                   "oneofKind": "stringValue",
@@ -366,12 +483,6 @@
                 "kind": {
                   "oneofKind": "stringValue",
                   "stringValue": "1794270129141"
-                }
-              },
-              "digest": {
-                "kind": {
-                  "oneofKind": "stringValue",
-                  "stringValue": "wk2qkxVXSzzHY4N+v2sUr6Nv3/pGGGATB5xqrK7njFY="
                 }
               }
             }
@@ -538,6 +649,12 @@
           "oneofKind": "structValue",
           "structValue": {
             "fields": {
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794270134208"
+                }
+              },
               "digest": {
                 "kind": {
                   "oneofKind": "stringValue",
@@ -555,12 +672,6 @@
                   "oneofKind": "stringValue",
                   "stringValue": "0xc64c6b9257642ee283628d717efd53f700e1345b02f37cc553d01ff12d437dd3"
                 }
-              },
-              "ts_ms": {
-                "kind": {
-                  "oneofKind": "stringValue",
-                  "stringValue": "1794270134208"
-                }
               }
             }
           }
@@ -572,7 +683,178 @@
         "nanos": 402000000
       },
       "error": null
+    },
+    {
+      "pairId": "polymarket:0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea",
+      "txDigest": "6ArJee8yoNqQqzMLrtVyEoxdinWJjcepbL2ycgJeciac",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "s7uuKUBKTjusfHe1Cv/0eoVttSHE/ooibrhzHphj5Hg="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "cG9seW1hcmtldDoweGYwMzY0ODE2MTNhNTNmYWFmZGM3NjM4ODI0ZTVkZmFiMDNiNGRkYTViOWJmMTNmYmRmYTIwNzVlMmQ0YThiZWE="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              },
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794274924007"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404747959",
+      "timestamp": {
+        "seconds": "1794274924",
+        "nanos": 7000000
+      },
+      "error": null
+    },
+    {
+      "pairId": "polymarket:0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9",
+      "txDigest": "C2tbvQzE8pM4Qn2eN2JbRKtHeEdE3aDDdm9DMbTysUCW",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "gUArd9eeY6iK+iV8yE0Mwn0wQZs5eQMD7/yjpDoq3rM="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "cG9seW1hcmtldDoweGNhMzk0ZTBkYjA0MWY5MWFjMmQ2OWYzZWEwNmVmZGZjODY0M2FjYjBkMjc1MTI4M2JkNTk0ZTdiOGJkNTgxZjk="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              },
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794274926725"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404747970",
+      "timestamp": {
+        "seconds": "1794274926",
+        "nanos": 725000000
+      },
+      "error": null
+    },
+    {
+      "pairId": "polymarket:0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b",
+      "txDigest": "2tXdHRJyirwvoTTNYjhfVWCSgGAJkYkgEH5dTKia1U6X",
+      "verified": true,
+      "digestFoundInEvents": true,
+      "referenceFoundInEvents": true,
+      "eventType": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363::commit::Committed",
+      "eventJson": {
+        "kind": {
+          "oneofKind": "structValue",
+          "structValue": {
+            "fields": {
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794274929796"
+                }
+              },
+              "digest": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "LT5virFXvA2i7O0QCT3P0uiArCE7ZNWco6rsoxgo/+s="
+                }
+              },
+              "reference": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "cG9seW1hcmtldDoweDk0YWU4ZTU0MTRlMDM2ZTJlOWI2YjY1MTRjMDQ4MDQyYmY3NGQwODk2MTRkN2Y3ZDczNjM1NjkzZjlkNTE4NmI="
+                }
+              },
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xe4107e426ad67c2536e059bcf7fcc15cafe4d77a0075a3cb97adb91cf680ad98"
+                }
+              }
+            }
+          }
+        }
+      },
+      "checkpoint": "404747983",
+      "timestamp": {
+        "seconds": "1794274929",
+        "nanos": 854000000
+      },
+      "error": null
     }
   ],
-  "commitmentVerification": "verified-through-tatum-testnet-grpc"
+  "commitmentVerification": "verified-through-tatum-testnet-grpc",
+  "extraLiveCalls": {
+    "observedAt": "2026-11-10T01:41:06.938Z",
+    "selection": "Three real Polymarket current-affairs markets closing 1-7 days; no forced correction",
+    "replayBucketSamples": {
+      "us-current-affairs|7d": 4,
+      "us-current-affairs|3d": 4,
+      "us-current-affairs|1d": 4
+    },
+    "recallCounts": [
+      {
+        "marketId": "0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea",
+        "count": 3,
+        "bucket": "us-current-affairs|7d",
+        "replaySampleN": 4
+      },
+      {
+        "marketId": "0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9",
+        "count": 3,
+        "bucket": "us-current-affairs|7d",
+        "replaySampleN": 4
+      },
+      {
+        "marketId": "0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b",
+        "count": 3,
+        "bucket": "us-current-affairs|7d",
+        "replaySampleN": 4
+      }
+    ],
+    "callCount": 3
+  }
 }

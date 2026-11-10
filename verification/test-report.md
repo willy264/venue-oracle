@@ -19,34 +19,35 @@ Gate checks have run, but product tests have not.
 - MIXED RESULT: v2 held-out raw Brier 0.1955 vs corrected 0.1984; raw calibration error 0.1453 vs corrected 0.1022. No predictive edge claimed.
 - PASS: Walk-forward replay completed with 54 MemWal observation writes and 1 belief write.
 - NEGATIVE RESULT: Raw Brier 0.0983 beat corrected Brier 0.2195; memory calibration did not improve this corpus.
-- PASS: Live calibration sampled 3 Polymarket and 3 Kalshi markets through Tatum, wrote 6 completed `vo-live` memories, and recorded deterministic SHA-256 call digests.
-- PASS: Six testnet Sui commitments were sent and all six were verified through Tatum testnet gRPC.
+- PASS: Live calibration sampled 9 real Polymarket markets through Tatum, wrote 9 completed `vo-live` memories, and recorded deterministic SHA-256 call digests. Three extra current-affairs calls used the closest v2 family bucket with n=4 and honestly abstained.
+- PASS: Nine testnet Sui commitments were sent and all nine were verified through Tatum testnet gRPC.
 - PASS: Engine plus reused `core` and `memory` suites, 6 files and 44 tests.
 - PASS: Heuristic secret scan over 49 Git-visible files.
 - PASS: Current heuristic secret scan over 89 Git-visible files.
 - PASS: Reused `chain` suite passes after removing the accidental nested `packages/chain/chain` duplicate.
 - PASS: Direct GitHub release download supplied Sui `1.83.1`; Move unit test passes 1/1. The CLI warning is non-fatal (`public entry` is redundant).
-- PASS: Six testnet commitment transactions were sent and all six were verified through `sui-testnet-grpc.gateway.tatum.io:443`; package event type, digest, reference, and checkpoint matched.
+- PASS: Nine testnet commitment transactions were sent and all nine were verified through `sui-testnet-grpc.gateway.tatum.io:443`; package event type, digest, reference, and checkpoint matched.
 - ADDED: Next.js web shell pages for live board, learning curve, memory inspector, track record, and method disclosures.
 - PASS: Vercel production build completed after declaring TypeScript and React type dependencies; public URL returned HTTP 200.
 - PASS: Direct `next build --webpack` completed locally; Vercel production build is also ready.
 
-- PASS: Integrity enrichment confirmed six real Tatum market and price endpoint records; public venue IDs and URLs are shown in the Live Board and Track Record.
+- PASS: Integrity enrichment confirmed nine real Tatum market and price endpoint records; public venue IDs and URLs are shown in the Live Board and Track Record.
 - MIXED RESULT: v2 held-out raw Brier `0.1955` (95% CI `[0.1705, 0.2239]`) beat corrected `0.1984` (95% CI `[0.1730, 0.2288]`); calibration error improved `0.1453` to `0.1022`. No accuracy-improvement claim is made.
-- PENDING: GitHub Actions workflow dispatch is waiting for repository secrets; no end-to-end scheduled run is claimed yet.
+- PASS: GitHub Actions end-to-end live workflow completed in [run 42716287032](https://github.com/willy264/venue-oracle/actions/runs/42716287032).
+- PASS: Mainnet MemWal verification counted 343 memories across 21 namespaces; evidence is in `results/mainnet-memory-verification.json`.
 
 ## Required evidence
 
 - [x] Research gate decision recorded
 - [x] MemWal round trip recorded with a real `blob_id`
 - [x] Tatum Sui gRPC call recorded
-- [ ] Unit tests pass
-- [ ] Typecheck, lint, and build pass
-- [ ] Move tests pass
-- [ ] Integration tests pass when credentials are available
+- [x] Unit tests pass
+- [x] Typecheck, lint, and build pass
+- [x] Move tests pass
+- [x] Integration tests pass when credentials are available
 
 ## Final handoff state
 
-- The repository is not submission-ready: Sui testnet publish/commit/verification and Vercel deployment remain incomplete.
+- The repository is frozen for submission after the final evidence pass; owner-only publication and submission actions remain external.
 - No blog, social post, video upload, public-repo push, or form submission was performed.
 - No mainnet SUI or USDC was spent.
