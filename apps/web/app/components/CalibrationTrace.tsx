@@ -5,7 +5,7 @@ import replay from "../../../../results/latest-replay-v2.json";
 import liveEvidence from "../../../../results/live-calls.json";
 import firstSampleEvidence from "../../../../results/live-calls-first-sample.json";
 import testnet from "../../../../results/testnet-verification.json";
-import { suiscanObjectUrl, suiscanTransactionUrl } from "../links";
+import { suivisionObjectUrl, suivisionTransactionUrl } from "../links";
 import type { LiveCall } from "../live-data";
 import { categoryDisplay } from "../live-data";
 import { CalibrationDrawer } from "./CalibrationDrawer";
@@ -193,10 +193,10 @@ function Trace({ call }: { call: LiveCall }) {
 					<IdChip
 						label="Tx"
 						value={call.txDigest}
-						href={suiscanTransactionUrl(call.txDigest)}
+						href={suivisionTransactionUrl(call.txDigest)}
 					/>{" "}
 					<a
-						href={suiscanTransactionUrl(call.txDigest)}
+						href={suivisionTransactionUrl(call.txDigest)}
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -208,7 +208,7 @@ function Trace({ call }: { call: LiveCall }) {
 					<IdChip
 						label="Package"
 						value={call.packageId}
-						href={suiscanObjectUrl(call.packageId)}
+						href={suivisionObjectUrl(call.packageId)}
 					/>
 				</p>
 				<p className="verified">Verified through Tatum Sui gRPC ✓</p>

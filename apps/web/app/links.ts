@@ -1,13 +1,13 @@
-export const SUISCAN_TESTNET_BASE = "https://suiscan.xyz/testnet";
+export const SUIVISION_TESTNET_BASE = "https://testnet.suivision.xyz";
 
-export function suiscanTransactionUrl(digest: string) {
-	return `${SUISCAN_TESTNET_BASE}/tx/${digest}`;
+export function suivisionTransactionUrl(digest: string) {
+	return `${SUIVISION_TESTNET_BASE}/txblock/${digest}`;
 }
 
-export function suiscanObjectUrl(id: string) {
-	return `${SUISCAN_TESTNET_BASE}/object/${id}`;
+export function suivisionObjectUrl(id: string) {
+	return `${SUIVISION_TESTNET_BASE}/object/${id}`;
 }
 
-export function suiscanAccountUrl(address: string) {
-	return `${SUISCAN_TESTNET_BASE}/account/${address}`;
+export function suivisionAccountUrl(address: string) {
+	return `${SUIVISION_TESTNET_BASE}/account/${address}`;
 }

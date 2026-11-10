@@ -22,7 +22,7 @@ V2 used 550 observations: 440 in the training prefix and 110 held out. On held-o
 
 ## Evidence and integrity
 
-The live board contains nine real Tatum-sampled records, not placeholders. Each record exposes its venue market ID and URL, Tatum price endpoint, snapshot timestamp, raw price, Walrus memory blob, and Sui testnet transaction digest. The nine commitments use Move package [`0xf12f...1363`](https://suiscan.xyz/testnet/object/0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363) and were verified through Tatum testnet gRPC. `VO-LIVE-01` and `VO-LIVE-03` were committed with Tatum `rawPrice: 0` and are shown as `Price unavailable`. The full evidence is in [`results/live-calls.json`](../results/live-calls.json) and [`results/testnet-verification.json`](../results/testnet-verification.json).
+The live board contains nine real Tatum-sampled records, not placeholders. Each record exposes its venue market ID and URL, Tatum price endpoint, snapshot timestamp, raw price, Walrus memory blob, and Sui testnet transaction digest. The nine commitments use Move package [`0xf12f...1363`](https://testnet.suivision.xyz/object/0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363) and were verified through Tatum testnet gRPC. `VO-LIVE-01` and `VO-LIVE-03` were committed with Tatum `rawPrice: 0` and are shown as `Price unavailable`. The full evidence is in [`results/live-calls.json`](../results/live-calls.json) and [`results/testnet-verification.json`](../results/testnet-verification.json).
 
 All Venue Oracle memories are stored on Walrus mainnet until at least June 2027 (results/mainnet-memory-expiry.json).
 

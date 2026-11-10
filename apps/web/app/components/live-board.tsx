@@ -1,6 +1,6 @@
 "use client";
 
-import { suiscanObjectUrl, suiscanTransactionUrl } from "../links";
+import { suivisionObjectUrl, suivisionTransactionUrl } from "../links";
 import type { LiveCall } from "../live-data";
 import { decisionFor } from "../live-data";
 import { CalibrationTrace } from "./CalibrationTrace";
@@ -67,7 +67,7 @@ export function LiveBoard({ calls }: { calls: LiveCall[] }) {
 					</div>
 					<div className="trust-links">
 						<a
-							href={suiscanTransactionUrl(call.txDigest)}
+							href={suivisionTransactionUrl(call.txDigest)}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -76,10 +76,10 @@ export function LiveBoard({ calls }: { calls: LiveCall[] }) {
 						<IdChip
 							label="Tx"
 							value={call.txDigest}
-							href={suiscanTransactionUrl(call.txDigest)}
+							href={suivisionTransactionUrl(call.txDigest)}
 						/>
 						<a
-							href={suiscanObjectUrl(call.packageId)}
+							href={suivisionObjectUrl(call.packageId)}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -88,7 +88,7 @@ export function LiveBoard({ calls }: { calls: LiveCall[] }) {
 						<IdChip
 							label="Package"
 							value={call.packageId}
-							href={suiscanObjectUrl(call.packageId)}
+							href={suivisionObjectUrl(call.packageId)}
 						/>
 					</div>
 					<button
