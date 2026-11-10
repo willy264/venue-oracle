@@ -2,7 +2,7 @@
 
 import type { LiveCall } from "../live-data";
 import { decisionFor } from "../live-data";
-import { CalibrationSidebar } from "./calibration-sidebar";
+import { CalibrationTrace } from "./CalibrationTrace";
 import { IdChip } from "./id-chip";
 import { ProbabilityRail } from "./probability-rail";
 
@@ -96,7 +96,7 @@ export function LiveBoard({ calls }: { calls: LiveCall[] }) {
 						type="button"
 						onClick={() =>
 							window.dispatchEvent(
-								new CustomEvent("venue-oracle:open-sidebar", {
+								new CustomEvent("venue-oracle:open-drawer", {
 									detail: call.id,
 								}),
 							)
@@ -106,7 +106,7 @@ export function LiveBoard({ calls }: { calls: LiveCall[] }) {
 					</button>
 				</article>
 			))}
-			<CalibrationSidebar calls={calls} showTriggers={false} />
+			<CalibrationTrace calls={calls} showTriggers={false} />
 		</div>
 	);
 }

@@ -1300,3 +1300,188 @@ details.proof summary:hover {
 		background: var(--muted);
 	}
 }
+
+/* Native modal trace drawer. It stays a right-side drawer at every viewport. */
+.calibration-drawer {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: auto;
+	width: min(460px, 100vw);
+	height: 100dvh;
+	max-width: none;
+	max-height: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	color: var(--text);
+	overflow: visible;
+	animation: trace-slide-in 200ms ease-out;
+}
+.calibration-drawer::backdrop {
+	background: rgb(0 0 0 / 60%);
+}
+.calibration-drawer-panel {
+	display: grid;
+	grid-template-rows: auto minmax(0, 1fr) auto;
+	height: 100dvh;
+	background: var(--surface);
+	border-left: 1px solid var(--rule);
+}
+.calibration-drawer-header {
+	padding: 24px 24px 18px;
+	border-bottom: 1px solid var(--rule);
+}
+.calibration-drawer-body {
+	min-height: 0;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	padding: 0 24px;
+}
+.calibration-drawer-footer {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	padding: 14px 24px;
+	border-top: 1px solid var(--rule);
+	background: var(--surface);
+}
+.trace-header-row {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+}
+.trace-header-row h2 {
+	flex: 1;
+	max-width: 3.5em;
+	margin: 8px 0;
+	color: var(--ink);
+	font-size: 20px;
+	line-height: 1.25;
+	font-weight: 600;
+}
+.trace-header-row h2:focus {
+	outline: 2px solid var(--accent);
+	outline-offset: 3px;
+}
+.trace-close {
+	flex: 0 0 auto;
+	border: 1px solid var(--rule);
+	border-radius: var(--radius);
+	background: transparent;
+	color: var(--ink);
+	font-size: 24px;
+	line-height: 1;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.trace-close:hover,
+.drawer-footer-button:hover {
+	border-color: var(--accent);
+	color: var(--ink);
+}
+.trace-meta {
+	color: var(--text);
+	margin: 0 0 8px;
+}
+.trace-section {
+	padding: 24px 0;
+	border-bottom: 1px solid var(--rule);
+}
+.trace-section h3 {
+	margin: 0 0 14px;
+	color: var(--ink);
+	font-size: 16px;
+	font-weight: 600;
+}
+.trace-numbers {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 8px;
+	color: var(--muted);
+	font:
+		600 17px ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		monospace;
+	font-variant-numeric: tabular-nums;
+}
+.trace-numbers strong {
+	color: var(--muted);
+	font-weight: 600;
+}
+.trace-numbers strong.corrected {
+	color: var(--accent);
+}
+.trace-kv {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+	margin: 0;
+	font-size: 14px;
+}
+.trace-kv dt,
+.trace-kv dd {
+	margin: 0;
+	padding: 8px 0;
+	border-bottom: 1px solid var(--rule);
+}
+.trace-kv dt {
+	color: var(--muted);
+}
+.trace-kv dd {
+	color: var(--text);
+	overflow-wrap: anywhere;
+	font-variant-numeric: tabular-nums;
+}
+.trace-formula {
+	padding: 14px;
+	border: 1px solid var(--rule);
+	border-radius: var(--radius);
+	background: var(--surface-2);
+	overflow-x: auto;
+}
+.trace-formula code {
+	color: var(--text);
+	font:
+		13px / 1.8 ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		monospace;
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+.trace-footer-note {
+	padding: 20px 0;
+	color: var(--muted);
+	font-size: 13px;
+}
+.drawer-footer-button {
+	border: 1px solid var(--rule);
+	border-radius: var(--radius);
+	background: var(--surface-2);
+	color: var(--text);
+	padding: 8px 10px;
+	font: inherit;
+	cursor: pointer;
+}
+.drawer-footer-button:focus-visible,
+.trace-close:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 3px;
+}
+@keyframes trace-slide-in {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+	.calibration-drawer {
+		animation: none;
+	}
+}
