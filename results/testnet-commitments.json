@@ -3,49 +3,34 @@
   "commitments": [
     {
       "pairId": "polymarket:0x1632539feac2c2879becdd9c82cbf6fe2a9d1a543081bcc4fc6095f3f5195815",
-      "txDigest": "BUFruBrFUANcSwKttP7iufFk3ZHhAZbp8gMfmr1LBpqj",
-      "skipped": true
+      "txDigest": "HddJFLHYtd8CPQCACETbFXwkejNwDN25eDJiyX834Fgb",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0xcb86b71e7ee2e62f8ecf5da5c8bd5f52d896970270abf420294a0ce0413cbf87",
-      "txDigest": "HF5Yawqb4Ny9p9sqoDp28c4A33z9PigWtH1vW5CAfnuj",
-      "skipped": true
+      "txDigest": "HoFZ9ggW9PPYJPDM5PsEL135yhcVeUKvnd4fgE8Joi3H",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0xa0e794b19ec1dda98d7fc518ec033233e25817b17e06f2a8fa4def146c15e15c",
-      "txDigest": "Dp5jsiCU3wz3ebS8iQdZ3CcCAKVvChzAdmxawx7hr5Nu",
-      "skipped": true
+      "txDigest": "7d45xQN1xtzzpzS6wLyhy1bowjy5iMcEJs2WG7JN8j4A",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0xbddb7c7946f22cd2c0fd059473c4cd0b3458e901bfa581afccdae0058ae25380",
-      "txDigest": "BVD2BxHtEhCT4ms6xvJpbVJtHuxw7pcbXBFywtxeFqi7",
-      "skipped": true
+      "txDigest": "Mgy4cgf71c5t3GnGDmxpif5dJAdzRNVcVbriuhJg678",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45",
-      "txDigest": "2C6PprHCbe4uVvV4cNTkciEiSJAf7ouSGWnAVASg1NQ1",
-      "skipped": true
+      "txDigest": "FvFPCTFfW4UfBM1if54vZrxe9S6jjy99KE9SetKT13zJ",
+      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0x134e5143254278e5df6f0ffcf9502845fa935923b86c56fd627508552240a959",
-      "txDigest": "DEq8sARojibdWpZNab4MhJw82Wns1U5Sh2s2rF1xT1oM",
-      "skipped": true
-    },
-    {
-      "pairId": "polymarket:0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea",
-      "txDigest": "6ArJee8yoNqQqzMLrtVyEoxdinWJjcepbL2ycgJeciac",
-      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
-    },
-    {
-      "pairId": "polymarket:0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9",
-      "txDigest": "C2tbvQzE8pM4Qn2eN2JbRKtHeEdE3aDDdm9DMbTysUCW",
-      "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
-    },
-    {
-      "pairId": "polymarket:0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b",
-      "txDigest": "2tXdHRJyirwvoTTNYjhfVWCSgGAJkYkgEH5dTKia1U6X",
+      "txDigest": "BZCtLNK76CdFc7quBkHEfApCtmztnUrETEcdBZmtGc6b",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     }
   ],
-  "observedAt": "2026-11-10T01:42:10.245Z"
+  "observedAt": "2026-11-10T07:37:29.497Z"
 }
