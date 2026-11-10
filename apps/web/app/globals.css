@@ -238,11 +238,9 @@ main {
 	border-radius: var(--radius);
 	transition:
 		transform 180ms ease,
-		border-color 180ms ease,
 		box-shadow 180ms ease;
 }
 .card:hover {
-	border-color: var(--link);
 	transform: translateY(-4px);
 	box-shadow: 0 14px 32px rgb(0 0 0 / 20%);
 }
@@ -1271,20 +1269,6 @@ details.proof summary:hover {
 	position: relative;
 	overflow: hidden;
 	padding: 16px;
-}
-.live-card::before {
-	content: "";
-	position: absolute;
-	inset: 0 0 auto;
-	height: 3px;
-	background: var(--accent);
-	transform: scaleX(0.16);
-	transform-origin: left;
-	transition: transform 220ms ease;
-}
-.live-card:hover::before,
-.live-card:focus-within::before {
-	transform: scaleX(1);
 }
 .cardhead {
 	align-items: center;

@@ -24,6 +24,8 @@ V2 used 550 observations: 440 in the training prefix and 110 held out. On held-o
 
 The live board contains nine real Tatum-sampled records, not placeholders. Each record exposes its venue market ID and URL, Tatum price endpoint, snapshot timestamp, raw price, Walrus memory blob, and Sui testnet transaction digest. The nine commitments use Move package [`0xf12f...1363`](https://suiexplorer.testnet.sui.io/object/0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363) and were verified through Tatum testnet gRPC. `VO-LIVE-01` and `VO-LIVE-03` were committed with Tatum `rawPrice: 0` and are shown as `Price unavailable`. The full evidence is in [`results/live-calls.json`](../results/live-calls.json) and [`results/testnet-verification.json`](../results/testnet-verification.json).
 
+All Venue Oracle memories are stored on Walrus mainnet until at least June 2027 (results/mainnet-memory-expiry.json).
+
 ## Limits
 
 The historical corpus is uneven: only 12 Polymarket observations were usable compared with 538 Kalshi observations. Many public history requests lacked a usable point and were excluded rather than imputed. The held-out sample is modest, live calls are unresolved until their markets close, and the Walrus relayer receives plaintext public market data. A calibration improvement is not the same as better directional accuracy.
