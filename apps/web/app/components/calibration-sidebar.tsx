@@ -159,7 +159,7 @@ function SidebarContent({
 			</div>
 			<section className="sidebar-section sidebar-header-section">
 				<div className="eyebrow">CALIBRATION TRACE · {call.id}</div>
-				<h2 id={`sidebar-title-${call.id}`}>
+				<h2 id={`sidebar-title-${call.id}`} tabIndex={-1}>
 					{call.question || "Not available"}
 				</h2>
 				<p className="sidebar-meta">{bucketLabel(call)}</p>
