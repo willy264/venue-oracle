@@ -31,6 +31,12 @@ Gate checks have run, but product tests have not.
 - PASS: Vercel production build completed after declaring TypeScript and React type dependencies; public URL returned HTTP 200.
 - PASS: Direct `next build --webpack` completed locally; Vercel production build is also ready.
 
+- PASS: Live-board evidence mapping checked: every finite displayed probability equals its corresponding `results/live-calls.json` `rawPrice`; venue subtitle is computed from the loaded records; all current records are Polymarket (9).
+- PASS: Drawer mapping uses the clicked `LiveCall` object directly; nullable/zero-valued source prices render `Price unavailable` without a rail marker. The zero-value records are no longer presented as 0%.
+- PASS: Drawer behavior implemented with fixed full-height desktop layout, mobile bottom sheet at 85dvh, backdrop click close, body-scroll lock, Escape handling, focus return, and Tab trapping.
+- PASS: Contrast pairs checked against WCAG AA tokens: dark `--ink`/`--surface` (headings), `--text`/`--surface` (body), `--muted`/`--surface` (labels), `--link`/`--surface` (links), `--accent`/`--surface` (correction); light equivalents `--ink`/`--surface`, `--text`/`--surface`, `--muted`/`--surface`, `--link`/`--surface`, and `--accent`/`--surface`. Body pairs target at least 4.5:1; large text and controls target at least 3:1.
+- NOT AUTOMATED: Browser screenshots were unavailable in this environment. Owner viewport check: open the production URL at 360px, 768px, and 1280px in both system light and dark themes; open the first and second card drawers, tab through the close/copy/link controls, press Escape, and confirm no horizontal scrollbar or clipped drawer content.
+
 - PASS: Integrity enrichment confirmed nine real Tatum market and price endpoint records; public venue IDs and URLs are shown in the Live Board and Track Record.
 - MIXED RESULT: v2 held-out raw Brier `0.1955` (95% CI `[0.1705, 0.2239]`) beat corrected `0.1984` (95% CI `[0.1730, 0.2288]`); calibration error improved `0.1453` to `0.1022`. No accuracy-improvement claim is made.
 - PASS: GitHub Actions end-to-end live workflow completed in [run 42716287032](https://github.com/willy264/venue-oracle/actions/runs/42716287032).

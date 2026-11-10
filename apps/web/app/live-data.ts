@@ -4,8 +4,8 @@ export type LiveCall = {
 	question: string;
 	marketId: string;
 	marketUrl: string;
-	rawPrice: number;
-	correctedProbability: number;
+	rawPrice: number | null;
+	correctedProbability: number | null;
 	snapshotAt: string;
 	tatumPriceEndpoint: string;
 	blobId: string;
@@ -14,6 +14,8 @@ export type LiveCall = {
 	category?: string;
 	timeBucket?: string;
 	liquidity?: number;
+	replaySampleN?: number;
+	sourceCategory?: string;
 	provenance?: "LIVE" | "TESTNET" | "REPLAY";
 	firstSample?: boolean;
 };
@@ -37,6 +39,8 @@ type EvidenceCall = {
 	commitmentPackageId: string;
 	tatum: { priceEndpoint: string };
 	liquidity?: number;
+	replaySampleN?: number;
+	sourceCategory?: string;
 };
 function mapCall(
 	call: EvidenceCall,
@@ -44,14 +48,18 @@ function mapCall(
 	first = false,
 	blobId = call.blobId,
 ): LiveCall {
+	const validProbability = (value: number) =>
+		Number.isFinite(value) && value > 0 && value <= 1;
 	return {
 		id,
 		venue: call.venue,
 		question: call.question,
 		marketId: call.marketId,
 		marketUrl: call.marketUrl ?? call.venueUrl ?? "",
-		rawPrice: call.rawPrice,
-		correctedProbability: call.correctedProbability,
+		rawPrice: validProbability(call.rawPrice) ? call.rawPrice : null,
+		correctedProbability: validProbability(call.correctedProbability)
+			? call.correctedProbability
+			: null,
 		snapshotAt: call.ts,
 		tatumPriceEndpoint: call.tatum.priceEndpoint,
 		blobId: blobId ?? "",
@@ -60,6 +68,8 @@ function mapCall(
 		category: call.category,
 		timeBucket: call.timeBucket,
 		liquidity: call.liquidity,
+		replaySampleN: call.replaySampleN,
+		sourceCategory: call.sourceCategory,
 		provenance: first ? "TESTNET" : "LIVE",
 		firstSample: first,
 	};
@@ -82,6 +92,8 @@ export const firstSampleCalls: LiveCall[] = (
 );
 
 export function decisionFor(call: LiveCall) {
+	if (call.rawPrice == null || call.correctedProbability == null)
+		return "Price unavailable";
 	if (call.correctedProbability > call.rawPrice)
 		return "Market looks underpriced";
 	if (call.correctedProbability < call.rawPrice)

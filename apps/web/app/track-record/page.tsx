@@ -1,3 +1,4 @@
+import { IdChip } from "../components/id-chip";
 import { firstSampleCalls, liveCalls } from "../live-data";
 
 export default function TrackRecord() {
@@ -40,7 +41,11 @@ export default function TrackRecord() {
 											{call.question}
 										</a>
 										<br />
-										<span className="muted">{call.marketId}</span>
+										<IdChip
+											label="Market"
+											value={call.marketId}
+											href={call.marketUrl}
+										/>
 									</td>
 									<td>
 										<a
@@ -48,13 +53,17 @@ export default function TrackRecord() {
 											target="_blank"
 											rel="noreferrer"
 										>
-											raw {(call.rawPrice * 100).toFixed(2)}%
+											{call.rawPrice == null
+												? "Price unavailable"
+												: `raw ${(call.rawPrice * 100).toFixed(2)}%`}
 										</a>
 									</td>
 									<td>
-										<a className="blob" href={`/memory#${call.blobId}`}>
-											{call.blobId.slice(0, 12)}...
-										</a>
+										<IdChip
+											label="Memory"
+											value={call.blobId}
+											href={`/memory#${call.blobId}`}
+										/>
 										<br />
 										<a
 											className="pill"

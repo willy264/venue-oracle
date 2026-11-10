@@ -1,20 +1,86 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { LiveCall } from "../live-data";
+
+const minimumSample = 5;
+const shrinkageK = 20;
+
+function titleCase(value: string) {
+	return value
+		.replaceAll("-", " ")
+		.replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function bucketLabel(call: LiveCall) {
+	const category = titleCase(call.category ?? "unknown");
+	const bucket =
+		call.timeBucket === "7d"
+			? "7 days"
+			: call.timeBucket === "3d"
+				? "3 days"
+				: call.timeBucket === "1d"
+					? "1 day"
+					: "current";
+	return `${titleCase(call.venue)} · ${category} · ${bucket}`;
+}
 
 export function WhyDrawer({ call }: { call: LiveCall }) {
 	const [open, setOpen] = useState(false);
+	const triggerRef = useRef<HTMLButtonElement>(null);
+	const closeRef = useRef<HTMLButtonElement>(null);
+	const dialogRef = useRef<HTMLDialogElement>(null);
+	const sampleN = call.replaySampleN ?? 0;
+	const weight = sampleN / (sampleN + shrinkageK);
+
+	useEffect(() => {
+		if (!open) {
+			document.body.style.overflow = "";
+			return;
+		}
+		document.body.style.overflow = "hidden";
+		closeRef.current?.focus();
+		return () => {
+			document.body.style.overflow = "";
+		};
+	}, [open]);
+
 	useEffect(() => {
 		if (!open) return;
-		const close = (event: KeyboardEvent) =>
-			event.key === "Escape" && setOpen(false);
-		window.addEventListener("keydown", close);
-		return () => window.removeEventListener("keydown", close);
+		const onKeyDown = (event: KeyboardEvent) => {
+			if (event.key === "Escape") {
+				event.preventDefault();
+				setOpen(false);
+				return;
+			}
+			if (event.key !== "Tab" || !dialogRef.current) return;
+			const focusable = dialogRef.current.querySelectorAll<HTMLElement>(
+				"button, a, input, select, textarea, [tabindex]:not([tabindex='-1'])",
+			);
+			if (!focusable.length) return;
+			const first = focusable[0];
+			const last = focusable[focusable.length - 1];
+			if (event.shiftKey && document.activeElement === first) {
+				event.preventDefault();
+				last.focus();
+			} else if (!event.shiftKey && document.activeElement === last) {
+				event.preventDefault();
+				first.focus();
+			}
+		};
+		document.addEventListener("keydown", onKeyDown);
+		return () => document.removeEventListener("keydown", onKeyDown);
 	}, [open]);
+
+	const close = () => {
+		setOpen(false);
+		window.setTimeout(() => triggerRef.current?.focus(), 0);
+	};
+
 	return (
 		<>
 			<button
+				ref={triggerRef}
 				className="why-button"
 				type="button"
 				onClick={() => setOpen(true)}
@@ -23,42 +89,55 @@ export function WhyDrawer({ call }: { call: LiveCall }) {
 			</button>
 			{open && (
 				<dialog
+					ref={dialogRef}
 					open
 					className="drawer-backdrop"
-					onClick={(event) =>
-						event.target === event.currentTarget && setOpen(false)
-					}
-					onKeyDown={(event) => event.key === "Escape" && setOpen(false)}
+					aria-modal="true"
+					aria-labelledby={`why-${call.id}`}
+					onClick={(event) => event.target === event.currentTarget && close()}
+					onKeyDown={(event) => event.key === "Escape" && close()}
 				>
-					<aside
-						className="drawer"
-						role="dialog"
-						aria-modal="true"
-						aria-labelledby={`why-${call.id}`}
-					>
+					<aside className="drawer">
+						<div className="drawer-handle" aria-hidden="true" />
 						<button
+							ref={closeRef}
 							className="drawer-close"
 							type="button"
-							onClick={() => setOpen(false)}
+							onClick={close}
 							aria-label="Close explanation"
 						>
-							×
+							X
 						</button>
 						<div className="eyebrow">CALIBRATION TRACE</div>
 						<h2 id={`why-${call.id}`}>Why this number?</h2>
-						<p className="muted">
-							The v2 engine looked for a prior summary in the {call.venue} ×{" "}
-							{call.category} × {call.timeBucket ?? "current"} bucket. No
-							qualifying summary was available for this live sports record, so
-							it abstained.
+						<p className="drawer-copy">
+							The v2 engine checked the {bucketLabel(call)} bucket before
+							deciding whether there was enough evidence to correct this venue
+							price.
 						</p>
 						<div className="arithmetic">
 							<code>
-								{(call.rawPrice * 100).toFixed(1)}% + 0.00 × (bucket rate −
-								bucket mean) = {(call.correctedProbability * 100).toFixed(1)}%
+								{call.rawPrice == null
+									? "Price unavailable"
+									: `${(call.rawPrice * 100).toFixed(1)}% + ${weight.toFixed(3)} x (bucket rate - bucket mean) = ${((call.correctedProbability ?? call.rawPrice) * 100).toFixed(1)}%`}
 							</code>
 						</div>
-						<p className="muted">Cited memories</p>
+						{call.rawPrice != null && sampleN === 0 && (
+							<p className="drawer-copy">
+								w = n/(n+k) = 0/(0+k) = 0 &mdash; no resolved cases in{" "}
+								{bucketLabel(call)} (minimum n = {minimumSample}).
+							</p>
+						)}
+						{call.rawPrice != null &&
+							sampleN > 0 &&
+							sampleN < minimumSample && (
+								<p className="drawer-copy">
+									w = n/(n+k) = {sampleN}/({sampleN}+{shrinkageK}) ={" "}
+									{weight.toFixed(3)} - below the minimum n = {minimumSample},
+									so the raw price is retained.
+								</p>
+							)}
+						<h3>Cited memories</h3>
 						<div className="drawer-memory">
 							No qualifying replay memory cited. The raw venue price is shown
 							unchanged.

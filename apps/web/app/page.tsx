@@ -1,4 +1,5 @@
 import replay from "../../../results/latest-replay-v2.json";
+import { IdChip } from "./components/id-chip";
 import { ProbabilityRail } from "./components/probability-rail";
 import { WhyDrawer } from "./components/why-drawer";
 import { decisionFor, liveCalls } from "./live-data";
@@ -6,18 +7,31 @@ import { decisionFor, liveCalls } from "./live-data";
 const holdout = replay.metrics.holdout;
 
 export default function Home() {
+	const venueCounts = liveCalls.reduce<Record<string, number>>(
+		(counts, call) => {
+			counts[call.venue] = (counts[call.venue] ?? 0) + 1;
+			return counts;
+		},
+		{},
+	);
+	const subtitle = Object.entries(venueCounts)
+		.map(
+			([venue, count]) => `${count} ${venue[0].toUpperCase()}${venue.slice(1)}`,
+		)
+		.join(" / ");
+
 	return (
 		<>
 			<div className="eyebrow">LIVE CALIBRATION / 09 NOV 2026</div>
 			<h1 className="title">How honest is each venue?</h1>
 			<p className="lede">
-				Venue Oracle calibrates each venue independently. These six records are
+				Venue Oracle calibrates each venue independently. These live records are
 				real Tatum snapshots, with their market IDs, source links, Walrus
 				memories, and Sui testnet commitments exposed for inspection.
 			</p>
 			<p className="headline-result">
-				Better calibrated (error 0.145 → 0.102), not more accurate on held-out
-				data (Brier 0.1955 → 0.1984).
+				Better calibrated (error 0.145 -&gt; 0.102), not more accurate on
+				held-out data (Brier 0.1955 -&gt; 0.1984).
 			</p>
 			<div className="stats">
 				<div className="stat">
@@ -39,7 +53,7 @@ export default function Home() {
 			</div>
 			<div className="toolbar">
 				<h2>Open calibration calls</h2>
-				<span>3 Polymarket / 3 Kalshi / Tatum snapshots</span>
+				<span>{subtitle} / Tatum snapshots</span>
 			</div>
 			<div className="grid">
 				{liveCalls.map((call) => (
@@ -61,7 +75,11 @@ export default function Home() {
 							<b>{decisionFor(call)}</b>
 						</div>
 						<div className="callmeta">
-							<span>ID {call.marketId}</span>
+							<IdChip
+								label="Market"
+								value={call.marketId}
+								href={call.marketUrl}
+							/>
 							<span>{call.snapshotAt}</span>
 						</div>
 						<div className="links">
@@ -73,9 +91,11 @@ export default function Home() {
 							>
 								OPEN MARKET
 							</a>
-							<a className="why" href={`/memory#${call.blobId}`}>
-								MEMORY / {call.blobId.slice(0, 12)}...
-							</a>
+							<IdChip
+								label="Memory"
+								value={call.blobId}
+								href={`/memory#${call.blobId}`}
+							/>
 						</div>
 						<div className="links">
 							<a
@@ -86,7 +106,6 @@ export default function Home() {
 							>
 								TATUM PRICE ENDPOINT
 							</a>
-							<span className="tx">SUI {call.txDigest.slice(0, 12)}...</span>
 						</div>
 						<div className="trust-links">
 							<a
@@ -94,15 +113,17 @@ export default function Home() {
 								target="_blank"
 								rel="noreferrer"
 							>
-								Sui proof ↗
+								Sui commit -&gt;
 							</a>
+							<IdChip label="Tx" value={call.txDigest} />
 							<a
 								href={`https://suiexplorer.testnet.sui.io/object/${call.packageId}`}
 								target="_blank"
 								rel="noreferrer"
 							>
-								Package ↗
+								Package -&gt;
 							</a>
+							<IdChip label="Package" value={call.packageId} />
 						</div>
 						<WhyDrawer call={call} />
 					</article>

@@ -1,16 +1,25 @@
 :root {
 	--font-ui: "Josefin Sans", sans-serif;
 	--radius: 10px;
-	--bg: #0b0e12;
-	--panel: #11161d;
-	--panel2: #151c24;
-	--line: #26313b;
-	--muted: #8b99a6;
-	--text: #e8edf1;
-	--green: #7ce2a7;
-	--amber: #f4c76b;
-	--red: #ff8e8e;
-	--cyan: #7dd4e8;
+	--bg: #0e1013;
+	--surface: #161a20;
+	--surface-2: #1d222a;
+	--rule: #2c323b;
+	--ink: #eceef1;
+	--text: #c9ced6;
+	--muted: #9aa2ad;
+	--accent: #f08a4b;
+	--link: #7fb3ff;
+	--ok: #7bc174;
+	--warn: #e0b34a;
+	--bad: #e57a70;
+	--panel: var(--surface);
+	--panel2: var(--surface-2);
+	--line: var(--rule);
+	--green: var(--ok);
+	--amber: var(--warn);
+	--red: var(--bad);
+	--cyan: var(--link);
 }
 * {
 	box-sizing: border-box;
@@ -19,17 +28,35 @@ html {
 	background: var(--bg);
 	color: var(--text);
 }
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg: #f5f3ee;
+		--surface: #ffffff;
+		--surface-2: #f0eee9;
+		--rule: #dcd8ce;
+		--ink: #14161a;
+		--text: #2e3238;
+		--muted: #5f646c;
+		--accent: #b4410f;
+		--link: #2753c9;
+		--ok: #3f7d3a;
+		--warn: #9a6b00;
+		--bad: #a23b32;
+	}
+}
 body {
 	margin: 0;
 	font-family: var(--font-ui);
-	background:
-		radial-gradient(circle at 90% -20%, #1b2b33 0, transparent 33%), var(--bg);
+	background: var(--bg);
 	font-size: 16px;
 	letter-spacing: 0;
 }
 a {
-	color: inherit;
+	color: var(--link);
 	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
 }
 .shell {
 	min-height: 100vh;
@@ -43,7 +70,7 @@ a {
 	z-index: 20;
 	min-height: 70px;
 	border-bottom: 1px solid var(--line);
-	background: color-mix(in srgb, var(--bg) 88%, transparent);
+	background: var(--bg);
 	backdrop-filter: blur(14px);
 	display: flex;
 	align-items: center;
@@ -74,7 +101,7 @@ nav {
 	flex: 1;
 }
 nav a:hover {
-	color: var(--text);
+	color: var(--ink);
 	background: var(--panel2);
 	transform: translateY(-2px);
 }
@@ -93,7 +120,7 @@ nav a {
 	letter-spacing: 0.08em;
 	white-space: nowrap;
 	padding: 8px 12px;
-	border: 1px solid #315340;
+	border: 1px solid var(--ok);
 	border-radius: 999px;
 }
 .status i {
@@ -115,6 +142,7 @@ main {
 }
 .title {
 	font-size: 34px;
+	color: var(--ink);
 	letter-spacing: 0.01em;
 	margin: 12px 0 8px;
 }
@@ -141,6 +169,7 @@ main {
 .toolbar h2 {
 	font-size: 18px;
 	margin: 0;
+	color: var(--ink);
 }
 .toolbar span {
 	color: var(--muted);
@@ -153,7 +182,7 @@ main {
 }
 .card {
 	min-width: 0;
-	background: linear-gradient(135deg, var(--panel), #0f141a);
+	background: var(--surface);
 	border: 1px solid var(--line);
 	padding: 18px;
 	border-radius: var(--radius);
@@ -163,9 +192,9 @@ main {
 		box-shadow 180ms ease;
 }
 .card:hover {
-	border-color: #49606e;
+	border-color: var(--link);
 	transform: translateY(-4px);
-	box-shadow: 0 14px 32px #0005;
+	box-shadow: 0 14px 32px rgb(0 0 0 / 20%);
 }
 .cardhead {
 	display: flex;
@@ -185,11 +214,12 @@ main {
 }
 .venue {
 	font-size: 11px;
-	color: var(--cyan);
+	color: var(--link);
 }
 .event {
 	font-family: inherit;
 	font-size: 18px;
+	color: var(--ink);
 	line-height: 1.5;
 	margin: 18px 0;
 	min-height: 42px;
@@ -230,7 +260,7 @@ main {
 	font-size: 14px;
 }
 .metricrow b {
-	color: var(--text);
+	color: var(--ink);
 	font-weight: 500;
 }
 .why {
@@ -459,6 +489,39 @@ details.proof summary:hover {
 	flex-wrap: wrap;
 	align-items: center;
 }
+.id-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	max-width: 100%;
+	min-width: 0;
+	padding: 4px 6px;
+	border: 1px solid var(--rule);
+	border-radius: 999px;
+	background: var(--surface-2);
+	font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+	font-size: 11px;
+	font-variant-numeric: tabular-nums;
+}
+.id-chip a,
+.id-value {
+	min-width: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.id-label {
+	color: var(--muted);
+}
+.id-chip button {
+	border: 0;
+	border-left: 1px solid var(--rule);
+	padding-left: 6px;
+	background: transparent;
+	color: var(--link);
+	font: inherit;
+	cursor: pointer;
+}
 .callmeta {
 	color: var(--muted);
 	font-size: 13px;
@@ -495,6 +558,13 @@ details.proof summary:hover {
 }
 .probability-rail {
 	margin: 26px 0 10px;
+}
+.rail-unavailable {
+	padding: 12px;
+	border: 1px dashed var(--rule);
+	border-radius: var(--radius);
+	color: var(--muted);
+	font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
 }
 .rail-track {
 	height: 34px;
@@ -586,25 +656,45 @@ details.proof summary:hover {
 .drawer-backdrop {
 	position: fixed;
 	inset: 0;
-	z-index: 40;
-	background: #0009;
+	margin: 0;
+	padding: 0;
+	max-width: none;
+	max-height: none;
+	z-index: 100;
+	background: rgb(0 0 0 / 60%);
+	border: 0;
 	display: flex;
 	justify-content: flex-end;
 	animation: reveal 180ms ease;
 }
 .drawer {
-	width: min(470px, 100%);
-	height: 100%;
-	overflow: auto;
-	background: var(--panel);
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: min(480px, 100vw);
+	height: 100dvh;
+	overflow-y: auto;
+	background: var(--surface);
 	border-left: 1px solid var(--line);
 	padding: 32px;
-	position: relative;
 	animation: drawer-in 220ms ease;
 }
 .drawer h2 {
 	font-size: 26px;
 	margin: 10px 0 18px;
+	color: var(--ink);
+	font-weight: 600;
+}
+.drawer-copy {
+	color: var(--text);
+	line-height: 1.6;
+}
+.drawer h3 {
+	color: var(--ink);
+	margin-top: 26px;
+}
+.drawer-handle {
+	display: none;
 }
 .drawer-close {
 	position: absolute;
@@ -612,7 +702,7 @@ details.proof summary:hover {
 	right: 20px;
 	border: 0;
 	background: transparent;
-	color: var(--muted);
+	color: var(--ink);
 	font-size: 28px;
 	cursor: pointer;
 }
@@ -622,8 +712,15 @@ details.proof summary:hover {
 	border-radius: var(--radius);
 	padding: 14px;
 	margin: 14px 0 22px;
-	background: var(--panel2);
+	background: var(--surface-2);
 	line-height: 1.6;
+}
+.arithmetic code {
+	color: var(--text);
+	font-variant-numeric: tabular-nums;
+}
+.drawer-memory {
+	color: var(--muted);
 }
 @keyframes drawer-in {
 	from {
@@ -739,5 +836,31 @@ details.proof summary:hover {
 	footer span {
 		display: block;
 		margin-top: 8px;
+	}
+}
+@media (max-width: 640px) {
+	.drawer-backdrop {
+		align-items: flex-end;
+	}
+	.drawer {
+		position: fixed;
+		top: auto;
+		right: auto;
+		bottom: 0;
+		width: 100vw;
+		height: auto;
+		max-height: 85dvh;
+		border-top: 1px solid var(--rule);
+		border-left: 0;
+		border-radius: var(--radius) var(--radius) 0 0;
+		padding: 24px 20px 28px;
+	}
+	.drawer-handle {
+		display: block;
+		width: 42px;
+		height: 4px;
+		margin: -10px auto 16px;
+		border-radius: 999px;
+		background: var(--muted);
 	}
 }

@@ -3,14 +3,26 @@ export function ProbabilityRail({
 	corrected,
 	label,
 }: {
-	raw: number;
-	corrected: number;
+	raw: number | null;
+	corrected: number | null;
 	label: string;
 }) {
-	const same = Math.abs(raw - corrected) < 0.01;
+	if (raw == null) {
+		return (
+			<div
+				className="probability-rail unavailable"
+				aria-label={`${label}: price unavailable`}
+				role="img"
+			>
+				<div className="rail-unavailable">Price unavailable</div>
+			</div>
+		);
+	}
+	const calibrated = corrected ?? raw;
+	const same = Math.abs(raw - calibrated) < 0.01;
 	const description = same
 		? `${label}: raw and calibrated probability ${(raw * 100).toFixed(1)} percent; no calibration edge.`
-		: `${label}: raw ${(raw * 100).toFixed(1)} percent, calibrated ${(corrected * 100).toFixed(1)} percent.`;
+		: `${label}: raw ${(raw * 100).toFixed(1)} percent, calibrated ${(calibrated * 100).toFixed(1)} percent.`;
 	const markerPosition = (value: number) =>
 		value <= 0.05 ? "edge-left" : value >= 0.95 ? "edge-right" : "";
 	return (
@@ -23,8 +35,8 @@ export function ProbabilityRail({
 					<span
 						className="rail-connector"
 						style={{
-							left: `${Math.min(raw, corrected) * 100}%`,
-							width: `${Math.abs(raw - corrected) * 100}%`,
+							left: `${Math.min(raw, calibrated) * 100}%`,
+							width: `${Math.abs(raw - calibrated) * 100}%`,
 						}}
 					/>
 				)}
@@ -36,10 +48,10 @@ export function ProbabilityRail({
 				</span>
 				{!same && (
 					<span
-						className={`rail-marker calibrated-marker ${markerPosition(corrected)}`}
-						style={{ left: `${corrected * 100}%` }}
+						className={`rail-marker calibrated-marker ${markerPosition(calibrated)}`}
+						style={{ left: `${calibrated * 100}%` }}
 					>
-						<span>Calibrated {(corrected * 100).toFixed(1)}%</span>
+						<span>Calibrated {(calibrated * 100).toFixed(1)}%</span>
 					</span>
 				)}
 			</div>
