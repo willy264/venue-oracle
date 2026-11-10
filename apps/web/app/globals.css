@@ -148,10 +148,11 @@ main {
 }
 .grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: 12px;
 }
 .card {
+	min-width: 0;
 	background: linear-gradient(135deg, var(--panel), #0f141a);
 	border: 1px solid var(--line);
 	padding: 18px;
@@ -169,9 +170,18 @@ main {
 .cardhead {
 	display: flex;
 	justify-content: space-between;
+	gap: 10px;
+	min-width: 0;
 	color: var(--muted);
 	font-size: 10px;
 	letter-spacing: 0.06em;
+}
+.cardhead > span,
+.callmeta > span,
+.links > a,
+.tx {
+	min-width: 0;
+	overflow-wrap: anywhere;
 }
 .venue {
 	font-size: 11px;
@@ -551,6 +561,15 @@ details.proof summary:hover {
 	white-space: nowrap;
 	color: var(--muted);
 	font-size: 11px;
+}
+.rail-marker.edge-left span {
+	left: 0;
+	transform: none;
+}
+.rail-marker.edge-right span {
+	left: auto;
+	right: 0;
+	transform: none;
 }
 .rail-scale {
 	display: flex;

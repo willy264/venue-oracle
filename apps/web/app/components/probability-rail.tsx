@@ -11,6 +11,8 @@ export function ProbabilityRail({
 	const description = same
 		? `${label}: raw and calibrated probability ${(raw * 100).toFixed(1)} percent; no calibration edge.`
 		: `${label}: raw ${(raw * 100).toFixed(1)} percent, calibrated ${(corrected * 100).toFixed(1)} percent.`;
+	const markerPosition = (value: number) =>
+		value <= 0.05 ? "edge-left" : value >= 0.95 ? "edge-right" : "";
 	return (
 		<div className="probability-rail" aria-label={description} role="img">
 			<div className="rail-track">
@@ -27,14 +29,14 @@ export function ProbabilityRail({
 					/>
 				)}
 				<span
-					className="rail-marker raw-marker"
+					className={`rail-marker raw-marker ${markerPosition(raw)}`}
 					style={{ left: `${raw * 100}%` }}
 				>
 					<span>Raw {(raw * 100).toFixed(1)}%</span>
 				</span>
 				{!same && (
 					<span
-						className="rail-marker calibrated-marker"
+						className={`rail-marker calibrated-marker ${markerPosition(corrected)}`}
 						style={{ left: `${corrected * 100}%` }}
 					>
 						<span>Calibrated {(corrected * 100).toFixed(1)}%</span>
