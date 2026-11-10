@@ -5,7 +5,7 @@
 - Demo URL: https://venue-oracle.vercel.app
 - Public repository: https://github.com/willy264/venue-oracle
 - Vercel project: `venue-oracle`; root `apps/web`, Node `22.x`.
-- Final UI/data implementation commit: `ff0af0b` (`fix(ui): prevent calibration title squeeze`).
+- Final UI/data implementation commit: `1b13858` (`fix(ui): satisfy drawer import lint`).
 - Final accessibility patch before freeze: `4c266e34cbb6b955add0a0993c8481feb77eb918`.
 - Blog URL: owner-only publication, not done.
 - Video URL: owner-only upload, not done.
