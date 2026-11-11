@@ -3,34 +3,34 @@
   "commitments": [
     {
       "pairId": "polymarket:0x1632539feac2c2879becdd9c82cbf6fe2a9d1a543081bcc4fc6095f3f5195815",
-      "txDigest": "78rXkpgMu5LEY1uaE8KPniXAyevWeDUCTVw3cTMW3yhX",
+      "txDigest": "9h68JbydivWWvVuS2aQL9gTUueiJ5Vb9PiFELqcaBcHV",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0xcb86b71e7ee2e62f8ecf5da5c8bd5f52d896970270abf420294a0ce0413cbf87",
-      "txDigest": "241kS8de8zCRBbnTDxS8qiLbqEbo7Ag83Gw9PamnmwEM",
+      "txDigest": "4tL9rX9q2W87CtgLHPtZ6fqqYwcMhunsxKw476VUZrse",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0xa0e794b19ec1dda98d7fc518ec033233e25817b17e06f2a8fa4def146c15e15c",
-      "txDigest": "5sPVCzVdhvYP7g7FBbwGXSmdEfSF9JGUcnQM8nqepFvg",
+      "txDigest": "5kNJFEHP4MVVECf5gEC7vMZTUK4fAapGhcNaCBWiFK6n",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0xbddb7c7946f22cd2c0fd059473c4cd0b3458e901bfa581afccdae0058ae25380",
-      "txDigest": "DTHMbk2ZyieGVA9UHxoJDnGEQtpUyz9v3Z2ZkMahMmpE",
+      "txDigest": "DaSi9E83GbU8dfBvGioKFKptsF7ceRJ8L1gRcDxAaTAW",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45",
-      "txDigest": "AiepfFzBeLVzbubKeCxkL77b6hNPtVukkU37AcuyeaTC",
+      "txDigest": "HrY4AVtAz1rEMm4Uxt749YZf2CC3HU3NrNvhaLWHsF97",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0x134e5143254278e5df6f0ffcf9502845fa935923b86c56fd627508552240a959",
-      "txDigest": "3KsRTYKvZ2u1CVQvwjFpvWNi7ycJaJvDCWSjHhXRK8FQ",
+      "txDigest": "9bM9rUmCmkrb89H35W4S564s2TWdMNzyc7NRMXPGk8qa",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     }
   ],
-  "observedAt": "2026-11-11T01:42:10.727Z"
+  "observedAt": "2026-11-11T08:46:30.401Z"
 }
