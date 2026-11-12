@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-11-11T23:16:40.422Z",
+  "observedAt": "2026-11-12T04:00:15.457Z",
   "source": "live-refresh-tatum",
   "provenance": "LIVE",
   "selection": "Tatum Polymarket sports markets closing 1-7 days; no forced correction",
@@ -7,7 +7,7 @@
   "calls": [
     {
       "pairId": "polymarket:0x1632539feac2c2879becdd9c82cbf6fe2a9d1a543081bcc4fc6095f3f5195815",
-      "ts": "2026-11-11T23:16:01.196Z",
+      "ts": "2026-11-12T03:59:33.571Z",
       "venue": "polymarket",
       "marketId": "0x1632539feac2c2879becdd9c82cbf6fe2a9d1a543081bcc4fc6095f3f5195815",
       "rawPrice": 0,
@@ -21,23 +21,23 @@
       "liquidity": 0,
       "volume": 943624.0453060002,
       "confidence": 0.1,
-      "digest": "02e5010dcee124c24fbdf722e4c2439a78fdb3a8034644cdaec125e686a1b354",
+      "digest": "3741abc0a25bd4ad90bef48d9e32bbc214d5b909dd1122eef75506de9351e029",
       "commitmentStatus": "testnet-committed",
-      "commitmentTxDigest": "8oAEjDV2psiA1vijke615pLnmofny8bTfoSR1Q7VaEt2",
+      "commitmentTxDigest": "F4YaLuCmsPM5KzNaJoQeQ7F5S9jj5YjC1u4RWfygSpPh",
       "marketUrl": "https://polymarket.com/event/wta-sabalen-muchova-2026-11-09",
       "venueUrl": "https://polymarket.com/event/wta-sabalen-muchova-2026-11-09",
       "tatum": {
         "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x1632539feac2c2879becdd9c82cbf6fe2a9d1a543081bcc4fc6095f3f5195815",
         "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x1632539feac2c2879becdd9c82cbf6fe2a9d1a543081bcc4fc6095f3f5195815/price",
-        "snapshotTimestamp": "2026-11-11T23:16:01.196Z",
+        "snapshotTimestamp": "2026-11-12T03:59:33.571Z",
         "rawPrice": 0
       },
-      "blobId": "ndfbviw8Q7eyyeb9teaQDm9JSmuGLm0hVHkYH2EDwRg",
+      "blobId": "CCsWpgn4PnewYCBBzhDgi-81Szl08CT_m7VR-HAlQBM",
       "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0xcb86b71e7ee2e62f8ecf5da5c8bd5f52d896970270abf420294a0ce0413cbf87",
-      "ts": "2026-11-11T23:16:04.731Z",
+      "ts": "2026-11-12T03:59:38.103Z",
       "venue": "polymarket",
       "marketId": "0xcb86b71e7ee2e62f8ecf5da5c8bd5f52d896970270abf420294a0ce0413cbf87",
       "rawPrice": 0,
@@ -51,23 +51,23 @@
       "liquidity": 0,
       "volume": 292988.623314,
       "confidence": 0.1,
-      "digest": "aa3a769ea1b1ee2fbd10c0ec3c082a025a8394aced092dabd56746caafb6d6f9",
+      "digest": "33d9c97a890fa8daa987d86af64b29b13ae6c09f53fc936dd5a4b608e5d724be",
       "commitmentStatus": "testnet-committed",
-      "commitmentTxDigest": "Ckz3SA48LHE9ibw7ExoxoQKinvMLCmqWcUFih2mi2bs2",
+      "commitmentTxDigest": "69AqgrmFopskr9nexF3Uqn9oQPuuMgLVGyt3hrKxLJxc",
       "marketUrl": "https://polymarket.com/event/atp-harris-broady-2026-11-08",
       "venueUrl": "https://polymarket.com/event/atp-harris-broady-2026-11-08",
       "tatum": {
         "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xcb86b71e7ee2e62f8ecf5da5c8bd5f52d896970270abf420294a0ce0413cbf87",
         "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xcb86b71e7ee2e62f8ecf5da5c8bd5f52d896970270abf420294a0ce0413cbf87/price",
-        "snapshotTimestamp": "2026-11-11T23:16:04.731Z",
+        "snapshotTimestamp": "2026-11-12T03:59:38.103Z",
         "rawPrice": 0
       },
-      "blobId": "JHcW2gJwbso_cPSr4m8_J9Tp-w0FnQCMSejHml5B71A",
+      "blobId": "uswizVIcnlIM4fLDyOJzMZNIt9pFAHFoMqByN3rh_mI",
       "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0xa0e794b19ec1dda98d7fc518ec033233e25817b17e06f2a8fa4def146c15e15c",
-      "ts": "2026-11-11T23:16:06.365Z",
+      "ts": "2026-11-12T03:59:39.964Z",
       "venue": "polymarket",
       "marketId": "0xa0e794b19ec1dda98d7fc518ec033233e25817b17e06f2a8fa4def146c15e15c",
       "rawPrice": 0,
@@ -81,23 +81,23 @@
       "liquidity": 0,
       "volume": 453761.4425,
       "confidence": 0.1,
-      "digest": "c36b2e9bc692a2dc29bbb045846e5838de48e73316092553000d1147366ed079",
+      "digest": "29f6a1b7558c211d57e7d14adde21aa54b13a41443f02e015d0d48531929f92f",
       "commitmentStatus": "testnet-committed",
-      "commitmentTxDigest": "8nZXZuCJy3gucPqqW4ccHPxeCwDjtBU6LVebinP6maw8",
+      "commitmentTxDigest": "BJKhodDHZni5PG3RepS6RkLUUBKTXoFxgTctbM3qNy3r",
       "marketUrl": "https://polymarket.com/event/atp-kjaer-gueymar-2026-11-09",
       "venueUrl": "https://polymarket.com/event/atp-kjaer-gueymar-2026-11-09",
       "tatum": {
         "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xa0e794b19ec1dda98d7fc518ec033233e25817b17e06f2a8fa4def146c15e15c",
         "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xa0e794b19ec1dda98d7fc518ec033233e25817b17e06f2a8fa4def146c15e15c/price",
-        "snapshotTimestamp": "2026-11-11T23:16:06.365Z",
+        "snapshotTimestamp": "2026-11-12T03:59:39.964Z",
         "rawPrice": 0
       },
-      "blobId": "eWtHiqINfr9kCh79NPatHu99STB2rf8D8vYAQgSeAgY",
+      "blobId": "Z38-QGge3aHl844jrAAJ2cePjQI8h-tTCa9rVeJYnM4",
       "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0xbddb7c7946f22cd2c0fd059473c4cd0b3458e901bfa581afccdae0058ae25380",
-      "ts": "2026-11-11T23:15:08.057Z",
+      "ts": "2026-11-12T03:58:23.207Z",
       "venue": "polymarket",
       "marketId": "0xbddb7c7946f22cd2c0fd059473c4cd0b3458e901bfa581afccdae0058ae25380",
       "rawPrice": 0.375,
@@ -108,26 +108,26 @@
       "category": "sports",
       "timeBucket": "3d",
       "closeTime": "2026-11-15T00:00:00.000Z",
-      "liquidity": 96946.9812,
-      "volume": 26185.429068000005,
+      "liquidity": 102650.5785,
+      "volume": 27810.142462000003,
       "confidence": 0.1,
-      "digest": "0dc2c9b6f56fb3ca361fc3ecdf6352eb2fec488555e8d2542dd78461d1562975",
+      "digest": "dba690a77dabd0d39c691a38cdfc0b4c734a6b72e1c2f4b3e38877eb56c25bbd",
       "commitmentStatus": "testnet-committed",
-      "commitmentTxDigest": "FAirSKXQu4hvpwsYip1DcfTcbzLgjUihzwhqeSmc1DvZ",
+      "commitmentTxDigest": "7CXcMBi8geNv5rfiNMTjTUkZvj1ZGReETpKBVzhYUXrb",
       "marketUrl": "https://polymarket.com/event/ufc-ama1-kay4-2026-11-14",
       "venueUrl": "https://polymarket.com/event/ufc-ama1-kay4-2026-11-14",
       "tatum": {
         "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xbddb7c7946f22cd2c0fd059473c4cd0b3458e901bfa581afccdae0058ae25380",
         "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0xbddb7c7946f22cd2c0fd059473c4cd0b3458e901bfa581afccdae0058ae25380/price",
-        "snapshotTimestamp": "2026-11-11T23:15:08.057Z",
+        "snapshotTimestamp": "2026-11-12T03:58:23.207Z",
         "rawPrice": 0.375
       },
-      "blobId": "IC86pUEsg3Oe7U40wAfpK8VQixst1ov4noRaYbtuCH8",
+      "blobId": "RasKahGrhHcGw720mqv5Giwfq_eZYkv0tYhYAKY1WCc",
       "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45",
-      "ts": "2026-11-11T23:16:05.790Z",
+      "ts": "2026-11-12T03:59:41.346Z",
       "venue": "polymarket",
       "marketId": "0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45",
       "rawPrice": 0.375,
@@ -138,26 +138,26 @@
       "category": "sports",
       "timeBucket": "3d",
       "closeTime": "2026-11-15T00:00:00.000Z",
-      "liquidity": 2232360.3129,
-      "volume": 542275.503389,
+      "liquidity": 2307838.699,
+      "volume": 551909.187627,
       "confidence": 0.1,
-      "digest": "c6b26aac75f6e0d7706a75ecef0903d669fed282d2410a16e93beb7ca6ebf69c",
+      "digest": "696957ccef74bd7dfd94f0a61d5cfcaed7ae266092a82c1b945246607d8ffd86",
       "commitmentStatus": "testnet-committed",
-      "commitmentTxDigest": "6LEZFQ18YgkXBiBmJzRVx4FTrBcK3GjiAEWz41E98Ut6",
+      "commitmentTxDigest": "HVXHPpVe9bvMpVvhH3yw4ZxYcTv5NjhRjWN6UtbCemEE",
       "marketUrl": "https://polymarket.com/event/lol-blg-gen-2026-11-14",
       "venueUrl": "https://polymarket.com/event/lol-blg-gen-2026-11-14",
       "tatum": {
         "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45",
         "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45/price",
-        "snapshotTimestamp": "2026-11-11T23:16:05.790Z",
+        "snapshotTimestamp": "2026-11-12T03:59:41.346Z",
         "rawPrice": 0.375
       },
-      "blobId": "PpANBtyVvvwBPI3Hl8BFpEilFyyznQhH3pZTkx_Vl04",
+      "blobId": "IglTSvt0nAlJFZ-EmlXBSO5azTGHDFILlRMSlBK-Aso",
       "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0x134e5143254278e5df6f0ffcf9502845fa935923b86c56fd627508552240a959",
-      "ts": "2026-11-11T23:16:04.340Z",
+      "ts": "2026-11-12T03:59:29.980Z",
       "venue": "polymarket",
       "marketId": "0x134e5143254278e5df6f0ffcf9502845fa935923b86c56fd627508552240a959",
       "rawPrice": 0.425,
@@ -166,61 +166,61 @@
       "citedBlobIds": [],
       "question": "LoL: Bilibili Gaming vs Gen.G - Game 1 Winner",
       "category": "sports",
-      "timeBucket": "3d",
+      "timeBucket": "1d",
       "closeTime": "2026-11-14T00:00:00.000Z",
-      "liquidity": 466640.7354,
-      "volume": 11192.846377000002,
+      "liquidity": 503475.5552,
+      "volume": 13161.387109000001,
       "confidence": 0.1,
-      "digest": "4317201cee2b8e17fb1cde78650a604c399428e5e8f106135ac3bdaea2da0c30",
+      "digest": "c9cd43cf8ad96e258d2bf124f2d493239699251380625c1153ce9d1adf4e77d8",
       "commitmentStatus": "testnet-committed",
-      "commitmentTxDigest": "FniyYjSYkBaS7t4vyhYCypDnHXboYSPMxXnC8mJbAoDJ",
+      "commitmentTxDigest": "8JBEPFRGRfctVUcNYPF2Md2iVsadeTkUbMhJFrCHtQFv",
       "marketUrl": "https://polymarket.com/event/lol-blg-gen-2026-11-14",
       "venueUrl": "https://polymarket.com/event/lol-blg-gen-2026-11-14",
       "tatum": {
         "marketEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x134e5143254278e5df6f0ffcf9502845fa935923b86c56fd627508552240a959",
         "priceEndpoint": "https://api.tatum.io/v4/data/prediction/markets/0x134e5143254278e5df6f0ffcf9502845fa935923b86c56fd627508552240a959/price",
-        "snapshotTimestamp": "2026-11-11T23:16:04.340Z",
+        "snapshotTimestamp": "2026-11-12T03:59:29.980Z",
         "rawPrice": 0.425
       },
-      "blobId": "0SgwE-LABYnQkIH_i-Axl3fTWJ0rQVzh3sMXbBgMGfw",
+      "blobId": "XpJzHHjsaXXnXRXGtXHtbwUAi_La7hceqzPdYbrvWRo",
       "commitmentPackageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     }
   ],
   "memoryWrite": {
     "results": [
       {
-        "id": "a6701c4d-e675-415b-b8f2-db95ed9991d6",
-        "blob_id": "ndfbviw8Q7eyyeb9teaQDm9JSmuGLm0hVHkYH2EDwRg",
+        "id": "ba8d9709-9c98-400e-a7df-f222ca852a84",
+        "blob_id": "CCsWpgn4PnewYCBBzhDgi-81Szl08CT_m7VR-HAlQBM",
         "status": "done",
         "namespace": "vo-live"
       },
       {
-        "id": "584d3d0c-7b9c-4dc2-ac57-c031e2a44a8a",
-        "blob_id": "JHcW2gJwbso_cPSr4m8_J9Tp-w0FnQCMSejHml5B71A",
+        "id": "fad73228-e79a-4bdb-968b-639c73851ef2",
+        "blob_id": "uswizVIcnlIM4fLDyOJzMZNIt9pFAHFoMqByN3rh_mI",
         "status": "done",
         "namespace": "vo-live"
       },
       {
-        "id": "a471f01f-b00e-4da7-b2a8-6be0af37971f",
-        "blob_id": "eWtHiqINfr9kCh79NPatHu99STB2rf8D8vYAQgSeAgY",
+        "id": "d3772434-d867-4866-be62-a460d64d0d09",
+        "blob_id": "Z38-QGge3aHl844jrAAJ2cePjQI8h-tTCa9rVeJYnM4",
         "status": "done",
         "namespace": "vo-live"
       },
       {
-        "id": "98fe286f-d813-4d3d-915f-617cba2a7bd9",
-        "blob_id": "IC86pUEsg3Oe7U40wAfpK8VQixst1ov4noRaYbtuCH8",
+        "id": "a8276d34-733b-42f6-beea-67f5f5c721f2",
+        "blob_id": "RasKahGrhHcGw720mqv5Giwfq_eZYkv0tYhYAKY1WCc",
         "status": "done",
         "namespace": "vo-live"
       },
       {
-        "id": "b1326291-7d4a-47f3-8ed5-8a0dfd6cece9",
-        "blob_id": "PpANBtyVvvwBPI3Hl8BFpEilFyyznQhH3pZTkx_Vl04",
+        "id": "bba7040a-bcbf-4e1c-8535-b4d40ae14465",
+        "blob_id": "IglTSvt0nAlJFZ-EmlXBSO5azTGHDFILlRMSlBK-Aso",
         "status": "done",
         "namespace": "vo-live"
       },
       {
-        "id": "56b1b447-62f9-4efa-bb4a-4ebc3c883225",
-        "blob_id": "0SgwE-LABYnQkIH_i-Axl3fTWJ0rQVzh3sMXbBgMGfw",
+        "id": "a1dcf5e0-d173-4003-9f24-bc2b0d90efce",
+        "blob_id": "XpJzHHjsaXXnXRXGtXHtbwUAi_La7hceqzPdYbrvWRo",
         "status": "done",
         "namespace": "vo-live"
       }
@@ -260,40 +260,40 @@
   "testnetCommitments": [
     {
       "pairId": "polymarket:0x1632539feac2c2879becdd9c82cbf6fe2a9d1a543081bcc4fc6095f3f5195815",
-      "txDigest": "8oAEjDV2psiA1vijke615pLnmofny8bTfoSR1Q7VaEt2",
+      "txDigest": "F4YaLuCmsPM5KzNaJoQeQ7F5S9jj5YjC1u4RWfygSpPh",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0xcb86b71e7ee2e62f8ecf5da5c8bd5f52d896970270abf420294a0ce0413cbf87",
-      "txDigest": "Ckz3SA48LHE9ibw7ExoxoQKinvMLCmqWcUFih2mi2bs2",
+      "txDigest": "69AqgrmFopskr9nexF3Uqn9oQPuuMgLVGyt3hrKxLJxc",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0xa0e794b19ec1dda98d7fc518ec033233e25817b17e06f2a8fa4def146c15e15c",
-      "txDigest": "8nZXZuCJy3gucPqqW4ccHPxeCwDjtBU6LVebinP6maw8",
+      "txDigest": "BJKhodDHZni5PG3RepS6RkLUUBKTXoFxgTctbM3qNy3r",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0xbddb7c7946f22cd2c0fd059473c4cd0b3458e901bfa581afccdae0058ae25380",
-      "txDigest": "FAirSKXQu4hvpwsYip1DcfTcbzLgjUihzwhqeSmc1DvZ",
+      "txDigest": "7CXcMBi8geNv5rfiNMTjTUkZvj1ZGReETpKBVzhYUXrb",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45",
-      "txDigest": "6LEZFQ18YgkXBiBmJzRVx4FTrBcK3GjiAEWz41E98Ut6",
+      "txDigest": "HVXHPpVe9bvMpVvhH3yw4ZxYcTv5NjhRjWN6UtbCemEE",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     },
     {
       "pairId": "polymarket:0x134e5143254278e5df6f0ffcf9502845fa935923b86c56fd627508552240a959",
-      "txDigest": "FniyYjSYkBaS7t4vyhYCypDnHXboYSPMxXnC8mJbAoDJ",
+      "txDigest": "8JBEPFRGRfctVUcNYPF2Md2iVsadeTkUbMhJFrCHtQFv",
       "packageId": "0xf12f3c22e31b83596b7db1a0641aff0a2bc033e10cc9bd1c435c850c11501363"
     }
   ],
-  "updatedAt": "2026-11-11T23:17:24.562Z",
+  "updatedAt": "2026-11-12T04:01:26.426Z",
   "tatumTestnetVerification": [
     {
       "pairId": "polymarket:0x1632539feac2c2879becdd9c82cbf6fe2a9d1a543081bcc4fc6095f3f5195815",
-      "txDigest": "8oAEjDV2psiA1vijke615pLnmofny8bTfoSR1Q7VaEt2",
+      "txDigest": "F4YaLuCmsPM5KzNaJoQeQ7F5S9jj5YjC1u4RWfygSpPh",
       "verified": true,
       "digestFoundInEvents": true,
       "referenceFoundInEvents": true,
@@ -303,10 +303,16 @@
           "oneofKind": "structValue",
           "structValue": {
             "fields": {
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794456074397"
+                }
+              },
               "digest": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "AuUBDc7hJMJPvfci5MJDmnj9s6gDRkTNrsEl5oahs1Q="
+                  "stringValue": "N0GrwKJb1K2QvvSNnjK7whTVuQndESLu91UG3pNR4Ck="
                 }
               },
               "reference": {
@@ -318,29 +324,23 @@
               "sender": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "0xcdace4658dfa2be3b43ca2656721ec4878957b8383f676d4b1b3ec577268f51a"
-                }
-              },
-              "ts_ms": {
-                "kind": {
-                  "oneofKind": "stringValue",
-                  "stringValue": "1794439034133"
+                  "stringValue": "0xc0093b7368cd7f60915e98f586aba67f0a108fb1c25a218d0fece9050dc5a3b0"
                 }
               }
             }
           }
         }
       },
-      "checkpoint": "405424851",
+      "checkpoint": "405497708",
       "timestamp": {
-        "seconds": "1794439034",
-        "nanos": 133000000
+        "seconds": "1794456074",
+        "nanos": 552000000
       },
       "error": null
     },
     {
       "pairId": "polymarket:0xcb86b71e7ee2e62f8ecf5da5c8bd5f52d896970270abf420294a0ce0413cbf87",
-      "txDigest": "Ckz3SA48LHE9ibw7ExoxoQKinvMLCmqWcUFih2mi2bs2",
+      "txDigest": "69AqgrmFopskr9nexF3Uqn9oQPuuMgLVGyt3hrKxLJxc",
       "verified": true,
       "digestFoundInEvents": true,
       "referenceFoundInEvents": true,
@@ -353,7 +353,7 @@
               "digest": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "qjp2nqGx7i+9EMDsPAgqAlqDlKztCS2r1WdGyq+21vk="
+                  "stringValue": "M9nJeokPqNqph9hq9kspsTrmwJ9T/JNt1aS2COXXJL4="
                 }
               },
               "reference": {
@@ -365,29 +365,29 @@
               "sender": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "0xcdace4658dfa2be3b43ca2656721ec4878957b8383f676d4b1b3ec577268f51a"
+                  "stringValue": "0xc0093b7368cd7f60915e98f586aba67f0a108fb1c25a218d0fece9050dc5a3b0"
                 }
               },
               "ts_ms": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "1794439034778"
+                  "stringValue": "1794456075406"
                 }
               }
             }
           }
         }
       },
-      "checkpoint": "405424854",
+      "checkpoint": "405497712",
       "timestamp": {
-        "seconds": "1794439034",
-        "nanos": 847000000
+        "seconds": "1794456075",
+        "nanos": 492000000
       },
       "error": null
     },
     {
       "pairId": "polymarket:0xa0e794b19ec1dda98d7fc518ec033233e25817b17e06f2a8fa4def146c15e15c",
-      "txDigest": "8nZXZuCJy3gucPqqW4ccHPxeCwDjtBU6LVebinP6maw8",
+      "txDigest": "BJKhodDHZni5PG3RepS6RkLUUBKTXoFxgTctbM3qNy3r",
       "verified": true,
       "digestFoundInEvents": true,
       "referenceFoundInEvents": true,
@@ -397,10 +397,22 @@
           "oneofKind": "structValue",
           "structValue": {
             "fields": {
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xc0093b7368cd7f60915e98f586aba67f0a108fb1c25a218d0fece9050dc5a3b0"
+                }
+              },
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794456076440"
+                }
+              },
               "digest": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "w2sum8aSotwpu7BFhG5YON5I5zMWCSVTAA0RRzZu0Hk="
+                  "stringValue": "Kfaht1WMIR1X59FK3eIapUsTpBRD8C4BXQ1IUxkp+S8="
                 }
               },
               "reference": {
@@ -408,33 +420,21 @@
                   "oneofKind": "stringValue",
                   "stringValue": "cG9seW1hcmtldDoweGEwZTc5NGIxOWVjMWRkYTk4ZDdmYzUxOGVjMDMzMjMzZTI1ODE3YjE3ZTA2ZjJhOGZhNGRlZjE0NmMxNWUxNWM="
                 }
-              },
-              "sender": {
-                "kind": {
-                  "oneofKind": "stringValue",
-                  "stringValue": "0xcdace4658dfa2be3b43ca2656721ec4878957b8383f676d4b1b3ec577268f51a"
-                }
-              },
-              "ts_ms": {
-                "kind": {
-                  "oneofKind": "stringValue",
-                  "stringValue": "1794439035565"
-                }
               }
             }
           }
         }
       },
-      "checkpoint": "405424857",
+      "checkpoint": "405497716",
       "timestamp": {
-        "seconds": "1794439035",
-        "nanos": 565000000
+        "seconds": "1794456076",
+        "nanos": 440000000
       },
       "error": null
     },
     {
       "pairId": "polymarket:0xbddb7c7946f22cd2c0fd059473c4cd0b3458e901bfa581afccdae0058ae25380",
-      "txDigest": "FAirSKXQu4hvpwsYip1DcfTcbzLgjUihzwhqeSmc1DvZ",
+      "txDigest": "7CXcMBi8geNv5rfiNMTjTUkZvj1ZGReETpKBVzhYUXrb",
       "verified": true,
       "digestFoundInEvents": true,
       "referenceFoundInEvents": true,
@@ -447,7 +447,7 @@
               "digest": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "DcLJtvVvs8o2H8Ps32NS6y/sSIVV6NJULdeEYdFWKXU="
+                  "stringValue": "26aQp32r0NOcaRo4zfwLTHNKa3LhwvSz44h361bCW70="
                 }
               },
               "reference": {
@@ -459,29 +459,29 @@
               "sender": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "0xcdace4658dfa2be3b43ca2656721ec4878957b8383f676d4b1b3ec577268f51a"
+                  "stringValue": "0xc0093b7368cd7f60915e98f586aba67f0a108fb1c25a218d0fece9050dc5a3b0"
                 }
               },
               "ts_ms": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "1794439036213"
+                  "stringValue": "1794456077353"
                 }
               }
             }
           }
         }
       },
-      "checkpoint": "405424860",
+      "checkpoint": "405497720",
       "timestamp": {
-        "seconds": "1794439036",
-        "nanos": 300000000
+        "seconds": "1794456077",
+        "nanos": 432000000
       },
       "error": null
     },
     {
       "pairId": "polymarket:0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45",
-      "txDigest": "6LEZFQ18YgkXBiBmJzRVx4FTrBcK3GjiAEWz41E98Ut6",
+      "txDigest": "HVXHPpVe9bvMpVvhH3yw4ZxYcTv5NjhRjWN6UtbCemEE",
       "verified": true,
       "digestFoundInEvents": true,
       "referenceFoundInEvents": true,
@@ -494,7 +494,7 @@
               "digest": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "xrJqrHX24NdwanXs7wkD1mn+0oLSQQoW6TvrfKbr9pw="
+                  "stringValue": "aWlXzO90vX39lPCmHVz8rteuJmCSqCwblFJGYH2P/YY="
                 }
               },
               "reference": {
@@ -506,29 +506,29 @@
               "sender": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "0xcdace4658dfa2be3b43ca2656721ec4878957b8383f676d4b1b3ec577268f51a"
+                  "stringValue": "0xc0093b7368cd7f60915e98f586aba67f0a108fb1c25a218d0fece9050dc5a3b0"
                 }
               },
               "ts_ms": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "1794439036990"
+                  "stringValue": "1794456078353"
                 }
               }
             }
           }
         }
       },
-      "checkpoint": "405424863",
+      "checkpoint": "405497724",
       "timestamp": {
-        "seconds": "1794439036",
-        "nanos": 990000000
+        "seconds": "1794456078",
+        "nanos": 353000000
       },
       "error": null
     },
     {
       "pairId": "polymarket:0x134e5143254278e5df6f0ffcf9502845fa935923b86c56fd627508552240a959",
-      "txDigest": "FniyYjSYkBaS7t4vyhYCypDnHXboYSPMxXnC8mJbAoDJ",
+      "txDigest": "8JBEPFRGRfctVUcNYPF2Md2iVsadeTkUbMhJFrCHtQFv",
       "verified": true,
       "digestFoundInEvents": true,
       "referenceFoundInEvents": true,
@@ -538,10 +538,22 @@
           "oneofKind": "structValue",
           "structValue": {
             "fields": {
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xc0093b7368cd7f60915e98f586aba67f0a108fb1c25a218d0fece9050dc5a3b0"
+                }
+              },
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1794456079281"
+                }
+              },
               "digest": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "QxcgHO4rjhf7HN54ZQpgTDmUKOXo8QYTWsO9rqLaDDA="
+                  "stringValue": "yc1Dz4rZbiWNK/Ek8tSTI5aZJROAYlwRU86dGt9Od9g="
                 }
               },
               "reference": {
@@ -549,27 +561,15 @@
                   "oneofKind": "stringValue",
                   "stringValue": "cG9seW1hcmtldDoweDEzNGU1MTQzMjU0Mjc4ZTVkZjZmMGZmY2Y5NTAyODQ1ZmE5MzU5MjNiODZjNTZmZDYyNzUwODU1MjI0MGE5NTk="
                 }
-              },
-              "sender": {
-                "kind": {
-                  "oneofKind": "stringValue",
-                  "stringValue": "0xcdace4658dfa2be3b43ca2656721ec4878957b8383f676d4b1b3ec577268f51a"
-                }
-              },
-              "ts_ms": {
-                "kind": {
-                  "oneofKind": "stringValue",
-                  "stringValue": "1794439037644"
-                }
               }
             }
           }
         }
       },
-      "checkpoint": "405424866",
+      "checkpoint": "405497728",
       "timestamp": {
-        "seconds": "1794439037",
-        "nanos": 644000000
+        "seconds": "1794456079",
+        "nanos": 281000000
       },
       "error": null
     }
