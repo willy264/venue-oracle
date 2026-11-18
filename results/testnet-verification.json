@@ -4,7 +4,7 @@
   "verifications": [
     {
       "pairId": "polymarket:0x1632539feac2c2879becdd9c82cbf6fe2a9d1a543081bcc4fc6095f3f5195815",
-      "txDigest": "AieGXxKBQ2bMEqfBEwts23SrgeorzAZzXgsdwt7y3wLz",
+      "txDigest": "uyRPB2iW7ACW1anTZM9XsFbe6YjKhrXEWBww8iAR7G1",
       "verified": true,
       "digestFoundInEvents": true,
       "referenceFoundInEvents": true,
@@ -17,7 +17,7 @@
               "digest": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "bCkyZjlF9bEfig3CVX/1nhxtw6s37DRcNeNUSBUYwhI="
+                  "stringValue": "+B671hdHFkbBu15s13yAe57IcwdKJLwJD+bxpYss0WM="
                 }
               },
               "reference": {
@@ -29,29 +29,29 @@
               "sender": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "0x0560cde7b6d44e4bf1559623572ba5d82d322ac3b0b62f71b313d78609fd7e9c"
+                  "stringValue": "0xfde42dbe60d3f2d66fac17e02f5bed0a00306fb1f5cca63bf60cce595b746a85"
                 }
               },
               "ts_ms": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "1794991829955"
+                  "stringValue": "1795023953416"
                 }
               }
             }
           }
         }
       },
-      "checkpoint": "407865545",
+      "checkpoint": "408008563",
       "timestamp": {
-        "seconds": "1794991830",
-        "nanos": 96000000
+        "seconds": "1795023953",
+        "nanos": 489000000
       },
       "error": null
     },
     {
       "pairId": "polymarket:0xcb86b71e7ee2e62f8ecf5da5c8bd5f52d896970270abf420294a0ce0413cbf87",
-      "txDigest": "2ZnzK6MV2AUpUPWew6zD4AoBbsrcouCuPrWsKHsCQhc8",
+      "txDigest": "4ecgPeragVkmyWiQSk1ry54pwyKPXjEacDJ8EgYxEQMn",
       "verified": true,
       "digestFoundInEvents": true,
       "referenceFoundInEvents": true,
@@ -64,7 +64,7 @@
               "digest": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "6wsrOpaz+5ZNj8tqMlEpINBs3RB/wmbYEKefKCm2M6k="
+                  "stringValue": "j1Wxa2wWeVOiEkORT91SKVD7bWmM6nDLww9uWpy80gw="
                 }
               },
               "reference": {
@@ -76,29 +76,29 @@
               "sender": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "0x0560cde7b6d44e4bf1559623572ba5d82d322ac3b0b62f71b313d78609fd7e9c"
+                  "stringValue": "0xfde42dbe60d3f2d66fac17e02f5bed0a00306fb1f5cca63bf60cce595b746a85"
                 }
               },
               "ts_ms": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "1794991831579"
+                  "stringValue": "1795023954645"
                 }
               }
             }
           }
         }
       },
-      "checkpoint": "407865552",
+      "checkpoint": "408008569",
       "timestamp": {
-        "seconds": "1794991831",
-        "nanos": 579000000
+        "seconds": "1795023954",
+        "nanos": 845000000
       },
       "error": null
     },
     {
       "pairId": "polymarket:0xa0e794b19ec1dda98d7fc518ec033233e25817b17e06f2a8fa4def146c15e15c",
-      "txDigest": "2D8qwDpffr9gXNvPGmyGGrQxTPNH3TpcqKNEhdbECr3b",
+      "txDigest": "4gQFJRN3eumPBkDS5bjDGJiKtz7mFxtppyQsnEaeMDXm",
       "verified": true,
       "digestFoundInEvents": true,
       "referenceFoundInEvents": true,
@@ -108,16 +108,10 @@
           "oneofKind": "structValue",
           "structValue": {
             "fields": {
-              "ts_ms": {
-                "kind": {
-                  "oneofKind": "stringValue",
-                  "stringValue": "1794991832865"
-                }
-              },
               "digest": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "Us7GBlnTenttQNt34GdPhVcUdxQI+0ZuI3z8sHe2MQ0="
+                  "stringValue": "Ga8hQzoh1PGpp71djOyZVLWq92HALVAWJdof1aaHWII="
                 }
               },
               "reference": {
@@ -129,23 +123,29 @@
               "sender": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "0x0560cde7b6d44e4bf1559623572ba5d82d322ac3b0b62f71b313d78609fd7e9c"
+                  "stringValue": "0xfde42dbe60d3f2d66fac17e02f5bed0a00306fb1f5cca63bf60cce595b746a85"
+                }
+              },
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1795023955953"
                 }
               }
             }
           }
         }
       },
-      "checkpoint": "407865558",
+      "checkpoint": "408008575",
       "timestamp": {
-        "seconds": "1794991832",
-        "nanos": 865000000
+        "seconds": "1795023956",
+        "nanos": 98000000
       },
       "error": null
     },
     {
       "pairId": "polymarket:0xbddb7c7946f22cd2c0fd059473c4cd0b3458e901bfa581afccdae0058ae25380",
-      "txDigest": "6t4nqbXTgvfNexyyynDn4kqkigtyAkGcEwL6TEuWx2ed",
+      "txDigest": "5V9Qtg8FnUMRgPvVF9CKAze5EDcYLqRDRFspx8XQJiAz",
       "verified": true,
       "digestFoundInEvents": true,
       "referenceFoundInEvents": true,
@@ -155,10 +155,16 @@
           "oneofKind": "structValue",
           "structValue": {
             "fields": {
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1795023957253"
+                }
+              },
               "digest": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "Tp7hUKobKi3GLxwu83Fgm8/UX4XgZ/bierfcVxVdC7k="
+                  "stringValue": "1lopSBdzhD8LKAEVYo7FEuHyVNgw9Ow3fFL7g/9fBnc="
                 }
               },
               "reference": {
@@ -170,29 +176,23 @@
               "sender": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "0x0560cde7b6d44e4bf1559623572ba5d82d322ac3b0b62f71b313d78609fd7e9c"
-                }
-              },
-              "ts_ms": {
-                "kind": {
-                  "oneofKind": "stringValue",
-                  "stringValue": "1794991834137"
+                  "stringValue": "0xfde42dbe60d3f2d66fac17e02f5bed0a00306fb1f5cca63bf60cce595b746a85"
                 }
               }
             }
           }
         }
       },
-      "checkpoint": "407865564",
+      "checkpoint": "408008581",
       "timestamp": {
-        "seconds": "1794991834",
-        "nanos": 137000000
+        "seconds": "1795023957",
+        "nanos": 386000000
       },
       "error": null
     },
     {
       "pairId": "polymarket:0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45",
-      "txDigest": "EPvp8k2tNKd8vVMErydDJWbTLCkb2H1WsfXtanQfAPdn",
+      "txDigest": "FNM2Cm7sv7qXy4ds65JuMKmxRcEsnWwx2Pj2HDhBdovp",
       "verified": true,
       "digestFoundInEvents": true,
       "referenceFoundInEvents": true,
@@ -202,10 +202,22 @@
           "oneofKind": "structValue",
           "structValue": {
             "fields": {
+              "sender": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "0xfde42dbe60d3f2d66fac17e02f5bed0a00306fb1f5cca63bf60cce595b746a85"
+                }
+              },
+              "ts_ms": {
+                "kind": {
+                  "oneofKind": "stringValue",
+                  "stringValue": "1795023958458"
+                }
+              },
               "digest": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "o+RC9CejHSW6j828ZWko4l92QuG33mT8vDorF/VXunk="
+                  "stringValue": "v3sGI0uN005WUk6JC8A4cYBB/f1pp5/zP4cJFskjO0A="
                 }
               },
               "reference": {
@@ -213,33 +225,21 @@
                   "oneofKind": "stringValue",
                   "stringValue": "cG9seW1hcmtldDoweDQxZjk0MTAxZDU3YmYwMjhlZmY2MmYyY2MzNzE0YWRiNzk3MjI1NTNkYzU5YzE2NzYwNzE0NTljMGIwMDllNDU="
                 }
-              },
-              "sender": {
-                "kind": {
-                  "oneofKind": "stringValue",
-                  "stringValue": "0x0560cde7b6d44e4bf1559623572ba5d82d322ac3b0b62f71b313d78609fd7e9c"
-                }
-              },
-              "ts_ms": {
-                "kind": {
-                  "oneofKind": "stringValue",
-                  "stringValue": "1794991835697"
-                }
               }
             }
           }
         }
       },
-      "checkpoint": "407865572",
+      "checkpoint": "408008586",
       "timestamp": {
-        "seconds": "1794991835",
-        "nanos": 839000000
+        "seconds": "1795023958",
+        "nanos": 521000000
       },
       "error": null
     },
     {
       "pairId": "polymarket:0x134e5143254278e5df6f0ffcf9502845fa935923b86c56fd627508552240a959",
-      "txDigest": "9aUZeNcxwonLPcrgCCatqAjqFwZ3tU5tzMbXJhEnowcA",
+      "txDigest": "2JMRfDiQT3sMZhTYWhJV6ZQ5JW2dQEWAPEdCctR7dGeJ",
       "verified": true,
       "digestFoundInEvents": true,
       "referenceFoundInEvents": true,
@@ -252,7 +252,7 @@
               "digest": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "oQVX/jxkTOx7/7vVKMRrK5g0lISAWLJma0Y9zPKCAFs="
+                  "stringValue": "LNpjyj4h/lNXtB8gN327SqAebAlNIyGxLwd52kNLZHo="
                 }
               },
               "reference": {
@@ -264,26 +264,26 @@
               "sender": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "0x0560cde7b6d44e4bf1559623572ba5d82d322ac3b0b62f71b313d78609fd7e9c"
+                  "stringValue": "0xfde42dbe60d3f2d66fac17e02f5bed0a00306fb1f5cca63bf60cce595b746a85"
                 }
               },
               "ts_ms": {
                 "kind": {
                   "oneofKind": "stringValue",
-                  "stringValue": "1794991836987"
+                  "stringValue": "1795023959599"
                 }
               }
             }
           }
         }
       },
-      "checkpoint": "407865578",
+      "checkpoint": "408008591",
       "timestamp": {
-        "seconds": "1794991837",
-        "nanos": 126000000
+        "seconds": "1795023959",
+        "nanos": 599000000
       },
       "error": null
     }
   ],
-  "observedAt": "2026-11-18T08:50:44.826Z"
+  "observedAt": "2026-11-18T17:46:07.208Z"
 }
